@@ -1,0 +1,14 @@
+# Ranorex test reports
+Reports/
+**/Reports/
+
+# Ranorex user preferences
+*.pref
+
+# Visual Studio / build output
+bin/
+obj/
+
+# Temporary files
+*.tmp
+*.log
