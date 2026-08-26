@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<modulegroupdoc>
+  <testsuiteentryhierarchy>
+    <flatlistofchildren>
+      <modulegroups
+      name="AutomationExercise"
+      id="1a0fda16-bb36-4a0e-8828-87cc6c1ffdb1"/>
+    </flatlistofchildren>
+    <childhierarchy>
+      <modulegroups
+      name="AutomationExercise"
+      id="1a0fda16-bb36-4a0e-8828-87cc6c1ffdb1"/>
+    </childhierarchy>
+  </testsuiteentryhierarchy>
+</modulegroupdoc>

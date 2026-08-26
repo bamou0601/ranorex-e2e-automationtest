@@ -1,0 +1,170 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<report
+	progress="">
+	<activity
+		result="Failed"
+		duration="7.64s"
+		durationms="7641"
+		type="root"
+		rid="2ff2eda253442200"
+		totalerrorcount="1"
+		totalwarningcount="1"
+		totalsuccesstestcasecount="0"
+		totalfailedtestcasecount="0"
+		totalblockedtestcasecount="0"
+		childsuccesscount="0"
+		childfailedcount="0"
+		childblockedcount="0"
+		totalsuccesscount="0"
+		totalfailedcount="0"
+		totalblockedcount="0"
+		totalmaintenancemodecount="0"
+		user="mo_ba"
+		rxversion="12.3.0.0"
+		host="01-0505716"
+		osversion="Windows 11 64bit"
+		runtimeversion="4.0.30319.42000"
+		procarch="32bit"
+		oslanguage="ja-JP"
+		dtnlanguage="ja-JP"
+		screenresolution="1920x1200"
+		timestamp="2026/08/25 16:04:44"
+		timestampiso="2026-08-25T07:04:44"
+		endtime="2026/08/25 16:04:52"
+		timeoutfactor="1"
+		runid=""
+		sutversion=""
+		module="ui_searching_product">
+		<detail>
+			ui_searching_product
+		</detail>
+		<errormessage>
+			Setting attribute 'Value' failed on element '{InputTag:}'.
+		</errormessage>
+		<varbindings>
+		</varbindings>
+		<item
+			timeRelativeToTestSuiteStartTime="00:03.828"
+			timeRelativeToTestModuleStartTime="00:03.828"
+			timeWallClock="16:04:48"
+			time="00:03.828"
+			level="Warn"
+			category="Data">
+			<message>
+				The following module variables are not bound to a data column:<br/>search_content
+			</message>
+			<metainfo
+				loglvl="Warn">
+			</metainfo>
+		</item>
+		<item
+			timeRelativeToTestSuiteStartTime="00:03.842"
+			timeRelativeToTestModuleStartTime="00:03.842"
+			timeWallClock="16:04:48"
+			time="00:03.842"
+			level="Info"
+			category="Website">
+			<message>
+				Opening web site 'https://www.automationexercise.com/' in normal mode.
+			</message>
+			<metainfo
+				itemindex="0"
+				codefile="C:\Users\mo_ba\Documents\Ranorex\RanorexStudio Projects\AutomationExercise\AutomationExercise\ui_searching_product.cs"
+				codeline="95"
+				loglvl="Info">
+			</metainfo>
+		</item>
+		<item
+			timeRelativeToTestSuiteStartTime="00:03.937"
+			timeRelativeToTestModuleStartTime="00:03.937"
+			timeWallClock="16:04:48"
+			time="00:03.937"
+			level="Info"
+			category="Mouse">
+			<message>
+				Mouse Left Click item 'ApplicationUnderTest.Products_Menu' at Center.
+			</message>
+			<metainfo
+				type="repoitem"
+				path="/dom[@domain='www.automationexercise.com']//header[#'header']/div/div/div/div[2]/?/?/ul/li[2]/a[@innertext=' Products']"
+				itempath=".//header[#'header']/div/div/div/div[2]/?/?/ul/li[2]/a[@innertext=' Products']"
+				fullname="AutomationExerciseRepository.ApplicationUnderTest.Products_Menu"
+				id="ece49e18a2974a30bf9ef0faa070e73a"
+				timeout="60000"
+				codefile="C:\Users\mo_ba\Documents\Ranorex\RanorexStudio Projects\AutomationExercise\AutomationExercise\ui_searching_product.cs"
+				codeline="99"
+				itemindex="1"
+				loglvl="Info">
+			</metainfo>
+		</item>
+		<item
+			timeRelativeToTestSuiteStartTime="00:06.768"
+			timeRelativeToTestModuleStartTime="00:06.768"
+			timeWallClock="16:04:51"
+			time="00:06.768"
+			level="Info"
+			category="Delay"
+			errimg="images_ui_searc_a8ba35d9\ui_searc_a8ba35d9_a6cf3669_trace.jpg"
+			errthumb="images_ui_searc_a8ba35d9\ui_searc_a8ba35d9_a6cf3669_trace_thumb.jpg">
+			<message>
+				Waiting for 300ms.
+			</message>
+			<metainfo
+				itemindex="2"
+				codefile="C:\Users\mo_ba\Documents\Ranorex\RanorexStudio Projects\AutomationExercise\AutomationExercise\ui_searching_product.cs"
+				codeline="103"
+				loglvl="Info">
+			</metainfo>
+		</item>
+		<item
+			timeRelativeToTestSuiteStartTime="00:07.074"
+			timeRelativeToTestModuleStartTime="00:07.074"
+			timeWallClock="16:04:52"
+			time="00:07.074"
+			level="Info"
+			category="Set value"
+			errimg="images_ui_searc_a8ba35d9\ui_searc_a8ba35d9_adbf0f8f_trace.jpg"
+			errthumb="images_ui_searc_a8ba35d9\ui_searc_a8ba35d9_adbf0f8f_trace_thumb.jpg">
+			<message>
+				Setting attribute Value to '$search_content' on item 'ApplicationUnderTest.SearchProduct'.
+			</message>
+			<metainfo
+				type="repoitem"
+				path="/dom[@domain='www.automationexercise.com']//input[#'search_product']"
+				itempath=".//input[#'search_product']"
+				fullname="AutomationExerciseRepository.ApplicationUnderTest.SearchProduct"
+				id="fd0b7cc1fc3f4bebaa4be221a80d531f"
+				timeout="60000"
+				codefile="C:\Users\mo_ba\Documents\Ranorex\RanorexStudio Projects\AutomationExercise\AutomationExercise\ui_searching_product.cs"
+				codeline="106"
+				itemindex="3"
+				loglvl="Info">
+			</metainfo>
+		</item>
+		<item
+			timeRelativeToTestSuiteStartTime="00:07.522"
+			timeRelativeToTestModuleStartTime="00:07.522"
+			timeWallClock="16:04:52"
+			time="00:07.522"
+			level="Error"
+			category="Module"
+			errimg="images_ui_searc_a8ba35d9\ui_searc_a8ba35d9_a4ef2b26_trace.jpg"
+			errthumb="images_ui_searc_a8ba35d9\ui_searc_a8ba35d9_a4ef2b26_trace_thumb.jpg">
+			<message>
+				Setting attribute 'Value' failed on element '{InputTag:}'.<br/>Error in MsgHostDom call: Error TypeError: Cannot set properties of undefined (setting 'value') TypeError: Cannot set properties of undefined (setting 'value')
+    at chrome-extension://nmcnaajhcdnlfoooebjbjoinjhlppdpd/content.js:244:20
+    at window.RXmsg.onRecv (chrome-extension://nmcnaajhcdnlfoooebjbjoinjhlppdpd/msgport.js:14:13)
+			</message>
+			<metainfo
+				stacktrace="   場所 Ranorex.Core.Element.SetAttributeValue(String name, Object value)
+   場所 Ranorex.Core.Element.SetAttributeValue(String name, String value)
+   場所 AutomationExercise.ui_searching_product.Ranorex.Core.Testing.ITestModule.Run() 場所 C:\Users\mo_ba\Documents\Ranorex\RanorexStudio Projects\AutomationExercise\AutomationExercise\ui_searching_product.cs:行 107
+   場所 Ranorex.Core.Testing.TestModuleLeaf.RunInternal(DataContext parentDataContext, Int32 iteration, Int32 iterationCount, Boolean skipIteration)"
+				codefile="C:\Users\mo_ba\Documents\Ranorex\RanorexStudio Projects\AutomationExercise\AutomationExercise\ui_searching_product.cs"
+				codeline="107"
+				loglvl="Error"
+				itemindex="3">
+			</metainfo>
+		</item>
+	</activity>
+</report>

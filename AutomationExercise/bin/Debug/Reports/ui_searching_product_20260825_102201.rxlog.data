@@ -1,0 +1,163 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<report
+	progress="">
+	<activity
+		result="Failed"
+		duration="10.5s"
+		durationms="10501"
+		type="root"
+		rid="af95db7ea94c607"
+		totalerrorcount="1"
+		totalwarningcount="1"
+		totalsuccesstestcasecount="0"
+		totalfailedtestcasecount="0"
+		totalblockedtestcasecount="0"
+		childsuccesscount="0"
+		childfailedcount="0"
+		childblockedcount="0"
+		totalsuccesscount="0"
+		totalfailedcount="0"
+		totalblockedcount="0"
+		totalmaintenancemodecount="0"
+		user="mo_ba"
+		rxversion="12.3.0.0"
+		host="01-0505716"
+		osversion="Windows 11 64bit"
+		runtimeversion="4.0.30319.42000"
+		procarch="32bit"
+		oslanguage="ja-JP"
+		dtnlanguage="ja-JP"
+		screenresolution="1920x1200"
+		timestamp="2026/08/25 10:22:06"
+		timestampiso="2026-08-25T01:22:06"
+		endtime="2026/08/25 10:22:17"
+		timeoutfactor="1"
+		runid=""
+		sutversion=""
+		module="ui_searching_product">
+		<detail>
+			ui_searching_product
+		</detail>
+		<errormessage>
+			Failed to move to location '200;113' within element '{PTag:All QA engineers can use this website for automation practice and API testing either they are at beginner or advance level. This is for everybody to help them brush up their automation skills.}'.
+		</errormessage>
+		<varbindings>
+		</varbindings>
+		<item
+			timeRelativeToTestSuiteStartTime="00:05.766"
+			timeRelativeToTestModuleStartTime="00:05.766"
+			timeWallClock="10:22:12"
+			time="00:05.766"
+			level="Info"
+			category="Website">
+			<message>
+				Opening web site 'https://www.automationexercise.com/' in normal mode.
+			</message>
+			<metainfo
+				itemindex="0"
+				codefile="C:\Users\mo_ba\Documents\Ranorex\RanorexStudio Projects\AutomationExercise\AutomationExercise\ui_searching_product.cs"
+				codeline="82"
+				loglvl="Info">
+			</metainfo>
+		</item>
+		<item
+			timeRelativeToTestSuiteStartTime="00:05.882"
+			timeRelativeToTestModuleStartTime="00:05.882"
+			timeWallClock="10:22:12"
+			time="00:05.882"
+			level="Info"
+			category="Mouse"
+			errimg="images_ui_searc_c5930843\ui_searc_c5930843_4485cd0e_trace.jpg"
+			errthumb="images_ui_searc_c5930843\ui_searc_c5930843_4485cd0e_trace_thumb.jpg">
+			<message>
+				Mouse Left Click item 'AutomationExerciseGoogleChrome.View20' at 34;19.
+			</message>
+			<metainfo
+				type="repoitem"
+				path="/form[@title>'Automation Exercise - Google']/container[@name>'Automation Exercise - Google']//container[@classname='HorizontalTabStripRegionView']/container[@automationid='view_21']/tabpagelist/tabpage[9]"
+				itempath="container[@name>'Automation Exercise - Google']//container[@classname='HorizontalTabStripRegionView']/container[@automationid='view_21']/tabpagelist/tabpage[9]"
+				fullname="AutomationExerciseRepository.AutomationExerciseGoogleChrome.View20"
+				id="0efa235f217c49e982453cbf54dd4554"
+				timeout="60000"
+				codefile="C:\Users\mo_ba\Documents\Ranorex\RanorexStudio Projects\AutomationExercise\AutomationExercise\ui_searching_product.cs"
+				codeline="86"
+				itemindex="1"
+				loglvl="Info">
+			</metainfo>
+		</item>
+		<item
+			timeRelativeToTestSuiteStartTime="00:09.421"
+			timeRelativeToTestModuleStartTime="00:09.421"
+			timeWallClock="10:22:16"
+			time="00:09.421"
+			level="Info"
+			category="Mouse"
+			errimg="images_ui_searc_c5930843\ui_searc_c5930843_1cef0f2e_trace.jpg"
+			errthumb="images_ui_searc_c5930843\ui_searc_c5930843_1cef0f2e_trace_thumb.jpg">
+			<message>
+				Mouse Left Click item 'ApplicationUnderTest.AllQAEngineersCanUseThisWebsiteFo' at 200;113.
+			</message>
+			<metainfo
+				type="repoitem"
+				path="/dom[@domain='www.automationexercise.com']//div[#'slider-carousel']/div/div[2]/div[1]/p[@innertext>'All QA engineers can use this']"
+				itempath=".//div[#'slider-carousel']/div/div[2]/div[1]/p[@innertext>'All QA engineers can use this']"
+				fullname="AutomationExerciseRepository.ApplicationUnderTest.AllQAEngineersCanUseThisWebsiteFo"
+				id="34dc2eab48b84594bcb31f8be7b7262c"
+				timeout="60000"
+				codefile="C:\Users\mo_ba\Documents\Ranorex\RanorexStudio Projects\AutomationExercise\AutomationExercise\ui_searching_product.cs"
+				codeline="90"
+				itemindex="2"
+				loglvl="Info">
+			</metainfo>
+		</item>
+		<item
+			timeRelativeToTestSuiteStartTime="00:09.830"
+			timeRelativeToTestModuleStartTime="00:09.830"
+			timeWallClock="10:22:16"
+			time="00:09.830"
+			level="Warn"
+			category="Click"
+			errimg="images_ui_searc_c5930843\ui_searc_bd1e4036_rxlog.jpg"
+			errthumb="images_ui_searc_c5930843\ui_searc_bd1e4036_rxlog_thumb.jpg">
+			<message>
+				The mouse action was performed outside the boundaries of the assigned UI element.<br/>
+			</message>
+			<metainfo
+				codefile="C:\Users\mo_ba\Documents\Ranorex\RanorexStudio Projects\AutomationExercise\AutomationExercise\ui_searching_product.cs"
+				codeline="91"
+				loglvl="Warn">
+			</metainfo>
+		</item>
+		<item
+			timeRelativeToTestSuiteStartTime="00:10.380"
+			timeRelativeToTestModuleStartTime="00:10.380"
+			timeWallClock="10:22:17"
+			time="00:10.380"
+			level="Error"
+			category="Module"
+			errimg="images_ui_searc_c5930843\ui_searc_c5930843_590c82ad_trace.jpg"
+			errthumb="images_ui_searc_c5930843\ui_searc_c5930843_590c82ad_trace_thumb.jpg">
+			<message>
+				Failed to move to location '200;113' within element '{PTag:All QA engineers can use this website for automation practice and API testing either they are at beginner or advance level. This is for everybody to help them brush up their automation skills.}'.<br/>The pointer cannot be moved to point '{X=-448,Y=594}' since it is outside of the visible desktop.
+			</message>
+			<metainfo
+				stacktrace="   場所 Ranorex.Mouse.MoveTo(Element element, Location location, Duration moveTime)
+   場所 Ranorex.Mouse.Click(Element element, MouseButtons buttons, Location location, Int32 times, Duration moveTime)
+   場所 Ranorex.Adapter.Click(MouseButtons buttons, Location location, Int32 times, Duration moveTime, Boolean showOutOfBoundsWarning)
+   場所 Ranorex.Adapter.Click(Location location)
+   場所 AutomationExercise.ui_searching_product.Ranorex.Core.Testing.ITestModule.Run() 場所 C:\Users\mo_ba\Documents\Ranorex\RanorexStudio Projects\AutomationExercise\AutomationExercise\ui_searching_product.cs:行 91
+   場所 Ranorex.Core.Testing.TestModuleLeaf.RunInternal(DataContext parentDataContext, Int32 iteration, Int32 iterationCount, Boolean skipIteration)"
+				codefile="C:\Users\mo_ba\Documents\Ranorex\RanorexStudio Projects\AutomationExercise\AutomationExercise\ui_searching_product.cs"
+				codeline="91"
+				type="repoitem"
+				path="/dom[@domain='www.automationexercise.com']//div[#'slider-carousel']/div/div[2]/div[1]/p[@innertext>'All QA engineers can use this']"
+				itempath=".//div[#'slider-carousel']/div/div[2]/div[1]/p[@innertext>'All QA engineers can use this']"
+				fullname="AutomationExerciseRepository.ApplicationUnderTest.AllQAEngineersCanUseThisWebsiteFo"
+				id="34dc2eab48b84594bcb31f8be7b7262c"
+				timeout="60000"
+				loglvl="Error"
+				itemindex="2">
+			</metainfo>
+		</item>
+	</activity>
+</report>

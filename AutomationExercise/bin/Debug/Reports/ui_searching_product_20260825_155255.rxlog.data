@@ -1,0 +1,276 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<report
+	progress="">
+	<activity
+		result="Failed"
+		duration="11.16s"
+		durationms="11160"
+		type="root"
+		rid="4999443db513351"
+		totalerrorcount="1"
+		totalwarningcount="1"
+		totalsuccesstestcasecount="0"
+		totalfailedtestcasecount="0"
+		totalblockedtestcasecount="0"
+		childsuccesscount="0"
+		childfailedcount="0"
+		childblockedcount="0"
+		totalsuccesscount="0"
+		totalfailedcount="0"
+		totalblockedcount="0"
+		totalmaintenancemodecount="0"
+		user="mo_ba"
+		rxversion="12.3.0.0"
+		host="01-0505716"
+		osversion="Windows 11 64bit"
+		runtimeversion="4.0.30319.42000"
+		procarch="32bit"
+		oslanguage="ja-JP"
+		dtnlanguage="ja-JP"
+		screenresolution="1920x1200"
+		timestamp="2026/08/25 15:52:58"
+		timestampiso="2026-08-25T06:52:58"
+		endtime="2026/08/25 15:53:09"
+		timeoutfactor="1"
+		runid=""
+		sutversion=""
+		module="ui_searching_product">
+		<detail>
+			ui_searching_product
+		</detail>
+		<errormessage>
+			Objects are not equal (actual='0', expected='14').
+		</errormessage>
+		<varbindings>
+		</varbindings>
+		<item
+			timeRelativeToTestSuiteStartTime="00:04.233"
+			timeRelativeToTestModuleStartTime="00:04.233"
+			timeWallClock="15:53:02"
+			time="00:04.233"
+			level="Warn"
+			category="Data">
+			<message>
+				The following module variables are not bound to a data column:<br/>search_content
+			</message>
+			<metainfo
+				loglvl="Warn">
+			</metainfo>
+		</item>
+		<item
+			timeRelativeToTestSuiteStartTime="00:04.248"
+			timeRelativeToTestModuleStartTime="00:04.248"
+			timeWallClock="15:53:02"
+			time="00:04.248"
+			level="Info"
+			category="Website">
+			<message>
+				Opening web site 'https://www.automationexercise.com/' in normal mode.
+			</message>
+			<metainfo
+				itemindex="0"
+				codefile="C:\Users\mo_ba\Documents\Ranorex\RanorexStudio Projects\AutomationExercise\AutomationExercise\ui_searching_product.cs"
+				codeline="95"
+				loglvl="Info">
+			</metainfo>
+		</item>
+		<item
+			timeRelativeToTestSuiteStartTime="00:04.342"
+			timeRelativeToTestModuleStartTime="00:04.342"
+			timeWallClock="15:53:02"
+			time="00:04.342"
+			level="Info"
+			category="Mouse">
+			<message>
+				Mouse Left Click item 'ApplicationUnderTest.Products_Menu' at Center.
+			</message>
+			<metainfo
+				type="repoitem"
+				path="/dom[@domain='www.automationexercise.com']//header[#'header']/div/div/div/div[2]/?/?/ul/li[2]/a[@innertext=' Products']"
+				itempath=".//header[#'header']/div/div/div/div[2]/?/?/ul/li[2]/a[@innertext=' Products']"
+				fullname="AutomationExerciseRepository.ApplicationUnderTest.Products_Menu"
+				id="ece49e18a2974a30bf9ef0faa070e73a"
+				timeout="60000"
+				codefile="C:\Users\mo_ba\Documents\Ranorex\RanorexStudio Projects\AutomationExercise\AutomationExercise\ui_searching_product.cs"
+				codeline="99"
+				itemindex="1"
+				loglvl="Info">
+			</metainfo>
+		</item>
+		<item
+			timeRelativeToTestSuiteStartTime="00:06.895"
+			timeRelativeToTestModuleStartTime="00:06.895"
+			timeWallClock="15:53:05"
+			time="00:06.895"
+			level="Info"
+			category="Delay">
+			<message>
+				Waiting for 300ms.
+			</message>
+			<metainfo
+				itemindex="2"
+				codefile="C:\Users\mo_ba\Documents\Ranorex\RanorexStudio Projects\AutomationExercise\AutomationExercise\ui_searching_product.cs"
+				codeline="103"
+				loglvl="Info">
+			</metainfo>
+		</item>
+		<item
+			timeRelativeToTestSuiteStartTime="00:07.198"
+			timeRelativeToTestModuleStartTime="00:07.198"
+			timeWallClock="15:53:05"
+			time="00:07.198"
+			level="Info"
+			category="Set value">
+			<message>
+				Setting attribute Value to '$search_content' on item 'ApplicationUnderTest.SearchProduct'.
+			</message>
+			<metainfo
+				type="repoitem"
+				path="/dom[@domain='www.automationexercise.com']//input[#'search_product']"
+				itempath=".//input[#'search_product']"
+				fullname="AutomationExerciseRepository.ApplicationUnderTest.SearchProduct"
+				id="fd0b7cc1fc3f4bebaa4be221a80d531f"
+				timeout="60000"
+				codefile="C:\Users\mo_ba\Documents\Ranorex\RanorexStudio Projects\AutomationExercise\AutomationExercise\ui_searching_product.cs"
+				codeline="106"
+				itemindex="3"
+				loglvl="Info">
+			</metainfo>
+		</item>
+		<item
+			timeRelativeToTestSuiteStartTime="00:08.233"
+			timeRelativeToTestModuleStartTime="00:08.233"
+			timeWallClock="15:53:06"
+			time="00:08.233"
+			level="Info"
+			category="Mouse">
+			<message>
+				Mouse Left Click item 'ApplicationUnderTest.SubmitSearch' at Center.
+			</message>
+			<metainfo
+				type="repoitem"
+				path="/dom[@domain='www.automationexercise.com']//button[#'submit_search']"
+				itempath=".//button[#'submit_search']"
+				fullname="AutomationExerciseRepository.ApplicationUnderTest.SubmitSearch"
+				id="f6a14cf7d44141738fcaa751a345d1a5"
+				timeout="60000"
+				codefile="C:\Users\mo_ba\Documents\Ranorex\RanorexStudio Projects\AutomationExercise\AutomationExercise\ui_searching_product.cs"
+				codeline="110"
+				itemindex="4"
+				loglvl="Info">
+			</metainfo>
+		</item>
+		<item
+			timeRelativeToTestSuiteStartTime="00:08.862"
+			timeRelativeToTestModuleStartTime="00:08.862"
+			timeWallClock="15:53:07"
+			time="00:08.862"
+			level="Info"
+			category="Delay">
+			<message>
+				Waiting for 1s.
+			</message>
+			<metainfo
+				itemindex="5"
+				codefile="C:\Users\mo_ba\Documents\Ranorex\RanorexStudio Projects\AutomationExercise\AutomationExercise\ui_searching_product.cs"
+				codeline="114"
+				loglvl="Info">
+			</metainfo>
+		</item>
+		<item
+			timeRelativeToTestSuiteStartTime="00:09.864"
+			timeRelativeToTestModuleStartTime="00:09.864"
+			timeWallClock="15:53:08"
+			time="00:09.864"
+			level="Info"
+			category="User">
+			<message>
+				検索RxPath: /dom[@domain='www.automationexercise.com']//h2[@innertext='Searched Products']/..//div[@class~'productinfo']/p
+			</message>
+			<metainfo
+				codefile="C:\Users\mo_ba\Documents\Ranorex\RanorexStudio Projects\AutomationExercise\AutomationExercise\ui_searching_product.UserCode.cs"
+				codeline="45"
+				loglvl="Info">
+			</metainfo>
+		</item>
+		<item
+			timeRelativeToTestSuiteStartTime="00:11.011"
+			timeRelativeToTestModuleStartTime="00:11.011"
+			timeWallClock="15:53:09"
+			time="00:11.011"
+			level="Info"
+			category="User"
+			errimg="images_ui_searc_a048c141\ui_searc_a048c141_704641b1_trace.jpg"
+			errthumb="images_ui_searc_a048c141\ui_searc_a048c141_704641b1_trace_thumb.jpg">
+			<message>
+				DOM取得商品数: 14
+			</message>
+			<metainfo
+				codefile="C:\Users\mo_ba\Documents\Ranorex\RanorexStudio Projects\AutomationExercise\AutomationExercise\ui_searching_product.UserCode.cs"
+				codeline="57"
+				loglvl="Info">
+			</metainfo>
+		</item>
+		<item
+			timeRelativeToTestSuiteStartTime="00:11.038"
+			timeRelativeToTestModuleStartTime="00:11.038"
+			timeWallClock="15:53:09"
+			time="00:11.038"
+			level="Info"
+			category="User"
+			errimg="images_ui_searc_a048c141\ui_searc_a048c141_704641b1_trace.jpg"
+			errthumb="images_ui_searc_a048c141\ui_searc_a048c141_704641b1_trace_thumb.jpg">
+			<message>
+				UI検索結果の商品数: 0
+			</message>
+			<metainfo
+				codefile="C:\Users\mo_ba\Documents\Ranorex\RanorexStudio Projects\AutomationExercise\AutomationExercise\ui_searching_product.UserCode.cs"
+				codeline="82"
+				loglvl="Info">
+			</metainfo>
+		</item>
+		<item
+			timeRelativeToTestSuiteStartTime="00:11.039"
+			timeRelativeToTestModuleStartTime="00:11.039"
+			timeWallClock="15:53:09"
+			time="00:11.039"
+			level="Failure"
+			category="Validation"
+			errimg="images_ui_searc_a048c141\ui_searc_a048c141_704641b1_trace.jpg"
+			errthumb="images_ui_searc_a048c141\ui_searc_a048c141_704641b1_trace_thumb.jpg">
+			<message>
+				Objects are not equal (actual='0', expected='14').
+			</message>
+			<metainfo
+				codefile="C:\Users\mo_ba\Documents\Ranorex\RanorexStudio Projects\AutomationExercise\AutomationExercise\ui_searching_product.UserCode.cs"
+				codeline="88"
+				loglvl="Failure">
+			</metainfo>
+		</item>
+		<item
+			timeRelativeToTestSuiteStartTime="00:11.044"
+			timeRelativeToTestModuleStartTime="00:11.044"
+			timeWallClock="15:53:09"
+			time="00:11.044"
+			level="Error"
+			category="Module"
+			errimg="images_ui_searc_a048c141\ui_searc_a048c141_704641b1_trace.jpg"
+			errthumb="images_ui_searc_a048c141\ui_searc_a048c141_704641b1_trace_thumb.jpg">
+			<message>
+				Module execution was aborted because a validation step has failed. Objects are not equal (actual='0', expected='14').
+			</message>
+			<metainfo
+				stacktrace="   場所 Ranorex.Validate.ThrowValidationException(RepoItemInfo itemInfo, ValidationException ex)
+   場所 Ranorex.Validate.IsTrueInternal(Boolean condition, String message, Options options, RepoItemInfo itemInfo, RanorexException innerException)
+   場所 Ranorex.Validate.AreEqual(Object actual, Object expected, String message, Options options)
+   場所 Ranorex.Validate.AreEqual(Object actual, Object expected)
+   場所 AutomationExercise.ui_searching_product.ValidateUiProductCount() 場所 C:\Users\mo_ba\Documents\Ranorex\RanorexStudio Projects\AutomationExercise\AutomationExercise\ui_searching_product.UserCode.cs:行 88
+   場所 AutomationExercise.ui_searching_product.Ranorex.Core.Testing.ITestModule.Run() 場所 C:\Users\mo_ba\Documents\Ranorex\RanorexStudio Projects\AutomationExercise\AutomationExercise\ui_searching_product.cs:行 117
+   場所 Ranorex.Core.Testing.TestModuleLeaf.RunInternal(DataContext parentDataContext, Int32 iteration, Int32 iterationCount, Boolean skipIteration)"
+				codefile="C:\Users\mo_ba\Documents\Ranorex\RanorexStudio Projects\AutomationExercise\AutomationExercise\ui_searching_product.UserCode.cs"
+				codeline="88"
+				loglvl="Error">
+			</metainfo>
+		</item>
+	</activity>
+</report>

@@ -1,0 +1,68 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<recordtable
+embeddedrepository="False"
+id="fb6760ef-a294-4a17-98df-55c29763301e"
+mode="Desktop">
+	<repeatcount>
+		1
+	</repeatcount>
+	<turbomode>
+		False
+	</turbomode>
+	<genreport>
+		True
+	</genreport>
+	<speedfactor>
+		1
+	</speedfactor>
+	<useDefaultItemLogging>
+		True
+	</useDefaultItemLogging>
+	<codegen
+	classname="CloseBrowser"
+	namespace="AutomationExercise.Common">
+	</codegen>
+	<variables>
+	</variables>
+	<recorditems>
+		<closeapprecorditem
+		enabled="True"
+		graceperiod="0ms"
+		method="CloseWindow"
+		optional="False"
+		searchpropertyid="1d565677-7e14-4d75-a2c1-0dff137d0f7a">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="40c7c42a-ab65-4243-9e6f-85d8108535bc"
+			sourcename="RepositoryEditor">
+				<path>
+					/form[@processname='chrome']
+				</path>
+				<robustPath>
+				</robustPath>
+			</info>
+		</closeapprecorditem>
+	</recorditems>
+	<repository
+	id="c0857d08-b99b-4d55-b197-ffd12d480039"
+	name="AutomationExerciseRepository"
+	relativepath="..\AutomationExerciseRepository.rxrep">
+		<codegen
+		classname="AutomationExerciseRepository"
+		namespace="AutomationExercise">
+		</codegen>
+		<rootfolder
+		id="198c1291-c4f8-440e-975f-c673da20c282"
+		name="_rootdummy_">
+		</rootfolder>
+	</repository>
+	<usercodefile
+	lang="CSharp">
+		CloseBrowser.UserCode.cs
+	</usercodefile>
+	<references>
+	</references>
+</recordtable>

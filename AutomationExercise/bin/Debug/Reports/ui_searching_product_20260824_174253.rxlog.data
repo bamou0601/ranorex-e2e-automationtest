@@ -1,0 +1,171 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<report
+	progress="">
+	<activity
+		result="Success"
+		duration="27.92s"
+		durationms="27920"
+		type="root"
+		rid="10a4fae116e9cf7a"
+		totalerrorcount="0"
+		totalwarningcount="1"
+		totalsuccesstestcasecount="0"
+		totalfailedtestcasecount="0"
+		totalblockedtestcasecount="0"
+		childsuccesscount="0"
+		childfailedcount="0"
+		childblockedcount="0"
+		totalsuccesscount="0"
+		totalfailedcount="0"
+		totalblockedcount="0"
+		totalmaintenancemodecount="0"
+		user="mo_ba"
+		rxversion="12.3.0.0"
+		host="01-0505716"
+		osversion="Windows 11 64bit"
+		runtimeversion="4.0.30319.42000"
+		procarch="32bit"
+		oslanguage="ja-JP"
+		dtnlanguage="ja-JP"
+		screenresolution="1920x1200"
+		timestamp="2026/08/24 17:42:57"
+		timestampiso="2026-08-24T08:42:57"
+		endtime="2026/08/24 17:43:25"
+		timeoutfactor="1"
+		runid=""
+		sutversion=""
+		module="ui_searching_product">
+		<detail>
+			ui_searching_product
+		</detail>
+		<varbindings>
+		</varbindings>
+		<item
+			timeRelativeToTestSuiteStartTime="00:06.618"
+			timeRelativeToTestModuleStartTime="00:06.618"
+			timeWallClock="17:43:03"
+			time="00:06.618"
+			level="Info"
+			category="Website">
+			<message>
+				Opening web site 'https://www.automationexercise.com/' in normal mode.
+			</message>
+			<metainfo
+				itemindex="0"
+				codefile="C:\Users\mo_ba\Documents\Ranorex\RanorexStudio Projects\AutomationExercise\AutomationExercise\ui_searching_product.cs"
+				codeline="82"
+				loglvl="Info">
+			</metainfo>
+		</item>
+		<item
+			timeRelativeToTestSuiteStartTime="00:06.777"
+			timeRelativeToTestModuleStartTime="00:06.777"
+			timeWallClock="17:43:04"
+			time="00:06.777"
+			level="Info"
+			category="Mouse">
+			<message>
+				Mouse Left Click item 'ApplicationUnderTest.ATagProducts' at 45;10.
+			</message>
+			<metainfo
+				type="repoitem"
+				path="/dom[@domain='www.automationexercise.com']//header[#'header']/div/div/div/div[2]/?/?/ul/li[2]/a[@innertext=' Products']"
+				itempath=".//header[#'header']/div/div/div/div[2]/?/?/ul/li[2]/a[@innertext=' Products']"
+				fullname="AutomationExerciseRepository.ApplicationUnderTest.ATagProducts"
+				id="ece49e18a2974a30bf9ef0faa070e73a"
+				timeout="60000"
+				codefile="C:\Users\mo_ba\Documents\Ranorex\RanorexStudio Projects\AutomationExercise\AutomationExercise\ui_searching_product.cs"
+				codeline="86"
+				itemindex="1"
+				loglvl="Info">
+			</metainfo>
+		</item>
+		<item
+			timeRelativeToTestSuiteStartTime="00:11.782"
+			timeRelativeToTestModuleStartTime="00:11.782"
+			timeWallClock="17:43:09"
+			time="00:11.782"
+			level="Info"
+			category="Mouse">
+			<message>
+				Mouse Left Click item 'ApplicationUnderTest' at 248;595.
+			</message>
+			<metainfo
+				type="repoitem"
+				path="/dom[@domain='www.automationexercise.com']"
+				itempath="/dom[@domain='www.automationexercise.com']"
+				fullname="AutomationExerciseRepository.ApplicationUnderTest.Self"
+				id="40c7c42aab6542439e6f85d8108535bc"
+				timeout="30000"
+				codefile="C:\Users\mo_ba\Documents\Ranorex\RanorexStudio Projects\AutomationExercise\AutomationExercise\ui_searching_product.cs"
+				codeline="90"
+				itemindex="2"
+				loglvl="Info">
+			</metainfo>
+		</item>
+		<item
+			timeRelativeToTestSuiteStartTime="00:12.615"
+			timeRelativeToTestModuleStartTime="00:12.615"
+			timeWallClock="17:43:09"
+			time="00:12.615"
+			level="Info"
+			category="Keyboard">
+			<message>
+				Key sequence 'top' with focus on 'ApplicationUnderTest'.
+			</message>
+			<metainfo
+				type="repoitem"
+				path="/dom[@domain='www.automationexercise.com']"
+				itempath="/dom[@domain='www.automationexercise.com']"
+				fullname="AutomationExerciseRepository.ApplicationUnderTest.Self"
+				id="40c7c42aab6542439e6f85d8108535bc"
+				timeout="30000"
+				codefile="C:\Users\mo_ba\Documents\Ranorex\RanorexStudio Projects\AutomationExercise\AutomationExercise\ui_searching_product.cs"
+				codeline="94"
+				itemindex="3"
+				loglvl="Info">
+			</metainfo>
+		</item>
+		<item
+			timeRelativeToTestSuiteStartTime="00:13.362"
+			timeRelativeToTestModuleStartTime="00:13.362"
+			timeWallClock="17:43:10"
+			time="00:13.362"
+			level="Info"
+			category="Mouse">
+			<message>
+				Mouse Left Click item 'ApplicationUnderTest.SearchProduct' at 420;22.
+			</message>
+			<metainfo
+				type="repoitem"
+				path="/dom[@domain='www.automationexercise.com']//input[#'search_product']"
+				itempath=".//input[#'search_product']"
+				fullname="AutomationExerciseRepository.ApplicationUnderTest.SearchProduct"
+				id="fd0b7cc1fc3f4bebaa4be221a80d531f"
+				timeout="60000"
+				codefile="C:\Users\mo_ba\Documents\Ranorex\RanorexStudio Projects\AutomationExercise\AutomationExercise\ui_searching_product.cs"
+				codeline="99"
+				itemindex="4"
+				loglvl="Info">
+			</metainfo>
+		</item>
+		<item
+			timeRelativeToTestSuiteStartTime="00:27.432"
+			timeRelativeToTestModuleStartTime="00:27.432"
+			timeWallClock="17:43:24"
+			time="00:27.432"
+			level="Warn"
+			category="Click"
+			errimg="images_ui_searc_4bf4c161\ui_searc_437ffe6a_rxlog.jpg"
+			errthumb="images_ui_searc_4bf4c161\ui_searc_437ffe6a_rxlog_thumb.jpg">
+			<message>
+				The mouse action was performed outside the boundaries of the assigned UI element.<br/>
+			</message>
+			<metainfo
+				codefile="C:\Users\mo_ba\Documents\Ranorex\RanorexStudio Projects\AutomationExercise\AutomationExercise\ui_searching_product.cs"
+				codeline="100"
+				loglvl="Warn">
+			</metainfo>
+		</item>
+	</activity>
+</report>

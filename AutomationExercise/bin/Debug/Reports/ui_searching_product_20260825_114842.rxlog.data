@@ -1,0 +1,3080 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<report
+	progress="">
+	<activity
+		result="Failed"
+		duration="27.85s"
+		durationms="27851"
+		type="root"
+		rid="39a3cb7eeaff883"
+		totalerrorcount="1"
+		totalwarningcount="1"
+		totalsuccesstestcasecount="0"
+		totalfailedtestcasecount="0"
+		totalblockedtestcasecount="0"
+		childsuccesscount="0"
+		childfailedcount="0"
+		childblockedcount="0"
+		totalsuccesscount="0"
+		totalfailedcount="0"
+		totalblockedcount="0"
+		totalmaintenancemodecount="0"
+		user="mo_ba"
+		rxversion="12.3.0.0"
+		host="01-0505716"
+		osversion="Windows 11 64bit"
+		runtimeversion="4.0.30319.42000"
+		procarch="32bit"
+		oslanguage="ja-JP"
+		dtnlanguage="ja-JP"
+		screenresolution="1920x1200"
+		timestamp="2026/08/25 11:48:45"
+		timestampiso="2026-08-25T02:48:45"
+		endtime="2026/08/25 11:49:13"
+		timeoutfactor="1"
+		runid=""
+		sutversion=""
+		module="ui_searching_product">
+		<detail>
+			ui_searching_product
+		</detail>
+		<errormessage>
+			Objects are not equal (actual='174', expected='14').
+		</errormessage>
+		<varbindings>
+		</varbindings>
+		<item
+			timeRelativeToTestSuiteStartTime="00:03.922"
+			timeRelativeToTestModuleStartTime="00:03.922"
+			timeWallClock="11:48:49"
+			time="00:03.922"
+			level="Warn"
+			category="Data">
+			<message>
+				The following module variables are not bound to a data column:<br/>search_content
+			</message>
+			<metainfo
+				loglvl="Warn">
+			</metainfo>
+		</item>
+		<item
+			timeRelativeToTestSuiteStartTime="00:03.937"
+			timeRelativeToTestModuleStartTime="00:03.937"
+			timeWallClock="11:48:49"
+			time="00:03.937"
+			level="Info"
+			category="Website">
+			<message>
+				Opening web site 'https://www.automationexercise.com/' in normal mode.
+			</message>
+			<metainfo
+				itemindex="0"
+				codefile="C:\Users\mo_ba\Documents\Ranorex\RanorexStudio Projects\AutomationExercise\AutomationExercise\ui_searching_product.cs"
+				codeline="95"
+				loglvl="Info">
+			</metainfo>
+		</item>
+		<item
+			timeRelativeToTestSuiteStartTime="00:04.040"
+			timeRelativeToTestModuleStartTime="00:04.040"
+			timeWallClock="11:48:49"
+			time="00:04.040"
+			level="Info"
+			category="Mouse">
+			<message>
+				Mouse Left Click item 'ApplicationUnderTest.Products_Menu' at Center.
+			</message>
+			<metainfo
+				type="repoitem"
+				path="/dom[@domain='www.automationexercise.com']//header[#'header']/div/div/div/div[2]/?/?/ul/li[2]/a[@innertext=' Products']"
+				itempath=".//header[#'header']/div/div/div/div[2]/?/?/ul/li[2]/a[@innertext=' Products']"
+				fullname="AutomationExerciseRepository.ApplicationUnderTest.Products_Menu"
+				id="ece49e18a2974a30bf9ef0faa070e73a"
+				timeout="60000"
+				codefile="C:\Users\mo_ba\Documents\Ranorex\RanorexStudio Projects\AutomationExercise\AutomationExercise\ui_searching_product.cs"
+				codeline="99"
+				itemindex="1"
+				loglvl="Info">
+			</metainfo>
+		</item>
+		<item
+			timeRelativeToTestSuiteStartTime="00:07.082"
+			timeRelativeToTestModuleStartTime="00:07.082"
+			timeWallClock="11:48:52"
+			time="00:07.082"
+			level="Info"
+			category="Delay">
+			<message>
+				Waiting for 300ms.
+			</message>
+			<metainfo
+				itemindex="2"
+				codefile="C:\Users\mo_ba\Documents\Ranorex\RanorexStudio Projects\AutomationExercise\AutomationExercise\ui_searching_product.cs"
+				codeline="103"
+				loglvl="Info">
+			</metainfo>
+		</item>
+		<item
+			timeRelativeToTestSuiteStartTime="00:07.392"
+			timeRelativeToTestModuleStartTime="00:07.392"
+			timeWallClock="11:48:52"
+			time="00:07.392"
+			level="Info"
+			category="Set value">
+			<message>
+				Setting attribute Value to '$search_content' on item 'ApplicationUnderTest.SearchProduct'.
+			</message>
+			<metainfo
+				type="repoitem"
+				path="/dom[@domain='www.automationexercise.com']//input[#'search_product']"
+				itempath=".//input[#'search_product']"
+				fullname="AutomationExerciseRepository.ApplicationUnderTest.SearchProduct"
+				id="fd0b7cc1fc3f4bebaa4be221a80d531f"
+				timeout="60000"
+				codefile="C:\Users\mo_ba\Documents\Ranorex\RanorexStudio Projects\AutomationExercise\AutomationExercise\ui_searching_product.cs"
+				codeline="106"
+				itemindex="3"
+				loglvl="Info">
+			</metainfo>
+		</item>
+		<item
+			timeRelativeToTestSuiteStartTime="00:07.732"
+			timeRelativeToTestModuleStartTime="00:07.732"
+			timeWallClock="11:48:53"
+			time="00:07.732"
+			level="Info"
+			category="Mouse">
+			<message>
+				Mouse Left Click item 'ApplicationUnderTest.SubmitSearch' at Center.
+			</message>
+			<metainfo
+				type="repoitem"
+				path="/dom[@domain='www.automationexercise.com']//button[#'submit_search']"
+				itempath=".//button[#'submit_search']"
+				fullname="AutomationExerciseRepository.ApplicationUnderTest.SubmitSearch"
+				id="f6a14cf7d44141738fcaa751a345d1a5"
+				timeout="60000"
+				codefile="C:\Users\mo_ba\Documents\Ranorex\RanorexStudio Projects\AutomationExercise\AutomationExercise\ui_searching_product.cs"
+				codeline="110"
+				itemindex="4"
+				loglvl="Info">
+			</metainfo>
+		</item>
+		<item
+			timeRelativeToTestSuiteStartTime="00:08.466"
+			timeRelativeToTestModuleStartTime="00:08.466"
+			timeWallClock="11:48:53"
+			time="00:08.466"
+			level="Info"
+			category="Delay">
+			<message>
+				Waiting for 10s.
+			</message>
+			<metainfo
+				itemindex="5"
+				codefile="C:\Users\mo_ba\Documents\Ranorex\RanorexStudio Projects\AutomationExercise\AutomationExercise\ui_searching_product.cs"
+				codeline="114"
+				loglvl="Info">
+			</metainfo>
+		</item>
+		<item
+			timeRelativeToTestSuiteStartTime="00:18.477"
+			timeRelativeToTestModuleStartTime="00:18.477"
+			timeWallClock="11:49:03"
+			time="00:18.477"
+			level="Info"
+			category="User">
+			<message>
+				検索RxPath: /dom[@domain='www.automationexercise.com']//div[@class~'productinfo']/p
+			</message>
+			<metainfo
+				codefile="C:\Users\mo_ba\Documents\Ranorex\RanorexStudio Projects\AutomationExercise\AutomationExercise\ui_searching_product.UserCode.cs"
+				codeline="45"
+				loglvl="Info">
+			</metainfo>
+		</item>
+		<item
+			timeRelativeToTestSuiteStartTime="00:27.229"
+			timeRelativeToTestModuleStartTime="00:27.229"
+			timeWallClock="11:49:12"
+			time="00:27.229"
+			level="Info"
+			category="User">
+			<message>
+				UI検索結果の商品数: 174
+			</message>
+			<metainfo
+				codefile="C:\Users\mo_ba\Documents\Ranorex\RanorexStudio Projects\AutomationExercise\AutomationExercise\ui_searching_product.UserCode.cs"
+				codeline="60"
+				loglvl="Info">
+			</metainfo>
+		</item>
+		<item
+			timeRelativeToTestSuiteStartTime="00:27.231"
+			timeRelativeToTestModuleStartTime="00:27.231"
+			timeWallClock="11:49:12"
+			time="00:27.231"
+			level="Info"
+			category="User">
+			<message>
+				商品[1]: Blue Top
+			</message>
+			<metainfo
+				codefile="C:\Users\mo_ba\Documents\Ranorex\RanorexStudio Projects\AutomationExercise\AutomationExercise\ui_searching_product.UserCode.cs"
+				codeline="67"
+				loglvl="Info">
+			</metainfo>
+		</item>
+		<item
+			timeRelativeToTestSuiteStartTime="00:27.233"
+			timeRelativeToTestModuleStartTime="00:27.233"
+			timeWallClock="11:49:12"
+			time="00:27.233"
+			level="Info"
+			category="User">
+			<message>
+				商品[2]: Winter Top
+			</message>
+			<metainfo
+				codefile="C:\Users\mo_ba\Documents\Ranorex\RanorexStudio Projects\AutomationExercise\AutomationExercise\ui_searching_product.UserCode.cs"
+				codeline="67"
+				loglvl="Info">
+			</metainfo>
+		</item>
+		<item
+			timeRelativeToTestSuiteStartTime="00:27.235"
+			timeRelativeToTestModuleStartTime="00:27.235"
+			timeWallClock="11:49:12"
+			time="00:27.235"
+			level="Info"
+			category="User">
+			<message>
+				商品[3]: Summer White Top
+			</message>
+			<metainfo
+				codefile="C:\Users\mo_ba\Documents\Ranorex\RanorexStudio Projects\AutomationExercise\AutomationExercise\ui_searching_product.UserCode.cs"
+				codeline="67"
+				loglvl="Info">
+			</metainfo>
+		</item>
+		<item
+			timeRelativeToTestSuiteStartTime="00:27.236"
+			timeRelativeToTestModuleStartTime="00:27.236"
+			timeWallClock="11:49:12"
+			time="00:27.236"
+			level="Info"
+			category="User">
+			<message>
+				商品[4]: Madame Top For Women
+			</message>
+			<metainfo
+				codefile="C:\Users\mo_ba\Documents\Ranorex\RanorexStudio Projects\AutomationExercise\AutomationExercise\ui_searching_product.UserCode.cs"
+				codeline="67"
+				loglvl="Info">
+			</metainfo>
+		</item>
+		<item
+			timeRelativeToTestSuiteStartTime="00:27.237"
+			timeRelativeToTestModuleStartTime="00:27.237"
+			timeWallClock="11:49:12"
+			time="00:27.237"
+			level="Info"
+			category="User">
+			<message>
+				商品[5]: Fancy Green Top
+			</message>
+			<metainfo
+				codefile="C:\Users\mo_ba\Documents\Ranorex\RanorexStudio Projects\AutomationExercise\AutomationExercise\ui_searching_product.UserCode.cs"
+				codeline="67"
+				loglvl="Info">
+			</metainfo>
+		</item>
+		<item
+			timeRelativeToTestSuiteStartTime="00:27.237"
+			timeRelativeToTestModuleStartTime="00:27.237"
+			timeWallClock="11:49:12"
+			time="00:27.237"
+			level="Info"
+			category="User">
+			<message>
+				商品[6]: Sleeves Printed Top - White
+			</message>
+			<metainfo
+				codefile="C:\Users\mo_ba\Documents\Ranorex\RanorexStudio Projects\AutomationExercise\AutomationExercise\ui_searching_product.UserCode.cs"
+				codeline="67"
+				loglvl="Info">
+			</metainfo>
+		</item>
+		<item
+			timeRelativeToTestSuiteStartTime="00:27.237"
+			timeRelativeToTestModuleStartTime="00:27.237"
+			timeWallClock="11:49:12"
+			time="00:27.237"
+			level="Info"
+			category="User">
+			<message>
+				商品[7]: Half Sleeves Top Schiffli Detailing - Pink
+			</message>
+			<metainfo
+				codefile="C:\Users\mo_ba\Documents\Ranorex\RanorexStudio Projects\AutomationExercise\AutomationExercise\ui_searching_product.UserCode.cs"
+				codeline="67"
+				loglvl="Info">
+			</metainfo>
+		</item>
+		<item
+			timeRelativeToTestSuiteStartTime="00:27.238"
+			timeRelativeToTestModuleStartTime="00:27.238"
+			timeWallClock="11:49:12"
+			time="00:27.238"
+			level="Info"
+			category="User">
+			<message>
+				商品[8]: Frozen Tops For Kids
+			</message>
+			<metainfo
+				codefile="C:\Users\mo_ba\Documents\Ranorex\RanorexStudio Projects\AutomationExercise\AutomationExercise\ui_searching_product.UserCode.cs"
+				codeline="67"
+				loglvl="Info">
+			</metainfo>
+		</item>
+		<item
+			timeRelativeToTestSuiteStartTime="00:27.238"
+			timeRelativeToTestModuleStartTime="00:27.238"
+			timeWallClock="11:49:12"
+			time="00:27.238"
+			level="Info"
+			category="User">
+			<message>
+				商品[9]: Full Sleeves Top Cherry - Pink
+			</message>
+			<metainfo
+				codefile="C:\Users\mo_ba\Documents\Ranorex\RanorexStudio Projects\AutomationExercise\AutomationExercise\ui_searching_product.UserCode.cs"
+				codeline="67"
+				loglvl="Info">
+			</metainfo>
+		</item>
+		<item
+			timeRelativeToTestSuiteStartTime="00:27.240"
+			timeRelativeToTestModuleStartTime="00:27.240"
+			timeWallClock="11:49:12"
+			time="00:27.240"
+			level="Info"
+			category="User">
+			<message>
+				商品[10]: Printed Off Shoulder Top - White
+			</message>
+			<metainfo
+				codefile="C:\Users\mo_ba\Documents\Ranorex\RanorexStudio Projects\AutomationExercise\AutomationExercise\ui_searching_product.UserCode.cs"
+				codeline="67"
+				loglvl="Info">
+			</metainfo>
+		</item>
+		<item
+			timeRelativeToTestSuiteStartTime="00:27.241"
+			timeRelativeToTestModuleStartTime="00:27.241"
+			timeWallClock="11:49:12"
+			time="00:27.241"
+			level="Info"
+			category="User">
+			<message>
+				&#21830;&#21697;[11]: Sleeves Top and Short - Blue &amp; Pink
+			</message>
+			<metainfo
+				codefile="C:\Users\mo_ba\Documents\Ranorex\RanorexStudio Projects\AutomationExercise\AutomationExercise\ui_searching_product.UserCode.cs"
+				codeline="67"
+				loglvl="Info">
+			</metainfo>
+		</item>
+		<item
+			timeRelativeToTestSuiteStartTime="00:27.242"
+			timeRelativeToTestModuleStartTime="00:27.242"
+			timeWallClock="11:49:12"
+			time="00:27.242"
+			level="Info"
+			category="User">
+			<message>
+				商品[12]: Little Girls Mr. Panda Shirt
+			</message>
+			<metainfo
+				codefile="C:\Users\mo_ba\Documents\Ranorex\RanorexStudio Projects\AutomationExercise\AutomationExercise\ui_searching_product.UserCode.cs"
+				codeline="67"
+				loglvl="Info">
+			</metainfo>
+		</item>
+		<item
+			timeRelativeToTestSuiteStartTime="00:27.243"
+			timeRelativeToTestModuleStartTime="00:27.243"
+			timeWallClock="11:49:12"
+			time="00:27.243"
+			level="Info"
+			category="User">
+			<message>
+				商品[13]: Colour Blocked Shirt – Sky Blue
+			</message>
+			<metainfo
+				codefile="C:\Users\mo_ba\Documents\Ranorex\RanorexStudio Projects\AutomationExercise\AutomationExercise\ui_searching_product.UserCode.cs"
+				codeline="67"
+				loglvl="Info">
+			</metainfo>
+		</item>
+		<item
+			timeRelativeToTestSuiteStartTime="00:27.244"
+			timeRelativeToTestModuleStartTime="00:27.244"
+			timeWallClock="11:49:12"
+			time="00:27.244"
+			level="Info"
+			category="User">
+			<message>
+				商品[14]: Lace Top For Women
+			</message>
+			<metainfo
+				codefile="C:\Users\mo_ba\Documents\Ranorex\RanorexStudio Projects\AutomationExercise\AutomationExercise\ui_searching_product.UserCode.cs"
+				codeline="67"
+				loglvl="Info">
+			</metainfo>
+		</item>
+		<item
+			timeRelativeToTestSuiteStartTime="00:27.245"
+			timeRelativeToTestModuleStartTime="00:27.245"
+			timeWallClock="11:49:12"
+			time="00:27.245"
+			level="Info"
+			category="User">
+			<message>
+				商品[15]: Blue Top
+			</message>
+			<metainfo
+				codefile="C:\Users\mo_ba\Documents\Ranorex\RanorexStudio Projects\AutomationExercise\AutomationExercise\ui_searching_product.UserCode.cs"
+				codeline="67"
+				loglvl="Info">
+			</metainfo>
+		</item>
+		<item
+			timeRelativeToTestSuiteStartTime="00:27.246"
+			timeRelativeToTestModuleStartTime="00:27.246"
+			timeWallClock="11:49:12"
+			time="00:27.246"
+			level="Info"
+			category="User">
+			<message>
+				&#21830;&#21697;[16]: Men&#32;
+			</message>
+			<metainfo
+				codefile="C:\Users\mo_ba\Documents\Ranorex\RanorexStudio Projects\AutomationExercise\AutomationExercise\ui_searching_product.UserCode.cs"
+				codeline="67"
+				loglvl="Info">
+			</metainfo>
+		</item>
+		<item
+			timeRelativeToTestSuiteStartTime="00:27.248"
+			timeRelativeToTestModuleStartTime="00:27.248"
+			timeWallClock="11:49:12"
+			time="00:27.248"
+			level="Info"
+			category="User">
+			<message>
+				商品[17]: Sleeveless Dress
+			</message>
+			<metainfo
+				codefile="C:\Users\mo_ba\Documents\Ranorex\RanorexStudio Projects\AutomationExercise\AutomationExercise\ui_searching_product.UserCode.cs"
+				codeline="67"
+				loglvl="Info">
+			</metainfo>
+		</item>
+		<item
+			timeRelativeToTestSuiteStartTime="00:27.249"
+			timeRelativeToTestModuleStartTime="00:27.249"
+			timeWallClock="11:49:12"
+			time="00:27.249"
+			level="Info"
+			category="User">
+			<message>
+				商品[18]: Stylish Dress
+			</message>
+			<metainfo
+				codefile="C:\Users\mo_ba\Documents\Ranorex\RanorexStudio Projects\AutomationExercise\AutomationExercise\ui_searching_product.UserCode.cs"
+				codeline="67"
+				loglvl="Info">
+			</metainfo>
+		</item>
+		<item
+			timeRelativeToTestSuiteStartTime="00:27.252"
+			timeRelativeToTestModuleStartTime="00:27.252"
+			timeWallClock="11:49:12"
+			time="00:27.252"
+			level="Info"
+			category="User">
+			<message>
+				商品[19]: Winter Top
+			</message>
+			<metainfo
+				codefile="C:\Users\mo_ba\Documents\Ranorex\RanorexStudio Projects\AutomationExercise\AutomationExercise\ui_searching_product.UserCode.cs"
+				codeline="67"
+				loglvl="Info">
+			</metainfo>
+		</item>
+		<item
+			timeRelativeToTestSuiteStartTime="00:27.254"
+			timeRelativeToTestModuleStartTime="00:27.254"
+			timeWallClock="11:49:12"
+			time="00:27.254"
+			level="Info"
+			category="User">
+			<message>
+				商品[20]: Summer White Top
+			</message>
+			<metainfo
+				codefile="C:\Users\mo_ba\Documents\Ranorex\RanorexStudio Projects\AutomationExercise\AutomationExercise\ui_searching_product.UserCode.cs"
+				codeline="67"
+				loglvl="Info">
+			</metainfo>
+		</item>
+		<item
+			timeRelativeToTestSuiteStartTime="00:27.255"
+			timeRelativeToTestModuleStartTime="00:27.255"
+			timeWallClock="11:49:12"
+			time="00:27.255"
+			level="Info"
+			category="User">
+			<message>
+				商品[21]: Madame Top For Women
+			</message>
+			<metainfo
+				codefile="C:\Users\mo_ba\Documents\Ranorex\RanorexStudio Projects\AutomationExercise\AutomationExercise\ui_searching_product.UserCode.cs"
+				codeline="67"
+				loglvl="Info">
+			</metainfo>
+		</item>
+		<item
+			timeRelativeToTestSuiteStartTime="00:27.256"
+			timeRelativeToTestModuleStartTime="00:27.256"
+			timeWallClock="11:49:12"
+			time="00:27.256"
+			level="Info"
+			category="User">
+			<message>
+				商品[22]: Fancy Green Top
+			</message>
+			<metainfo
+				codefile="C:\Users\mo_ba\Documents\Ranorex\RanorexStudio Projects\AutomationExercise\AutomationExercise\ui_searching_product.UserCode.cs"
+				codeline="67"
+				loglvl="Info">
+			</metainfo>
+		</item>
+		<item
+			timeRelativeToTestSuiteStartTime="00:27.257"
+			timeRelativeToTestModuleStartTime="00:27.257"
+			timeWallClock="11:49:12"
+			time="00:27.257"
+			level="Info"
+			category="User">
+			<message>
+				商品[23]: Sleeves Printed Top - White
+			</message>
+			<metainfo
+				codefile="C:\Users\mo_ba\Documents\Ranorex\RanorexStudio Projects\AutomationExercise\AutomationExercise\ui_searching_product.UserCode.cs"
+				codeline="67"
+				loglvl="Info">
+			</metainfo>
+		</item>
+		<item
+			timeRelativeToTestSuiteStartTime="00:27.258"
+			timeRelativeToTestModuleStartTime="00:27.258"
+			timeWallClock="11:49:12"
+			time="00:27.258"
+			level="Info"
+			category="User">
+			<message>
+				商品[24]: Half Sleeves Top Schiffli Detailing - Pink
+			</message>
+			<metainfo
+				codefile="C:\Users\mo_ba\Documents\Ranorex\RanorexStudio Projects\AutomationExercise\AutomationExercise\ui_searching_product.UserCode.cs"
+				codeline="67"
+				loglvl="Info">
+			</metainfo>
+		</item>
+		<item
+			timeRelativeToTestSuiteStartTime="00:27.259"
+			timeRelativeToTestModuleStartTime="00:27.259"
+			timeWallClock="11:49:12"
+			time="00:27.259"
+			level="Info"
+			category="User">
+			<message>
+				商品[25]: Frozen Tops For Kids
+			</message>
+			<metainfo
+				codefile="C:\Users\mo_ba\Documents\Ranorex\RanorexStudio Projects\AutomationExercise\AutomationExercise\ui_searching_product.UserCode.cs"
+				codeline="67"
+				loglvl="Info">
+			</metainfo>
+		</item>
+		<item
+			timeRelativeToTestSuiteStartTime="00:27.260"
+			timeRelativeToTestModuleStartTime="00:27.260"
+			timeWallClock="11:49:12"
+			time="00:27.260"
+			level="Info"
+			category="User">
+			<message>
+				商品[26]: Full Sleeves Top Cherry - Pink
+			</message>
+			<metainfo
+				codefile="C:\Users\mo_ba\Documents\Ranorex\RanorexStudio Projects\AutomationExercise\AutomationExercise\ui_searching_product.UserCode.cs"
+				codeline="67"
+				loglvl="Info">
+			</metainfo>
+		</item>
+		<item
+			timeRelativeToTestSuiteStartTime="00:27.263"
+			timeRelativeToTestModuleStartTime="00:27.263"
+			timeWallClock="11:49:12"
+			time="00:27.263"
+			level="Info"
+			category="User">
+			<message>
+				商品[27]: Printed Off Shoulder Top - White
+			</message>
+			<metainfo
+				codefile="C:\Users\mo_ba\Documents\Ranorex\RanorexStudio Projects\AutomationExercise\AutomationExercise\ui_searching_product.UserCode.cs"
+				codeline="67"
+				loglvl="Info">
+			</metainfo>
+		</item>
+		<item
+			timeRelativeToTestSuiteStartTime="00:27.265"
+			timeRelativeToTestModuleStartTime="00:27.265"
+			timeWallClock="11:49:12"
+			time="00:27.265"
+			level="Info"
+			category="User">
+			<message>
+				&#21830;&#21697;[28]: Sleeves Top and Short - Blue &amp; Pink
+			</message>
+			<metainfo
+				codefile="C:\Users\mo_ba\Documents\Ranorex\RanorexStudio Projects\AutomationExercise\AutomationExercise\ui_searching_product.UserCode.cs"
+				codeline="67"
+				loglvl="Info">
+			</metainfo>
+		</item>
+		<item
+			timeRelativeToTestSuiteStartTime="00:27.266"
+			timeRelativeToTestModuleStartTime="00:27.266"
+			timeWallClock="11:49:12"
+			time="00:27.266"
+			level="Info"
+			category="User">
+			<message>
+				商品[29]: Little Girls Mr. Panda Shirt
+			</message>
+			<metainfo
+				codefile="C:\Users\mo_ba\Documents\Ranorex\RanorexStudio Projects\AutomationExercise\AutomationExercise\ui_searching_product.UserCode.cs"
+				codeline="67"
+				loglvl="Info">
+			</metainfo>
+		</item>
+		<item
+			timeRelativeToTestSuiteStartTime="00:27.268"
+			timeRelativeToTestModuleStartTime="00:27.268"
+			timeWallClock="11:49:12"
+			time="00:27.268"
+			level="Info"
+			category="User">
+			<message>
+				商品[30]: Sleeveless Unicorn Patch Gown - Pink
+			</message>
+			<metainfo
+				codefile="C:\Users\mo_ba\Documents\Ranorex\RanorexStudio Projects\AutomationExercise\AutomationExercise\ui_searching_product.UserCode.cs"
+				codeline="67"
+				loglvl="Info">
+			</metainfo>
+		</item>
+		<item
+			timeRelativeToTestSuiteStartTime="00:27.269"
+			timeRelativeToTestModuleStartTime="00:27.269"
+			timeWallClock="11:49:12"
+			time="00:27.269"
+			level="Info"
+			category="User">
+			<message>
+				商品[31]: Cotton Mull Embroidered Dress
+			</message>
+			<metainfo
+				codefile="C:\Users\mo_ba\Documents\Ranorex\RanorexStudio Projects\AutomationExercise\AutomationExercise\ui_searching_product.UserCode.cs"
+				codeline="67"
+				loglvl="Info">
+			</metainfo>
+		</item>
+		<item
+			timeRelativeToTestSuiteStartTime="00:27.270"
+			timeRelativeToTestModuleStartTime="00:27.270"
+			timeWallClock="11:49:12"
+			time="00:27.270"
+			level="Info"
+			category="User">
+			<message>
+				商品[32]: Blue Cotton Indie Mickey Dress
+			</message>
+			<metainfo
+				codefile="C:\Users\mo_ba\Documents\Ranorex\RanorexStudio Projects\AutomationExercise\AutomationExercise\ui_searching_product.UserCode.cs"
+				codeline="67"
+				loglvl="Info">
+			</metainfo>
+		</item>
+		<item
+			timeRelativeToTestSuiteStartTime="00:27.271"
+			timeRelativeToTestModuleStartTime="00:27.271"
+			timeWallClock="11:49:12"
+			time="00:27.271"
+			level="Info"
+			category="User">
+			<message>
+				商品[33]: Long Maxi Tulle Fancy Dress Up Outfits -Pink
+			</message>
+			<metainfo
+				codefile="C:\Users\mo_ba\Documents\Ranorex\RanorexStudio Projects\AutomationExercise\AutomationExercise\ui_searching_product.UserCode.cs"
+				codeline="67"
+				loglvl="Info">
+			</metainfo>
+		</item>
+		<item
+			timeRelativeToTestSuiteStartTime="00:27.272"
+			timeRelativeToTestModuleStartTime="00:27.272"
+			timeWallClock="11:49:12"
+			time="00:27.272"
+			level="Info"
+			category="User">
+			<message>
+				&#21830;&#21697;[34]: Sleeveless Unicorn Print Fit &amp; Flare Net Dress - Multi
+			</message>
+			<metainfo
+				codefile="C:\Users\mo_ba\Documents\Ranorex\RanorexStudio Projects\AutomationExercise\AutomationExercise\ui_searching_product.UserCode.cs"
+				codeline="67"
+				loglvl="Info">
+			</metainfo>
+		</item>
+		<item
+			timeRelativeToTestSuiteStartTime="00:27.273"
+			timeRelativeToTestModuleStartTime="00:27.273"
+			timeWallClock="11:49:12"
+			time="00:27.273"
+			level="Info"
+			category="User">
+			<message>
+				商品[35]: Colour Blocked Shirt – Sky Blue
+			</message>
+			<metainfo
+				codefile="C:\Users\mo_ba\Documents\Ranorex\RanorexStudio Projects\AutomationExercise\AutomationExercise\ui_searching_product.UserCode.cs"
+				codeline="67"
+				loglvl="Info">
+			</metainfo>
+		</item>
+		<item
+			timeRelativeToTestSuiteStartTime="00:27.274"
+			timeRelativeToTestModuleStartTime="00:27.274"
+			timeWallClock="11:49:12"
+			time="00:27.274"
+			level="Info"
+			category="User">
+			<message>
+				&#21830;&#21697;[36]: Pure Cotton V-Neck&#32;
+			</message>
+			<metainfo
+				codefile="C:\Users\mo_ba\Documents\Ranorex\RanorexStudio Projects\AutomationExercise\AutomationExercise\ui_searching_product.UserCode.cs"
+				codeline="67"
+				loglvl="Info">
+			</metainfo>
+		</item>
+		<item
+			timeRelativeToTestSuiteStartTime="00:27.275"
+			timeRelativeToTestModuleStartTime="00:27.275"
+			timeWallClock="11:49:12"
+			time="00:27.275"
+			level="Info"
+			category="User">
+			<message>
+				商品[37]: Green Side Placket Detail T-Shirt
+			</message>
+			<metainfo
+				codefile="C:\Users\mo_ba\Documents\Ranorex\RanorexStudio Projects\AutomationExercise\AutomationExercise\ui_searching_product.UserCode.cs"
+				codeline="67"
+				loglvl="Info">
+			</metainfo>
+		</item>
+		<item
+			timeRelativeToTestSuiteStartTime="00:27.278"
+			timeRelativeToTestModuleStartTime="00:27.278"
+			timeWallClock="11:49:12"
+			time="00:27.278"
+			level="Info"
+			category="User">
+			<message>
+				&#21830;&#21697;[38]: Premium Polo&#32;
+			</message>
+			<metainfo
+				codefile="C:\Users\mo_ba\Documents\Ranorex\RanorexStudio Projects\AutomationExercise\AutomationExercise\ui_searching_product.UserCode.cs"
+				codeline="67"
+				loglvl="Info">
+			</metainfo>
+		</item>
+		<item
+			timeRelativeToTestSuiteStartTime="00:27.279"
+			timeRelativeToTestModuleStartTime="00:27.279"
+			timeWallClock="11:49:12"
+			time="00:27.279"
+			level="Info"
+			category="User">
+			<message>
+				商品[39]: Pure Cotton Neon Green Tshirt
+			</message>
+			<metainfo
+				codefile="C:\Users\mo_ba\Documents\Ranorex\RanorexStudio Projects\AutomationExercise\AutomationExercise\ui_searching_product.UserCode.cs"
+				codeline="67"
+				loglvl="Info">
+			</metainfo>
+		</item>
+		<item
+			timeRelativeToTestSuiteStartTime="00:27.280"
+			timeRelativeToTestModuleStartTime="00:27.280"
+			timeWallClock="11:49:12"
+			time="00:27.280"
+			level="Info"
+			category="User">
+			<message>
+				商品[40]: Soft Stretch Jeans
+			</message>
+			<metainfo
+				codefile="C:\Users\mo_ba\Documents\Ranorex\RanorexStudio Projects\AutomationExercise\AutomationExercise\ui_searching_product.UserCode.cs"
+				codeline="67"
+				loglvl="Info">
+			</metainfo>
+		</item>
+		<item
+			timeRelativeToTestSuiteStartTime="00:27.282"
+			timeRelativeToTestModuleStartTime="00:27.282"
+			timeWallClock="11:49:12"
+			time="00:27.282"
+			level="Info"
+			category="User">
+			<message>
+				商品[41]: Regular Fit Straight Jeans
+			</message>
+			<metainfo
+				codefile="C:\Users\mo_ba\Documents\Ranorex\RanorexStudio Projects\AutomationExercise\AutomationExercise\ui_searching_product.UserCode.cs"
+				codeline="67"
+				loglvl="Info">
+			</metainfo>
+		</item>
+		<item
+			timeRelativeToTestSuiteStartTime="00:27.283"
+			timeRelativeToTestModuleStartTime="00:27.283"
+			timeWallClock="11:49:12"
+			time="00:27.283"
+			level="Info"
+			category="User">
+			<message>
+				商品[42]: Grunt Blue Slim Fit Jeans
+			</message>
+			<metainfo
+				codefile="C:\Users\mo_ba\Documents\Ranorex\RanorexStudio Projects\AutomationExercise\AutomationExercise\ui_searching_product.UserCode.cs"
+				codeline="67"
+				loglvl="Info">
+			</metainfo>
+		</item>
+		<item
+			timeRelativeToTestSuiteStartTime="00:27.283"
+			timeRelativeToTestModuleStartTime="00:27.283"
+			timeWallClock="11:49:12"
+			time="00:27.283"
+			level="Info"
+			category="User">
+			<message>
+				商品[43]: Rose Pink Embroidered Maxi Dress
+			</message>
+			<metainfo
+				codefile="C:\Users\mo_ba\Documents\Ranorex\RanorexStudio Projects\AutomationExercise\AutomationExercise\ui_searching_product.UserCode.cs"
+				codeline="67"
+				loglvl="Info">
+			</metainfo>
+		</item>
+		<item
+			timeRelativeToTestSuiteStartTime="00:27.285"
+			timeRelativeToTestModuleStartTime="00:27.285"
+			timeWallClock="11:49:12"
+			time="00:27.285"
+			level="Info"
+			category="User">
+			<message>
+				商品[44]: Cotton Silk Hand Block Print Saree
+			</message>
+			<metainfo
+				codefile="C:\Users\mo_ba\Documents\Ranorex\RanorexStudio Projects\AutomationExercise\AutomationExercise\ui_searching_product.UserCode.cs"
+				codeline="67"
+				loglvl="Info">
+			</metainfo>
+		</item>
+		<item
+			timeRelativeToTestSuiteStartTime="00:27.285"
+			timeRelativeToTestModuleStartTime="00:27.285"
+			timeWallClock="11:49:12"
+			time="00:27.285"
+			level="Info"
+			category="User">
+			<message>
+				商品[45]: Rust Red Linen Saree
+			</message>
+			<metainfo
+				codefile="C:\Users\mo_ba\Documents\Ranorex\RanorexStudio Projects\AutomationExercise\AutomationExercise\ui_searching_product.UserCode.cs"
+				codeline="67"
+				loglvl="Info">
+			</metainfo>
+		</item>
+		<item
+			timeRelativeToTestSuiteStartTime="00:27.287"
+			timeRelativeToTestModuleStartTime="00:27.287"
+			timeWallClock="11:49:12"
+			time="00:27.287"
+			level="Info"
+			category="User">
+			<message>
+				商品[46]: Beautiful Peacock Blue Cotton Linen Saree
+			</message>
+			<metainfo
+				codefile="C:\Users\mo_ba\Documents\Ranorex\RanorexStudio Projects\AutomationExercise\AutomationExercise\ui_searching_product.UserCode.cs"
+				codeline="67"
+				loglvl="Info">
+			</metainfo>
+		</item>
+		<item
+			timeRelativeToTestSuiteStartTime="00:27.288"
+			timeRelativeToTestModuleStartTime="00:27.288"
+			timeWallClock="11:49:12"
+			time="00:27.288"
+			level="Info"
+			category="User">
+			<message>
+				商品[47]: Lace Top For Women
+			</message>
+			<metainfo
+				codefile="C:\Users\mo_ba\Documents\Ranorex\RanorexStudio Projects\AutomationExercise\AutomationExercise\ui_searching_product.UserCode.cs"
+				codeline="67"
+				loglvl="Info">
+			</metainfo>
+		</item>
+		<item
+			timeRelativeToTestSuiteStartTime="00:27.289"
+			timeRelativeToTestModuleStartTime="00:27.289"
+			timeWallClock="11:49:12"
+			time="00:27.289"
+			level="Info"
+			category="User">
+			<message>
+				商品[48]: GRAPHIC DESIGN MEN T SHIRT - BLUE
+			</message>
+			<metainfo
+				codefile="C:\Users\mo_ba\Documents\Ranorex\RanorexStudio Projects\AutomationExercise\AutomationExercise\ui_searching_product.UserCode.cs"
+				codeline="67"
+				loglvl="Info">
+			</metainfo>
+		</item>
+		<item
+			timeRelativeToTestSuiteStartTime="00:27.290"
+			timeRelativeToTestModuleStartTime="00:27.290"
+			timeWallClock="11:49:12"
+			time="00:27.290"
+			level="Info"
+			category="User">
+			<message>
+				商品[49]: Blue Top
+			</message>
+			<metainfo
+				codefile="C:\Users\mo_ba\Documents\Ranorex\RanorexStudio Projects\AutomationExercise\AutomationExercise\ui_searching_product.UserCode.cs"
+				codeline="67"
+				loglvl="Info">
+			</metainfo>
+		</item>
+		<item
+			timeRelativeToTestSuiteStartTime="00:27.292"
+			timeRelativeToTestModuleStartTime="00:27.292"
+			timeWallClock="11:49:12"
+			time="00:27.292"
+			level="Info"
+			category="User">
+			<message>
+				商品[50]: Men Tshirt
+			</message>
+			<metainfo
+				codefile="C:\Users\mo_ba\Documents\Ranorex\RanorexStudio Projects\AutomationExercise\AutomationExercise\ui_searching_product.UserCode.cs"
+				codeline="67"
+				loglvl="Info">
+			</metainfo>
+		</item>
+		<item
+			timeRelativeToTestSuiteStartTime="00:27.294"
+			timeRelativeToTestModuleStartTime="00:27.294"
+			timeWallClock="11:49:12"
+			time="00:27.294"
+			level="Info"
+			category="User">
+			<message>
+				商品[51]: Rs. 1000
+			</message>
+			<metainfo
+				codefile="C:\Users\mo_ba\Documents\Ranorex\RanorexStudio Projects\AutomationExercise\AutomationExercise\ui_searching_product.UserCode.cs"
+				codeline="67"
+				loglvl="Info">
+			</metainfo>
+		</item>
+		<item
+			timeRelativeToTestSuiteStartTime="00:27.295"
+			timeRelativeToTestModuleStartTime="00:27.295"
+			timeWallClock="11:49:12"
+			time="00:27.295"
+			level="Info"
+			category="User">
+			<message>
+				商品[52]: Stylish Dress
+			</message>
+			<metainfo
+				codefile="C:\Users\mo_ba\Documents\Ranorex\RanorexStudio Projects\AutomationExercise\AutomationExercise\ui_searching_product.UserCode.cs"
+				codeline="67"
+				loglvl="Info">
+			</metainfo>
+		</item>
+		<item
+			timeRelativeToTestSuiteStartTime="00:27.296"
+			timeRelativeToTestModuleStartTime="00:27.296"
+			timeWallClock="11:49:12"
+			time="00:27.296"
+			level="Info"
+			category="User">
+			<message>
+				商品[53]: Winter Top
+			</message>
+			<metainfo
+				codefile="C:\Users\mo_ba\Documents\Ranorex\RanorexStudio Projects\AutomationExercise\AutomationExercise\ui_searching_product.UserCode.cs"
+				codeline="67"
+				loglvl="Info">
+			</metainfo>
+		</item>
+		<item
+			timeRelativeToTestSuiteStartTime="00:27.299"
+			timeRelativeToTestModuleStartTime="00:27.299"
+			timeWallClock="11:49:12"
+			time="00:27.299"
+			level="Info"
+			category="User">
+			<message>
+				商品[54]: Summer White Top
+			</message>
+			<metainfo
+				codefile="C:\Users\mo_ba\Documents\Ranorex\RanorexStudio Projects\AutomationExercise\AutomationExercise\ui_searching_product.UserCode.cs"
+				codeline="67"
+				loglvl="Info">
+			</metainfo>
+		</item>
+		<item
+			timeRelativeToTestSuiteStartTime="00:27.300"
+			timeRelativeToTestModuleStartTime="00:27.300"
+			timeWallClock="11:49:12"
+			time="00:27.300"
+			level="Info"
+			category="User">
+			<message>
+				商品[55]: Blue Top
+			</message>
+			<metainfo
+				codefile="C:\Users\mo_ba\Documents\Ranorex\RanorexStudio Projects\AutomationExercise\AutomationExercise\ui_searching_product.UserCode.cs"
+				codeline="67"
+				loglvl="Info">
+			</metainfo>
+		</item>
+		<item
+			timeRelativeToTestSuiteStartTime="00:27.301"
+			timeRelativeToTestModuleStartTime="00:27.301"
+			timeWallClock="11:49:12"
+			time="00:27.301"
+			level="Info"
+			category="User">
+			<message>
+				&#21830;&#21697;[56]: Men&#32;
+			</message>
+			<metainfo
+				codefile="C:\Users\mo_ba\Documents\Ranorex\RanorexStudio Projects\AutomationExercise\AutomationExercise\ui_searching_product.UserCode.cs"
+				codeline="67"
+				loglvl="Info">
+			</metainfo>
+		</item>
+		<item
+			timeRelativeToTestSuiteStartTime="00:27.302"
+			timeRelativeToTestModuleStartTime="00:27.302"
+			timeWallClock="11:49:12"
+			time="00:27.302"
+			level="Info"
+			category="User">
+			<message>
+				商品[57]: Sleeveless Dress
+			</message>
+			<metainfo
+				codefile="C:\Users\mo_ba\Documents\Ranorex\RanorexStudio Projects\AutomationExercise\AutomationExercise\ui_searching_product.UserCode.cs"
+				codeline="67"
+				loglvl="Info">
+			</metainfo>
+		</item>
+		<item
+			timeRelativeToTestSuiteStartTime="00:27.303"
+			timeRelativeToTestModuleStartTime="00:27.303"
+			timeWallClock="11:49:12"
+			time="00:27.303"
+			level="Info"
+			category="User">
+			<message>
+				商品[58]: Stylish Dress
+			</message>
+			<metainfo
+				codefile="C:\Users\mo_ba\Documents\Ranorex\RanorexStudio Projects\AutomationExercise\AutomationExercise\ui_searching_product.UserCode.cs"
+				codeline="67"
+				loglvl="Info">
+			</metainfo>
+		</item>
+		<item
+			timeRelativeToTestSuiteStartTime="00:27.304"
+			timeRelativeToTestModuleStartTime="00:27.304"
+			timeWallClock="11:49:12"
+			time="00:27.304"
+			level="Info"
+			category="User">
+			<message>
+				商品[59]: Winter Top
+			</message>
+			<metainfo
+				codefile="C:\Users\mo_ba\Documents\Ranorex\RanorexStudio Projects\AutomationExercise\AutomationExercise\ui_searching_product.UserCode.cs"
+				codeline="67"
+				loglvl="Info">
+			</metainfo>
+		</item>
+		<item
+			timeRelativeToTestSuiteStartTime="00:27.305"
+			timeRelativeToTestModuleStartTime="00:27.305"
+			timeWallClock="11:49:12"
+			time="00:27.305"
+			level="Info"
+			category="User">
+			<message>
+				商品[60]: Summer White Top
+			</message>
+			<metainfo
+				codefile="C:\Users\mo_ba\Documents\Ranorex\RanorexStudio Projects\AutomationExercise\AutomationExercise\ui_searching_product.UserCode.cs"
+				codeline="67"
+				loglvl="Info">
+			</metainfo>
+		</item>
+		<item
+			timeRelativeToTestSuiteStartTime="00:27.305"
+			timeRelativeToTestModuleStartTime="00:27.305"
+			timeWallClock="11:49:12"
+			time="00:27.305"
+			level="Info"
+			category="User">
+			<message>
+				商品[61]: Madame Top For Women
+			</message>
+			<metainfo
+				codefile="C:\Users\mo_ba\Documents\Ranorex\RanorexStudio Projects\AutomationExercise\AutomationExercise\ui_searching_product.UserCode.cs"
+				codeline="67"
+				loglvl="Info">
+			</metainfo>
+		</item>
+		<item
+			timeRelativeToTestSuiteStartTime="00:27.307"
+			timeRelativeToTestModuleStartTime="00:27.307"
+			timeWallClock="11:49:12"
+			time="00:27.307"
+			level="Info"
+			category="User">
+			<message>
+				商品[62]: Fancy Green Top
+			</message>
+			<metainfo
+				codefile="C:\Users\mo_ba\Documents\Ranorex\RanorexStudio Projects\AutomationExercise\AutomationExercise\ui_searching_product.UserCode.cs"
+				codeline="67"
+				loglvl="Info">
+			</metainfo>
+		</item>
+		<item
+			timeRelativeToTestSuiteStartTime="00:27.308"
+			timeRelativeToTestModuleStartTime="00:27.308"
+			timeWallClock="11:49:12"
+			time="00:27.308"
+			level="Info"
+			category="User">
+			<message>
+				商品[63]: Sleeves Printed Top - White
+			</message>
+			<metainfo
+				codefile="C:\Users\mo_ba\Documents\Ranorex\RanorexStudio Projects\AutomationExercise\AutomationExercise\ui_searching_product.UserCode.cs"
+				codeline="67"
+				loglvl="Info">
+			</metainfo>
+		</item>
+		<item
+			timeRelativeToTestSuiteStartTime="00:27.309"
+			timeRelativeToTestModuleStartTime="00:27.309"
+			timeWallClock="11:49:12"
+			time="00:27.309"
+			level="Info"
+			category="User">
+			<message>
+				商品[64]: Half Sleeves Top Schiffli Detailing - Pink
+			</message>
+			<metainfo
+				codefile="C:\Users\mo_ba\Documents\Ranorex\RanorexStudio Projects\AutomationExercise\AutomationExercise\ui_searching_product.UserCode.cs"
+				codeline="67"
+				loglvl="Info">
+			</metainfo>
+		</item>
+		<item
+			timeRelativeToTestSuiteStartTime="00:27.310"
+			timeRelativeToTestModuleStartTime="00:27.310"
+			timeWallClock="11:49:12"
+			time="00:27.310"
+			level="Info"
+			category="User">
+			<message>
+				商品[65]: Frozen Tops For Kids
+			</message>
+			<metainfo
+				codefile="C:\Users\mo_ba\Documents\Ranorex\RanorexStudio Projects\AutomationExercise\AutomationExercise\ui_searching_product.UserCode.cs"
+				codeline="67"
+				loglvl="Info">
+			</metainfo>
+		</item>
+		<item
+			timeRelativeToTestSuiteStartTime="00:27.311"
+			timeRelativeToTestModuleStartTime="00:27.311"
+			timeWallClock="11:49:12"
+			time="00:27.311"
+			level="Info"
+			category="User">
+			<message>
+				商品[66]: Full Sleeves Top Cherry - Pink
+			</message>
+			<metainfo
+				codefile="C:\Users\mo_ba\Documents\Ranorex\RanorexStudio Projects\AutomationExercise\AutomationExercise\ui_searching_product.UserCode.cs"
+				codeline="67"
+				loglvl="Info">
+			</metainfo>
+		</item>
+		<item
+			timeRelativeToTestSuiteStartTime="00:27.312"
+			timeRelativeToTestModuleStartTime="00:27.312"
+			timeWallClock="11:49:12"
+			time="00:27.312"
+			level="Info"
+			category="User">
+			<message>
+				商品[67]: Printed Off Shoulder Top - White
+			</message>
+			<metainfo
+				codefile="C:\Users\mo_ba\Documents\Ranorex\RanorexStudio Projects\AutomationExercise\AutomationExercise\ui_searching_product.UserCode.cs"
+				codeline="67"
+				loglvl="Info">
+			</metainfo>
+		</item>
+		<item
+			timeRelativeToTestSuiteStartTime="00:27.313"
+			timeRelativeToTestModuleStartTime="00:27.313"
+			timeWallClock="11:49:12"
+			time="00:27.313"
+			level="Info"
+			category="User">
+			<message>
+				&#21830;&#21697;[68]: Sleeves Top and Short - Blue &amp; Pink
+			</message>
+			<metainfo
+				codefile="C:\Users\mo_ba\Documents\Ranorex\RanorexStudio Projects\AutomationExercise\AutomationExercise\ui_searching_product.UserCode.cs"
+				codeline="67"
+				loglvl="Info">
+			</metainfo>
+		</item>
+		<item
+			timeRelativeToTestSuiteStartTime="00:27.315"
+			timeRelativeToTestModuleStartTime="00:27.315"
+			timeWallClock="11:49:12"
+			time="00:27.315"
+			level="Info"
+			category="User">
+			<message>
+				商品[69]: Little Girls Mr. Panda Shirt
+			</message>
+			<metainfo
+				codefile="C:\Users\mo_ba\Documents\Ranorex\RanorexStudio Projects\AutomationExercise\AutomationExercise\ui_searching_product.UserCode.cs"
+				codeline="67"
+				loglvl="Info">
+			</metainfo>
+		</item>
+		<item
+			timeRelativeToTestSuiteStartTime="00:27.316"
+			timeRelativeToTestModuleStartTime="00:27.316"
+			timeWallClock="11:49:12"
+			time="00:27.316"
+			level="Info"
+			category="User">
+			<message>
+				商品[70]: Sleeveless Unicorn Patch Gown - Pink
+			</message>
+			<metainfo
+				codefile="C:\Users\mo_ba\Documents\Ranorex\RanorexStudio Projects\AutomationExercise\AutomationExercise\ui_searching_product.UserCode.cs"
+				codeline="67"
+				loglvl="Info">
+			</metainfo>
+		</item>
+		<item
+			timeRelativeToTestSuiteStartTime="00:27.317"
+			timeRelativeToTestModuleStartTime="00:27.317"
+			timeWallClock="11:49:12"
+			time="00:27.317"
+			level="Info"
+			category="User">
+			<message>
+				商品[71]: Cotton Mull Embroidered Dress
+			</message>
+			<metainfo
+				codefile="C:\Users\mo_ba\Documents\Ranorex\RanorexStudio Projects\AutomationExercise\AutomationExercise\ui_searching_product.UserCode.cs"
+				codeline="67"
+				loglvl="Info">
+			</metainfo>
+		</item>
+		<item
+			timeRelativeToTestSuiteStartTime="00:27.318"
+			timeRelativeToTestModuleStartTime="00:27.318"
+			timeWallClock="11:49:12"
+			time="00:27.318"
+			level="Info"
+			category="User">
+			<message>
+				商品[72]: Blue Cotton Indie Mickey Dress
+			</message>
+			<metainfo
+				codefile="C:\Users\mo_ba\Documents\Ranorex\RanorexStudio Projects\AutomationExercise\AutomationExercise\ui_searching_product.UserCode.cs"
+				codeline="67"
+				loglvl="Info">
+			</metainfo>
+		</item>
+		<item
+			timeRelativeToTestSuiteStartTime="00:27.319"
+			timeRelativeToTestModuleStartTime="00:27.319"
+			timeWallClock="11:49:12"
+			time="00:27.319"
+			level="Info"
+			category="User">
+			<message>
+				商品[73]: Long Maxi Tulle Fancy Dress Up Outfits -Pink
+			</message>
+			<metainfo
+				codefile="C:\Users\mo_ba\Documents\Ranorex\RanorexStudio Projects\AutomationExercise\AutomationExercise\ui_searching_product.UserCode.cs"
+				codeline="67"
+				loglvl="Info">
+			</metainfo>
+		</item>
+		<item
+			timeRelativeToTestSuiteStartTime="00:27.320"
+			timeRelativeToTestModuleStartTime="00:27.320"
+			timeWallClock="11:49:12"
+			time="00:27.320"
+			level="Info"
+			category="User">
+			<message>
+				&#21830;&#21697;[74]: Sleeveless Unicorn Print Fit &amp; Flare Net Dress - Multi
+			</message>
+			<metainfo
+				codefile="C:\Users\mo_ba\Documents\Ranorex\RanorexStudio Projects\AutomationExercise\AutomationExercise\ui_searching_product.UserCode.cs"
+				codeline="67"
+				loglvl="Info">
+			</metainfo>
+		</item>
+		<item
+			timeRelativeToTestSuiteStartTime="00:27.322"
+			timeRelativeToTestModuleStartTime="00:27.322"
+			timeWallClock="11:49:12"
+			time="00:27.322"
+			level="Info"
+			category="User">
+			<message>
+				商品[75]: Colour Blocked Shirt – Sky Blue
+			</message>
+			<metainfo
+				codefile="C:\Users\mo_ba\Documents\Ranorex\RanorexStudio Projects\AutomationExercise\AutomationExercise\ui_searching_product.UserCode.cs"
+				codeline="67"
+				loglvl="Info">
+			</metainfo>
+		</item>
+		<item
+			timeRelativeToTestSuiteStartTime="00:27.323"
+			timeRelativeToTestModuleStartTime="00:27.323"
+			timeWallClock="11:49:12"
+			time="00:27.323"
+			level="Info"
+			category="User">
+			<message>
+				&#21830;&#21697;[76]: Pure Cotton V-Neck&#32;
+			</message>
+			<metainfo
+				codefile="C:\Users\mo_ba\Documents\Ranorex\RanorexStudio Projects\AutomationExercise\AutomationExercise\ui_searching_product.UserCode.cs"
+				codeline="67"
+				loglvl="Info">
+			</metainfo>
+		</item>
+		<item
+			timeRelativeToTestSuiteStartTime="00:27.325"
+			timeRelativeToTestModuleStartTime="00:27.325"
+			timeWallClock="11:49:12"
+			time="00:27.325"
+			level="Info"
+			category="User">
+			<message>
+				商品[77]: Green Side Placket Detail T-Shirt
+			</message>
+			<metainfo
+				codefile="C:\Users\mo_ba\Documents\Ranorex\RanorexStudio Projects\AutomationExercise\AutomationExercise\ui_searching_product.UserCode.cs"
+				codeline="67"
+				loglvl="Info">
+			</metainfo>
+		</item>
+		<item
+			timeRelativeToTestSuiteStartTime="00:27.326"
+			timeRelativeToTestModuleStartTime="00:27.326"
+			timeWallClock="11:49:12"
+			time="00:27.326"
+			level="Info"
+			category="User">
+			<message>
+				&#21830;&#21697;[78]: Premium Polo&#32;
+			</message>
+			<metainfo
+				codefile="C:\Users\mo_ba\Documents\Ranorex\RanorexStudio Projects\AutomationExercise\AutomationExercise\ui_searching_product.UserCode.cs"
+				codeline="67"
+				loglvl="Info">
+			</metainfo>
+		</item>
+		<item
+			timeRelativeToTestSuiteStartTime="00:27.327"
+			timeRelativeToTestModuleStartTime="00:27.327"
+			timeWallClock="11:49:12"
+			time="00:27.327"
+			level="Info"
+			category="User">
+			<message>
+				商品[79]: Pure Cotton Neon Green Tshirt
+			</message>
+			<metainfo
+				codefile="C:\Users\mo_ba\Documents\Ranorex\RanorexStudio Projects\AutomationExercise\AutomationExercise\ui_searching_product.UserCode.cs"
+				codeline="67"
+				loglvl="Info">
+			</metainfo>
+		</item>
+		<item
+			timeRelativeToTestSuiteStartTime="00:27.328"
+			timeRelativeToTestModuleStartTime="00:27.328"
+			timeWallClock="11:49:12"
+			time="00:27.328"
+			level="Info"
+			category="User">
+			<message>
+				商品[80]: Soft Stretch Jeans
+			</message>
+			<metainfo
+				codefile="C:\Users\mo_ba\Documents\Ranorex\RanorexStudio Projects\AutomationExercise\AutomationExercise\ui_searching_product.UserCode.cs"
+				codeline="67"
+				loglvl="Info">
+			</metainfo>
+		</item>
+		<item
+			timeRelativeToTestSuiteStartTime="00:27.329"
+			timeRelativeToTestModuleStartTime="00:27.329"
+			timeWallClock="11:49:12"
+			time="00:27.329"
+			level="Info"
+			category="User">
+			<message>
+				商品[81]: Regular Fit Straight Jeans
+			</message>
+			<metainfo
+				codefile="C:\Users\mo_ba\Documents\Ranorex\RanorexStudio Projects\AutomationExercise\AutomationExercise\ui_searching_product.UserCode.cs"
+				codeline="67"
+				loglvl="Info">
+			</metainfo>
+		</item>
+		<item
+			timeRelativeToTestSuiteStartTime="00:27.329"
+			timeRelativeToTestModuleStartTime="00:27.329"
+			timeWallClock="11:49:12"
+			time="00:27.329"
+			level="Info"
+			category="User">
+			<message>
+				商品[82]: Grunt Blue Slim Fit Jeans
+			</message>
+			<metainfo
+				codefile="C:\Users\mo_ba\Documents\Ranorex\RanorexStudio Projects\AutomationExercise\AutomationExercise\ui_searching_product.UserCode.cs"
+				codeline="67"
+				loglvl="Info">
+			</metainfo>
+		</item>
+		<item
+			timeRelativeToTestSuiteStartTime="00:27.330"
+			timeRelativeToTestModuleStartTime="00:27.330"
+			timeWallClock="11:49:12"
+			time="00:27.330"
+			level="Info"
+			category="User">
+			<message>
+				商品[83]: Rose Pink Embroidered Maxi Dress
+			</message>
+			<metainfo
+				codefile="C:\Users\mo_ba\Documents\Ranorex\RanorexStudio Projects\AutomationExercise\AutomationExercise\ui_searching_product.UserCode.cs"
+				codeline="67"
+				loglvl="Info">
+			</metainfo>
+		</item>
+		<item
+			timeRelativeToTestSuiteStartTime="00:27.331"
+			timeRelativeToTestModuleStartTime="00:27.331"
+			timeWallClock="11:49:12"
+			time="00:27.331"
+			level="Info"
+			category="User">
+			<message>
+				商品[84]: Cotton Silk Hand Block Print Saree
+			</message>
+			<metainfo
+				codefile="C:\Users\mo_ba\Documents\Ranorex\RanorexStudio Projects\AutomationExercise\AutomationExercise\ui_searching_product.UserCode.cs"
+				codeline="67"
+				loglvl="Info">
+			</metainfo>
+		</item>
+		<item
+			timeRelativeToTestSuiteStartTime="00:27.332"
+			timeRelativeToTestModuleStartTime="00:27.332"
+			timeWallClock="11:49:12"
+			time="00:27.332"
+			level="Info"
+			category="User">
+			<message>
+				商品[85]: Rust Red Linen Saree
+			</message>
+			<metainfo
+				codefile="C:\Users\mo_ba\Documents\Ranorex\RanorexStudio Projects\AutomationExercise\AutomationExercise\ui_searching_product.UserCode.cs"
+				codeline="67"
+				loglvl="Info">
+			</metainfo>
+		</item>
+		<item
+			timeRelativeToTestSuiteStartTime="00:27.333"
+			timeRelativeToTestModuleStartTime="00:27.333"
+			timeWallClock="11:49:12"
+			time="00:27.333"
+			level="Info"
+			category="User">
+			<message>
+				商品[86]: Beautiful Peacock Blue Cotton Linen Saree
+			</message>
+			<metainfo
+				codefile="C:\Users\mo_ba\Documents\Ranorex\RanorexStudio Projects\AutomationExercise\AutomationExercise\ui_searching_product.UserCode.cs"
+				codeline="67"
+				loglvl="Info">
+			</metainfo>
+		</item>
+		<item
+			timeRelativeToTestSuiteStartTime="00:27.333"
+			timeRelativeToTestModuleStartTime="00:27.333"
+			timeWallClock="11:49:12"
+			time="00:27.333"
+			level="Info"
+			category="User">
+			<message>
+				商品[87]: Lace Top For Women
+			</message>
+			<metainfo
+				codefile="C:\Users\mo_ba\Documents\Ranorex\RanorexStudio Projects\AutomationExercise\AutomationExercise\ui_searching_product.UserCode.cs"
+				codeline="67"
+				loglvl="Info">
+			</metainfo>
+		</item>
+		<item
+			timeRelativeToTestSuiteStartTime="00:27.334"
+			timeRelativeToTestModuleStartTime="00:27.334"
+			timeWallClock="11:49:12"
+			time="00:27.334"
+			level="Info"
+			category="User">
+			<message>
+				商品[88]: GRAPHIC DESIGN MEN T SHIRT - BLUE
+			</message>
+			<metainfo
+				codefile="C:\Users\mo_ba\Documents\Ranorex\RanorexStudio Projects\AutomationExercise\AutomationExercise\ui_searching_product.UserCode.cs"
+				codeline="67"
+				loglvl="Info">
+			</metainfo>
+		</item>
+		<item
+			timeRelativeToTestSuiteStartTime="00:27.335"
+			timeRelativeToTestModuleStartTime="00:27.335"
+			timeWallClock="11:49:12"
+			time="00:27.335"
+			level="Info"
+			category="User">
+			<message>
+				商品[89]: Blue Top
+			</message>
+			<metainfo
+				codefile="C:\Users\mo_ba\Documents\Ranorex\RanorexStudio Projects\AutomationExercise\AutomationExercise\ui_searching_product.UserCode.cs"
+				codeline="67"
+				loglvl="Info">
+			</metainfo>
+		</item>
+		<item
+			timeRelativeToTestSuiteStartTime="00:27.335"
+			timeRelativeToTestModuleStartTime="00:27.335"
+			timeWallClock="11:49:12"
+			time="00:27.335"
+			level="Info"
+			category="User">
+			<message>
+				商品[90]: Men Tshirt
+			</message>
+			<metainfo
+				codefile="C:\Users\mo_ba\Documents\Ranorex\RanorexStudio Projects\AutomationExercise\AutomationExercise\ui_searching_product.UserCode.cs"
+				codeline="67"
+				loglvl="Info">
+			</metainfo>
+		</item>
+		<item
+			timeRelativeToTestSuiteStartTime="00:27.336"
+			timeRelativeToTestModuleStartTime="00:27.336"
+			timeWallClock="11:49:12"
+			time="00:27.336"
+			level="Info"
+			category="User">
+			<message>
+				商品[91]: Rs. 1000
+			</message>
+			<metainfo
+				codefile="C:\Users\mo_ba\Documents\Ranorex\RanorexStudio Projects\AutomationExercise\AutomationExercise\ui_searching_product.UserCode.cs"
+				codeline="67"
+				loglvl="Info">
+			</metainfo>
+		</item>
+		<item
+			timeRelativeToTestSuiteStartTime="00:27.337"
+			timeRelativeToTestModuleStartTime="00:27.337"
+			timeWallClock="11:49:12"
+			time="00:27.337"
+			level="Info"
+			category="User">
+			<message>
+				商品[92]: Stylish Dress
+			</message>
+			<metainfo
+				codefile="C:\Users\mo_ba\Documents\Ranorex\RanorexStudio Projects\AutomationExercise\AutomationExercise\ui_searching_product.UserCode.cs"
+				codeline="67"
+				loglvl="Info">
+			</metainfo>
+		</item>
+		<item
+			timeRelativeToTestSuiteStartTime="00:27.338"
+			timeRelativeToTestModuleStartTime="00:27.338"
+			timeWallClock="11:49:12"
+			time="00:27.338"
+			level="Info"
+			category="User">
+			<message>
+				商品[93]: Winter Top
+			</message>
+			<metainfo
+				codefile="C:\Users\mo_ba\Documents\Ranorex\RanorexStudio Projects\AutomationExercise\AutomationExercise\ui_searching_product.UserCode.cs"
+				codeline="67"
+				loglvl="Info">
+			</metainfo>
+		</item>
+		<item
+			timeRelativeToTestSuiteStartTime="00:27.339"
+			timeRelativeToTestModuleStartTime="00:27.339"
+			timeWallClock="11:49:12"
+			time="00:27.339"
+			level="Info"
+			category="User">
+			<message>
+				商品[94]: Summer White Top
+			</message>
+			<metainfo
+				codefile="C:\Users\mo_ba\Documents\Ranorex\RanorexStudio Projects\AutomationExercise\AutomationExercise\ui_searching_product.UserCode.cs"
+				codeline="67"
+				loglvl="Info">
+			</metainfo>
+		</item>
+		<item
+			timeRelativeToTestSuiteStartTime="00:27.340"
+			timeRelativeToTestModuleStartTime="00:27.340"
+			timeWallClock="11:49:12"
+			time="00:27.340"
+			level="Info"
+			category="User">
+			<message>
+				商品[95]: Blue Top
+			</message>
+			<metainfo
+				codefile="C:\Users\mo_ba\Documents\Ranorex\RanorexStudio Projects\AutomationExercise\AutomationExercise\ui_searching_product.UserCode.cs"
+				codeline="67"
+				loglvl="Info">
+			</metainfo>
+		</item>
+		<item
+			timeRelativeToTestSuiteStartTime="00:27.341"
+			timeRelativeToTestModuleStartTime="00:27.341"
+			timeWallClock="11:49:12"
+			time="00:27.341"
+			level="Info"
+			category="User">
+			<message>
+				&#21830;&#21697;[96]: Men&#32;
+			</message>
+			<metainfo
+				codefile="C:\Users\mo_ba\Documents\Ranorex\RanorexStudio Projects\AutomationExercise\AutomationExercise\ui_searching_product.UserCode.cs"
+				codeline="67"
+				loglvl="Info">
+			</metainfo>
+		</item>
+		<item
+			timeRelativeToTestSuiteStartTime="00:27.343"
+			timeRelativeToTestModuleStartTime="00:27.343"
+			timeWallClock="11:49:12"
+			time="00:27.343"
+			level="Info"
+			category="User">
+			<message>
+				商品[97]: Sleeveless Dress
+			</message>
+			<metainfo
+				codefile="C:\Users\mo_ba\Documents\Ranorex\RanorexStudio Projects\AutomationExercise\AutomationExercise\ui_searching_product.UserCode.cs"
+				codeline="67"
+				loglvl="Info">
+			</metainfo>
+		</item>
+		<item
+			timeRelativeToTestSuiteStartTime="00:27.345"
+			timeRelativeToTestModuleStartTime="00:27.345"
+			timeWallClock="11:49:12"
+			time="00:27.345"
+			level="Info"
+			category="User">
+			<message>
+				商品[98]: Stylish Dress
+			</message>
+			<metainfo
+				codefile="C:\Users\mo_ba\Documents\Ranorex\RanorexStudio Projects\AutomationExercise\AutomationExercise\ui_searching_product.UserCode.cs"
+				codeline="67"
+				loglvl="Info">
+			</metainfo>
+		</item>
+		<item
+			timeRelativeToTestSuiteStartTime="00:27.346"
+			timeRelativeToTestModuleStartTime="00:27.346"
+			timeWallClock="11:49:12"
+			time="00:27.346"
+			level="Info"
+			category="User">
+			<message>
+				商品[99]: Winter Top
+			</message>
+			<metainfo
+				codefile="C:\Users\mo_ba\Documents\Ranorex\RanorexStudio Projects\AutomationExercise\AutomationExercise\ui_searching_product.UserCode.cs"
+				codeline="67"
+				loglvl="Info">
+			</metainfo>
+		</item>
+		<item
+			timeRelativeToTestSuiteStartTime="00:27.349"
+			timeRelativeToTestModuleStartTime="00:27.349"
+			timeWallClock="11:49:12"
+			time="00:27.349"
+			level="Info"
+			category="User">
+			<message>
+				商品[100]: Summer White Top
+			</message>
+			<metainfo
+				codefile="C:\Users\mo_ba\Documents\Ranorex\RanorexStudio Projects\AutomationExercise\AutomationExercise\ui_searching_product.UserCode.cs"
+				codeline="67"
+				loglvl="Info">
+			</metainfo>
+		</item>
+		<item
+			timeRelativeToTestSuiteStartTime="00:27.350"
+			timeRelativeToTestModuleStartTime="00:27.350"
+			timeWallClock="11:49:12"
+			time="00:27.350"
+			level="Info"
+			category="User">
+			<message>
+				商品[101]: Madame Top For Women
+			</message>
+			<metainfo
+				codefile="C:\Users\mo_ba\Documents\Ranorex\RanorexStudio Projects\AutomationExercise\AutomationExercise\ui_searching_product.UserCode.cs"
+				codeline="67"
+				loglvl="Info">
+			</metainfo>
+		</item>
+		<item
+			timeRelativeToTestSuiteStartTime="00:27.351"
+			timeRelativeToTestModuleStartTime="00:27.351"
+			timeWallClock="11:49:12"
+			time="00:27.351"
+			level="Info"
+			category="User">
+			<message>
+				商品[102]: Fancy Green Top
+			</message>
+			<metainfo
+				codefile="C:\Users\mo_ba\Documents\Ranorex\RanorexStudio Projects\AutomationExercise\AutomationExercise\ui_searching_product.UserCode.cs"
+				codeline="67"
+				loglvl="Info">
+			</metainfo>
+		</item>
+		<item
+			timeRelativeToTestSuiteStartTime="00:27.352"
+			timeRelativeToTestModuleStartTime="00:27.352"
+			timeWallClock="11:49:12"
+			time="00:27.352"
+			level="Info"
+			category="User">
+			<message>
+				商品[103]: Sleeves Printed Top - White
+			</message>
+			<metainfo
+				codefile="C:\Users\mo_ba\Documents\Ranorex\RanorexStudio Projects\AutomationExercise\AutomationExercise\ui_searching_product.UserCode.cs"
+				codeline="67"
+				loglvl="Info">
+			</metainfo>
+		</item>
+		<item
+			timeRelativeToTestSuiteStartTime="00:27.353"
+			timeRelativeToTestModuleStartTime="00:27.353"
+			timeWallClock="11:49:12"
+			time="00:27.353"
+			level="Info"
+			category="User">
+			<message>
+				商品[104]: Half Sleeves Top Schiffli Detailing - Pink
+			</message>
+			<metainfo
+				codefile="C:\Users\mo_ba\Documents\Ranorex\RanorexStudio Projects\AutomationExercise\AutomationExercise\ui_searching_product.UserCode.cs"
+				codeline="67"
+				loglvl="Info">
+			</metainfo>
+		</item>
+		<item
+			timeRelativeToTestSuiteStartTime="00:27.354"
+			timeRelativeToTestModuleStartTime="00:27.354"
+			timeWallClock="11:49:12"
+			time="00:27.354"
+			level="Info"
+			category="User">
+			<message>
+				商品[105]: Frozen Tops For Kids
+			</message>
+			<metainfo
+				codefile="C:\Users\mo_ba\Documents\Ranorex\RanorexStudio Projects\AutomationExercise\AutomationExercise\ui_searching_product.UserCode.cs"
+				codeline="67"
+				loglvl="Info">
+			</metainfo>
+		</item>
+		<item
+			timeRelativeToTestSuiteStartTime="00:27.355"
+			timeRelativeToTestModuleStartTime="00:27.355"
+			timeWallClock="11:49:12"
+			time="00:27.355"
+			level="Info"
+			category="User">
+			<message>
+				商品[106]: Full Sleeves Top Cherry - Pink
+			</message>
+			<metainfo
+				codefile="C:\Users\mo_ba\Documents\Ranorex\RanorexStudio Projects\AutomationExercise\AutomationExercise\ui_searching_product.UserCode.cs"
+				codeline="67"
+				loglvl="Info">
+			</metainfo>
+		</item>
+		<item
+			timeRelativeToTestSuiteStartTime="00:27.357"
+			timeRelativeToTestModuleStartTime="00:27.357"
+			timeWallClock="11:49:12"
+			time="00:27.357"
+			level="Info"
+			category="User">
+			<message>
+				商品[107]: Printed Off Shoulder Top - White
+			</message>
+			<metainfo
+				codefile="C:\Users\mo_ba\Documents\Ranorex\RanorexStudio Projects\AutomationExercise\AutomationExercise\ui_searching_product.UserCode.cs"
+				codeline="67"
+				loglvl="Info">
+			</metainfo>
+		</item>
+		<item
+			timeRelativeToTestSuiteStartTime="00:27.358"
+			timeRelativeToTestModuleStartTime="00:27.358"
+			timeWallClock="11:49:12"
+			time="00:27.358"
+			level="Info"
+			category="User">
+			<message>
+				&#21830;&#21697;[108]: Sleeves Top and Short - Blue &amp; Pink
+			</message>
+			<metainfo
+				codefile="C:\Users\mo_ba\Documents\Ranorex\RanorexStudio Projects\AutomationExercise\AutomationExercise\ui_searching_product.UserCode.cs"
+				codeline="67"
+				loglvl="Info">
+			</metainfo>
+		</item>
+		<item
+			timeRelativeToTestSuiteStartTime="00:27.359"
+			timeRelativeToTestModuleStartTime="00:27.359"
+			timeWallClock="11:49:12"
+			time="00:27.359"
+			level="Info"
+			category="User">
+			<message>
+				商品[109]: Little Girls Mr. Panda Shirt
+			</message>
+			<metainfo
+				codefile="C:\Users\mo_ba\Documents\Ranorex\RanorexStudio Projects\AutomationExercise\AutomationExercise\ui_searching_product.UserCode.cs"
+				codeline="67"
+				loglvl="Info">
+			</metainfo>
+		</item>
+		<item
+			timeRelativeToTestSuiteStartTime="00:27.360"
+			timeRelativeToTestModuleStartTime="00:27.360"
+			timeWallClock="11:49:12"
+			time="00:27.360"
+			level="Info"
+			category="User">
+			<message>
+				商品[110]: Sleeveless Unicorn Patch Gown - Pink
+			</message>
+			<metainfo
+				codefile="C:\Users\mo_ba\Documents\Ranorex\RanorexStudio Projects\AutomationExercise\AutomationExercise\ui_searching_product.UserCode.cs"
+				codeline="67"
+				loglvl="Info">
+			</metainfo>
+		</item>
+		<item
+			timeRelativeToTestSuiteStartTime="00:27.362"
+			timeRelativeToTestModuleStartTime="00:27.362"
+			timeWallClock="11:49:12"
+			time="00:27.362"
+			level="Info"
+			category="User">
+			<message>
+				商品[111]: Cotton Mull Embroidered Dress
+			</message>
+			<metainfo
+				codefile="C:\Users\mo_ba\Documents\Ranorex\RanorexStudio Projects\AutomationExercise\AutomationExercise\ui_searching_product.UserCode.cs"
+				codeline="67"
+				loglvl="Info">
+			</metainfo>
+		</item>
+		<item
+			timeRelativeToTestSuiteStartTime="00:27.363"
+			timeRelativeToTestModuleStartTime="00:27.363"
+			timeWallClock="11:49:12"
+			time="00:27.363"
+			level="Info"
+			category="User">
+			<message>
+				商品[112]: Blue Cotton Indie Mickey Dress
+			</message>
+			<metainfo
+				codefile="C:\Users\mo_ba\Documents\Ranorex\RanorexStudio Projects\AutomationExercise\AutomationExercise\ui_searching_product.UserCode.cs"
+				codeline="67"
+				loglvl="Info">
+			</metainfo>
+		</item>
+		<item
+			timeRelativeToTestSuiteStartTime="00:27.364"
+			timeRelativeToTestModuleStartTime="00:27.364"
+			timeWallClock="11:49:12"
+			time="00:27.364"
+			level="Info"
+			category="User">
+			<message>
+				商品[113]: Long Maxi Tulle Fancy Dress Up Outfits -Pink
+			</message>
+			<metainfo
+				codefile="C:\Users\mo_ba\Documents\Ranorex\RanorexStudio Projects\AutomationExercise\AutomationExercise\ui_searching_product.UserCode.cs"
+				codeline="67"
+				loglvl="Info">
+			</metainfo>
+		</item>
+		<item
+			timeRelativeToTestSuiteStartTime="00:27.365"
+			timeRelativeToTestModuleStartTime="00:27.365"
+			timeWallClock="11:49:12"
+			time="00:27.365"
+			level="Info"
+			category="User">
+			<message>
+				&#21830;&#21697;[114]: Sleeveless Unicorn Print Fit &amp; Flare Net Dress - Multi
+			</message>
+			<metainfo
+				codefile="C:\Users\mo_ba\Documents\Ranorex\RanorexStudio Projects\AutomationExercise\AutomationExercise\ui_searching_product.UserCode.cs"
+				codeline="67"
+				loglvl="Info">
+			</metainfo>
+		</item>
+		<item
+			timeRelativeToTestSuiteStartTime="00:27.366"
+			timeRelativeToTestModuleStartTime="00:27.366"
+			timeWallClock="11:49:12"
+			time="00:27.366"
+			level="Info"
+			category="User">
+			<message>
+				商品[115]: Colour Blocked Shirt – Sky Blue
+			</message>
+			<metainfo
+				codefile="C:\Users\mo_ba\Documents\Ranorex\RanorexStudio Projects\AutomationExercise\AutomationExercise\ui_searching_product.UserCode.cs"
+				codeline="67"
+				loglvl="Info">
+			</metainfo>
+		</item>
+		<item
+			timeRelativeToTestSuiteStartTime="00:27.367"
+			timeRelativeToTestModuleStartTime="00:27.367"
+			timeWallClock="11:49:12"
+			time="00:27.367"
+			level="Info"
+			category="User">
+			<message>
+				&#21830;&#21697;[116]: Pure Cotton V-Neck&#32;
+			</message>
+			<metainfo
+				codefile="C:\Users\mo_ba\Documents\Ranorex\RanorexStudio Projects\AutomationExercise\AutomationExercise\ui_searching_product.UserCode.cs"
+				codeline="67"
+				loglvl="Info">
+			</metainfo>
+		</item>
+		<item
+			timeRelativeToTestSuiteStartTime="00:27.369"
+			timeRelativeToTestModuleStartTime="00:27.369"
+			timeWallClock="11:49:12"
+			time="00:27.369"
+			level="Info"
+			category="User">
+			<message>
+				商品[117]: Green Side Placket Detail T-Shirt
+			</message>
+			<metainfo
+				codefile="C:\Users\mo_ba\Documents\Ranorex\RanorexStudio Projects\AutomationExercise\AutomationExercise\ui_searching_product.UserCode.cs"
+				codeline="67"
+				loglvl="Info">
+			</metainfo>
+		</item>
+		<item
+			timeRelativeToTestSuiteStartTime="00:27.370"
+			timeRelativeToTestModuleStartTime="00:27.370"
+			timeWallClock="11:49:12"
+			time="00:27.370"
+			level="Info"
+			category="User">
+			<message>
+				&#21830;&#21697;[118]: Premium Polo&#32;
+			</message>
+			<metainfo
+				codefile="C:\Users\mo_ba\Documents\Ranorex\RanorexStudio Projects\AutomationExercise\AutomationExercise\ui_searching_product.UserCode.cs"
+				codeline="67"
+				loglvl="Info">
+			</metainfo>
+		</item>
+		<item
+			timeRelativeToTestSuiteStartTime="00:27.372"
+			timeRelativeToTestModuleStartTime="00:27.372"
+			timeWallClock="11:49:12"
+			time="00:27.372"
+			level="Info"
+			category="User">
+			<message>
+				商品[119]: Pure Cotton Neon Green Tshirt
+			</message>
+			<metainfo
+				codefile="C:\Users\mo_ba\Documents\Ranorex\RanorexStudio Projects\AutomationExercise\AutomationExercise\ui_searching_product.UserCode.cs"
+				codeline="67"
+				loglvl="Info">
+			</metainfo>
+		</item>
+		<item
+			timeRelativeToTestSuiteStartTime="00:27.373"
+			timeRelativeToTestModuleStartTime="00:27.373"
+			timeWallClock="11:49:12"
+			time="00:27.373"
+			level="Info"
+			category="User">
+			<message>
+				商品[120]: Soft Stretch Jeans
+			</message>
+			<metainfo
+				codefile="C:\Users\mo_ba\Documents\Ranorex\RanorexStudio Projects\AutomationExercise\AutomationExercise\ui_searching_product.UserCode.cs"
+				codeline="67"
+				loglvl="Info">
+			</metainfo>
+		</item>
+		<item
+			timeRelativeToTestSuiteStartTime="00:27.374"
+			timeRelativeToTestModuleStartTime="00:27.374"
+			timeWallClock="11:49:12"
+			time="00:27.374"
+			level="Info"
+			category="User">
+			<message>
+				商品[121]: Regular Fit Straight Jeans
+			</message>
+			<metainfo
+				codefile="C:\Users\mo_ba\Documents\Ranorex\RanorexStudio Projects\AutomationExercise\AutomationExercise\ui_searching_product.UserCode.cs"
+				codeline="67"
+				loglvl="Info">
+			</metainfo>
+		</item>
+		<item
+			timeRelativeToTestSuiteStartTime="00:27.376"
+			timeRelativeToTestModuleStartTime="00:27.376"
+			timeWallClock="11:49:12"
+			time="00:27.376"
+			level="Info"
+			category="User">
+			<message>
+				商品[122]: Grunt Blue Slim Fit Jeans
+			</message>
+			<metainfo
+				codefile="C:\Users\mo_ba\Documents\Ranorex\RanorexStudio Projects\AutomationExercise\AutomationExercise\ui_searching_product.UserCode.cs"
+				codeline="67"
+				loglvl="Info">
+			</metainfo>
+		</item>
+		<item
+			timeRelativeToTestSuiteStartTime="00:27.377"
+			timeRelativeToTestModuleStartTime="00:27.377"
+			timeWallClock="11:49:12"
+			time="00:27.377"
+			level="Info"
+			category="User">
+			<message>
+				商品[123]: Rose Pink Embroidered Maxi Dress
+			</message>
+			<metainfo
+				codefile="C:\Users\mo_ba\Documents\Ranorex\RanorexStudio Projects\AutomationExercise\AutomationExercise\ui_searching_product.UserCode.cs"
+				codeline="67"
+				loglvl="Info">
+			</metainfo>
+		</item>
+		<item
+			timeRelativeToTestSuiteStartTime="00:27.378"
+			timeRelativeToTestModuleStartTime="00:27.378"
+			timeWallClock="11:49:12"
+			time="00:27.378"
+			level="Info"
+			category="User">
+			<message>
+				商品[124]: Cotton Silk Hand Block Print Saree
+			</message>
+			<metainfo
+				codefile="C:\Users\mo_ba\Documents\Ranorex\RanorexStudio Projects\AutomationExercise\AutomationExercise\ui_searching_product.UserCode.cs"
+				codeline="67"
+				loglvl="Info">
+			</metainfo>
+		</item>
+		<item
+			timeRelativeToTestSuiteStartTime="00:27.379"
+			timeRelativeToTestModuleStartTime="00:27.379"
+			timeWallClock="11:49:12"
+			time="00:27.379"
+			level="Info"
+			category="User">
+			<message>
+				商品[125]: Rust Red Linen Saree
+			</message>
+			<metainfo
+				codefile="C:\Users\mo_ba\Documents\Ranorex\RanorexStudio Projects\AutomationExercise\AutomationExercise\ui_searching_product.UserCode.cs"
+				codeline="67"
+				loglvl="Info">
+			</metainfo>
+		</item>
+		<item
+			timeRelativeToTestSuiteStartTime="00:27.381"
+			timeRelativeToTestModuleStartTime="00:27.381"
+			timeWallClock="11:49:12"
+			time="00:27.381"
+			level="Info"
+			category="User">
+			<message>
+				商品[126]: Beautiful Peacock Blue Cotton Linen Saree
+			</message>
+			<metainfo
+				codefile="C:\Users\mo_ba\Documents\Ranorex\RanorexStudio Projects\AutomationExercise\AutomationExercise\ui_searching_product.UserCode.cs"
+				codeline="67"
+				loglvl="Info">
+			</metainfo>
+		</item>
+		<item
+			timeRelativeToTestSuiteStartTime="00:27.382"
+			timeRelativeToTestModuleStartTime="00:27.382"
+			timeWallClock="11:49:12"
+			time="00:27.382"
+			level="Info"
+			category="User">
+			<message>
+				商品[127]: Lace Top For Women
+			</message>
+			<metainfo
+				codefile="C:\Users\mo_ba\Documents\Ranorex\RanorexStudio Projects\AutomationExercise\AutomationExercise\ui_searching_product.UserCode.cs"
+				codeline="67"
+				loglvl="Info">
+			</metainfo>
+		</item>
+		<item
+			timeRelativeToTestSuiteStartTime="00:27.383"
+			timeRelativeToTestModuleStartTime="00:27.383"
+			timeWallClock="11:49:12"
+			time="00:27.383"
+			level="Info"
+			category="User">
+			<message>
+				商品[128]: GRAPHIC DESIGN MEN T SHIRT - BLUE
+			</message>
+			<metainfo
+				codefile="C:\Users\mo_ba\Documents\Ranorex\RanorexStudio Projects\AutomationExercise\AutomationExercise\ui_searching_product.UserCode.cs"
+				codeline="67"
+				loglvl="Info">
+			</metainfo>
+		</item>
+		<item
+			timeRelativeToTestSuiteStartTime="00:27.384"
+			timeRelativeToTestModuleStartTime="00:27.384"
+			timeWallClock="11:49:12"
+			time="00:27.384"
+			level="Info"
+			category="User">
+			<message>
+				商品[129]: Blue Top
+			</message>
+			<metainfo
+				codefile="C:\Users\mo_ba\Documents\Ranorex\RanorexStudio Projects\AutomationExercise\AutomationExercise\ui_searching_product.UserCode.cs"
+				codeline="67"
+				loglvl="Info">
+			</metainfo>
+		</item>
+		<item
+			timeRelativeToTestSuiteStartTime="00:27.385"
+			timeRelativeToTestModuleStartTime="00:27.385"
+			timeWallClock="11:49:12"
+			time="00:27.385"
+			level="Info"
+			category="User">
+			<message>
+				商品[130]: Men Tshirt
+			</message>
+			<metainfo
+				codefile="C:\Users\mo_ba\Documents\Ranorex\RanorexStudio Projects\AutomationExercise\AutomationExercise\ui_searching_product.UserCode.cs"
+				codeline="67"
+				loglvl="Info">
+			</metainfo>
+		</item>
+		<item
+			timeRelativeToTestSuiteStartTime="00:27.387"
+			timeRelativeToTestModuleStartTime="00:27.387"
+			timeWallClock="11:49:12"
+			time="00:27.387"
+			level="Info"
+			category="User">
+			<message>
+				商品[131]: Rs. 1000
+			</message>
+			<metainfo
+				codefile="C:\Users\mo_ba\Documents\Ranorex\RanorexStudio Projects\AutomationExercise\AutomationExercise\ui_searching_product.UserCode.cs"
+				codeline="67"
+				loglvl="Info">
+			</metainfo>
+		</item>
+		<item
+			timeRelativeToTestSuiteStartTime="00:27.389"
+			timeRelativeToTestModuleStartTime="00:27.389"
+			timeWallClock="11:49:12"
+			time="00:27.389"
+			level="Info"
+			category="User">
+			<message>
+				商品[132]: Stylish Dress
+			</message>
+			<metainfo
+				codefile="C:\Users\mo_ba\Documents\Ranorex\RanorexStudio Projects\AutomationExercise\AutomationExercise\ui_searching_product.UserCode.cs"
+				codeline="67"
+				loglvl="Info">
+			</metainfo>
+		</item>
+		<item
+			timeRelativeToTestSuiteStartTime="00:27.390"
+			timeRelativeToTestModuleStartTime="00:27.390"
+			timeWallClock="11:49:12"
+			time="00:27.390"
+			level="Info"
+			category="User">
+			<message>
+				商品[133]: Winter Top
+			</message>
+			<metainfo
+				codefile="C:\Users\mo_ba\Documents\Ranorex\RanorexStudio Projects\AutomationExercise\AutomationExercise\ui_searching_product.UserCode.cs"
+				codeline="67"
+				loglvl="Info">
+			</metainfo>
+		</item>
+		<item
+			timeRelativeToTestSuiteStartTime="00:27.391"
+			timeRelativeToTestModuleStartTime="00:27.391"
+			timeWallClock="11:49:12"
+			time="00:27.391"
+			level="Info"
+			category="User">
+			<message>
+				商品[134]: Summer White Top
+			</message>
+			<metainfo
+				codefile="C:\Users\mo_ba\Documents\Ranorex\RanorexStudio Projects\AutomationExercise\AutomationExercise\ui_searching_product.UserCode.cs"
+				codeline="67"
+				loglvl="Info">
+			</metainfo>
+		</item>
+		<item
+			timeRelativeToTestSuiteStartTime="00:27.393"
+			timeRelativeToTestModuleStartTime="00:27.393"
+			timeWallClock="11:49:12"
+			time="00:27.393"
+			level="Info"
+			category="User">
+			<message>
+				商品[135]: Blue Top
+			</message>
+			<metainfo
+				codefile="C:\Users\mo_ba\Documents\Ranorex\RanorexStudio Projects\AutomationExercise\AutomationExercise\ui_searching_product.UserCode.cs"
+				codeline="67"
+				loglvl="Info">
+			</metainfo>
+		</item>
+		<item
+			timeRelativeToTestSuiteStartTime="00:27.394"
+			timeRelativeToTestModuleStartTime="00:27.394"
+			timeWallClock="11:49:12"
+			time="00:27.394"
+			level="Info"
+			category="User">
+			<message>
+				&#21830;&#21697;[136]: Men&#32;
+			</message>
+			<metainfo
+				codefile="C:\Users\mo_ba\Documents\Ranorex\RanorexStudio Projects\AutomationExercise\AutomationExercise\ui_searching_product.UserCode.cs"
+				codeline="67"
+				loglvl="Info">
+			</metainfo>
+		</item>
+		<item
+			timeRelativeToTestSuiteStartTime="00:27.395"
+			timeRelativeToTestModuleStartTime="00:27.395"
+			timeWallClock="11:49:12"
+			time="00:27.395"
+			level="Info"
+			category="User">
+			<message>
+				商品[137]: Sleeveless Dress
+			</message>
+			<metainfo
+				codefile="C:\Users\mo_ba\Documents\Ranorex\RanorexStudio Projects\AutomationExercise\AutomationExercise\ui_searching_product.UserCode.cs"
+				codeline="67"
+				loglvl="Info">
+			</metainfo>
+		</item>
+		<item
+			timeRelativeToTestSuiteStartTime="00:27.396"
+			timeRelativeToTestModuleStartTime="00:27.396"
+			timeWallClock="11:49:12"
+			time="00:27.396"
+			level="Info"
+			category="User">
+			<message>
+				商品[138]: Stylish Dress
+			</message>
+			<metainfo
+				codefile="C:\Users\mo_ba\Documents\Ranorex\RanorexStudio Projects\AutomationExercise\AutomationExercise\ui_searching_product.UserCode.cs"
+				codeline="67"
+				loglvl="Info">
+			</metainfo>
+		</item>
+		<item
+			timeRelativeToTestSuiteStartTime="00:27.397"
+			timeRelativeToTestModuleStartTime="00:27.397"
+			timeWallClock="11:49:12"
+			time="00:27.397"
+			level="Info"
+			category="User">
+			<message>
+				商品[139]: Winter Top
+			</message>
+			<metainfo
+				codefile="C:\Users\mo_ba\Documents\Ranorex\RanorexStudio Projects\AutomationExercise\AutomationExercise\ui_searching_product.UserCode.cs"
+				codeline="67"
+				loglvl="Info">
+			</metainfo>
+		</item>
+		<item
+			timeRelativeToTestSuiteStartTime="00:27.399"
+			timeRelativeToTestModuleStartTime="00:27.399"
+			timeWallClock="11:49:12"
+			time="00:27.399"
+			level="Info"
+			category="User">
+			<message>
+				商品[140]: Summer White Top
+			</message>
+			<metainfo
+				codefile="C:\Users\mo_ba\Documents\Ranorex\RanorexStudio Projects\AutomationExercise\AutomationExercise\ui_searching_product.UserCode.cs"
+				codeline="67"
+				loglvl="Info">
+			</metainfo>
+		</item>
+		<item
+			timeRelativeToTestSuiteStartTime="00:27.401"
+			timeRelativeToTestModuleStartTime="00:27.401"
+			timeWallClock="11:49:12"
+			time="00:27.401"
+			level="Info"
+			category="User">
+			<message>
+				商品[141]: Madame Top For Women
+			</message>
+			<metainfo
+				codefile="C:\Users\mo_ba\Documents\Ranorex\RanorexStudio Projects\AutomationExercise\AutomationExercise\ui_searching_product.UserCode.cs"
+				codeline="67"
+				loglvl="Info">
+			</metainfo>
+		</item>
+		<item
+			timeRelativeToTestSuiteStartTime="00:27.402"
+			timeRelativeToTestModuleStartTime="00:27.402"
+			timeWallClock="11:49:12"
+			time="00:27.402"
+			level="Info"
+			category="User">
+			<message>
+				商品[142]: Fancy Green Top
+			</message>
+			<metainfo
+				codefile="C:\Users\mo_ba\Documents\Ranorex\RanorexStudio Projects\AutomationExercise\AutomationExercise\ui_searching_product.UserCode.cs"
+				codeline="67"
+				loglvl="Info">
+			</metainfo>
+		</item>
+		<item
+			timeRelativeToTestSuiteStartTime="00:27.404"
+			timeRelativeToTestModuleStartTime="00:27.404"
+			timeWallClock="11:49:12"
+			time="00:27.404"
+			level="Info"
+			category="User">
+			<message>
+				商品[143]: Sleeves Printed Top - White
+			</message>
+			<metainfo
+				codefile="C:\Users\mo_ba\Documents\Ranorex\RanorexStudio Projects\AutomationExercise\AutomationExercise\ui_searching_product.UserCode.cs"
+				codeline="67"
+				loglvl="Info">
+			</metainfo>
+		</item>
+		<item
+			timeRelativeToTestSuiteStartTime="00:27.405"
+			timeRelativeToTestModuleStartTime="00:27.405"
+			timeWallClock="11:49:12"
+			time="00:27.405"
+			level="Info"
+			category="User">
+			<message>
+				商品[144]: Half Sleeves Top Schiffli Detailing - Pink
+			</message>
+			<metainfo
+				codefile="C:\Users\mo_ba\Documents\Ranorex\RanorexStudio Projects\AutomationExercise\AutomationExercise\ui_searching_product.UserCode.cs"
+				codeline="67"
+				loglvl="Info">
+			</metainfo>
+		</item>
+		<item
+			timeRelativeToTestSuiteStartTime="00:27.406"
+			timeRelativeToTestModuleStartTime="00:27.406"
+			timeWallClock="11:49:12"
+			time="00:27.406"
+			level="Info"
+			category="User">
+			<message>
+				商品[145]: Frozen Tops For Kids
+			</message>
+			<metainfo
+				codefile="C:\Users\mo_ba\Documents\Ranorex\RanorexStudio Projects\AutomationExercise\AutomationExercise\ui_searching_product.UserCode.cs"
+				codeline="67"
+				loglvl="Info">
+			</metainfo>
+		</item>
+		<item
+			timeRelativeToTestSuiteStartTime="00:27.407"
+			timeRelativeToTestModuleStartTime="00:27.407"
+			timeWallClock="11:49:12"
+			time="00:27.407"
+			level="Info"
+			category="User">
+			<message>
+				商品[146]: Full Sleeves Top Cherry - Pink
+			</message>
+			<metainfo
+				codefile="C:\Users\mo_ba\Documents\Ranorex\RanorexStudio Projects\AutomationExercise\AutomationExercise\ui_searching_product.UserCode.cs"
+				codeline="67"
+				loglvl="Info">
+			</metainfo>
+		</item>
+		<item
+			timeRelativeToTestSuiteStartTime="00:27.408"
+			timeRelativeToTestModuleStartTime="00:27.408"
+			timeWallClock="11:49:12"
+			time="00:27.408"
+			level="Info"
+			category="User">
+			<message>
+				商品[147]: Printed Off Shoulder Top - White
+			</message>
+			<metainfo
+				codefile="C:\Users\mo_ba\Documents\Ranorex\RanorexStudio Projects\AutomationExercise\AutomationExercise\ui_searching_product.UserCode.cs"
+				codeline="67"
+				loglvl="Info">
+			</metainfo>
+		</item>
+		<item
+			timeRelativeToTestSuiteStartTime="00:27.409"
+			timeRelativeToTestModuleStartTime="00:27.409"
+			timeWallClock="11:49:12"
+			time="00:27.409"
+			level="Info"
+			category="User">
+			<message>
+				&#21830;&#21697;[148]: Sleeves Top and Short - Blue &amp; Pink
+			</message>
+			<metainfo
+				codefile="C:\Users\mo_ba\Documents\Ranorex\RanorexStudio Projects\AutomationExercise\AutomationExercise\ui_searching_product.UserCode.cs"
+				codeline="67"
+				loglvl="Info">
+			</metainfo>
+		</item>
+		<item
+			timeRelativeToTestSuiteStartTime="00:27.410"
+			timeRelativeToTestModuleStartTime="00:27.410"
+			timeWallClock="11:49:12"
+			time="00:27.410"
+			level="Info"
+			category="User">
+			<message>
+				商品[149]: Little Girls Mr. Panda Shirt
+			</message>
+			<metainfo
+				codefile="C:\Users\mo_ba\Documents\Ranorex\RanorexStudio Projects\AutomationExercise\AutomationExercise\ui_searching_product.UserCode.cs"
+				codeline="67"
+				loglvl="Info">
+			</metainfo>
+		</item>
+		<item
+			timeRelativeToTestSuiteStartTime="00:27.412"
+			timeRelativeToTestModuleStartTime="00:27.412"
+			timeWallClock="11:49:12"
+			time="00:27.412"
+			level="Info"
+			category="User">
+			<message>
+				商品[150]: Sleeveless Unicorn Patch Gown - Pink
+			</message>
+			<metainfo
+				codefile="C:\Users\mo_ba\Documents\Ranorex\RanorexStudio Projects\AutomationExercise\AutomationExercise\ui_searching_product.UserCode.cs"
+				codeline="67"
+				loglvl="Info">
+			</metainfo>
+		</item>
+		<item
+			timeRelativeToTestSuiteStartTime="00:27.413"
+			timeRelativeToTestModuleStartTime="00:27.413"
+			timeWallClock="11:49:12"
+			time="00:27.413"
+			level="Info"
+			category="User">
+			<message>
+				商品[151]: Cotton Mull Embroidered Dress
+			</message>
+			<metainfo
+				codefile="C:\Users\mo_ba\Documents\Ranorex\RanorexStudio Projects\AutomationExercise\AutomationExercise\ui_searching_product.UserCode.cs"
+				codeline="67"
+				loglvl="Info">
+			</metainfo>
+		</item>
+		<item
+			timeRelativeToTestSuiteStartTime="00:27.415"
+			timeRelativeToTestModuleStartTime="00:27.415"
+			timeWallClock="11:49:12"
+			time="00:27.415"
+			level="Info"
+			category="User">
+			<message>
+				商品[152]: Blue Cotton Indie Mickey Dress
+			</message>
+			<metainfo
+				codefile="C:\Users\mo_ba\Documents\Ranorex\RanorexStudio Projects\AutomationExercise\AutomationExercise\ui_searching_product.UserCode.cs"
+				codeline="67"
+				loglvl="Info">
+			</metainfo>
+		</item>
+		<item
+			timeRelativeToTestSuiteStartTime="00:27.416"
+			timeRelativeToTestModuleStartTime="00:27.416"
+			timeWallClock="11:49:12"
+			time="00:27.416"
+			level="Info"
+			category="User">
+			<message>
+				商品[153]: Long Maxi Tulle Fancy Dress Up Outfits -Pink
+			</message>
+			<metainfo
+				codefile="C:\Users\mo_ba\Documents\Ranorex\RanorexStudio Projects\AutomationExercise\AutomationExercise\ui_searching_product.UserCode.cs"
+				codeline="67"
+				loglvl="Info">
+			</metainfo>
+		</item>
+		<item
+			timeRelativeToTestSuiteStartTime="00:27.417"
+			timeRelativeToTestModuleStartTime="00:27.417"
+			timeWallClock="11:49:12"
+			time="00:27.417"
+			level="Info"
+			category="User">
+			<message>
+				&#21830;&#21697;[154]: Sleeveless Unicorn Print Fit &amp; Flare Net Dress - Multi
+			</message>
+			<metainfo
+				codefile="C:\Users\mo_ba\Documents\Ranorex\RanorexStudio Projects\AutomationExercise\AutomationExercise\ui_searching_product.UserCode.cs"
+				codeline="67"
+				loglvl="Info">
+			</metainfo>
+		</item>
+		<item
+			timeRelativeToTestSuiteStartTime="00:27.419"
+			timeRelativeToTestModuleStartTime="00:27.419"
+			timeWallClock="11:49:12"
+			time="00:27.419"
+			level="Info"
+			category="User"
+			errimg="images_ui_searc_979935dd\ui_searc_979935dd_3ae5f083_trace.jpg"
+			errthumb="images_ui_searc_979935dd\ui_searc_979935dd_3ae5f083_trace_thumb.jpg">
+			<message>
+				商品[155]: Colour Blocked Shirt – Sky Blue
+			</message>
+			<metainfo
+				codefile="C:\Users\mo_ba\Documents\Ranorex\RanorexStudio Projects\AutomationExercise\AutomationExercise\ui_searching_product.UserCode.cs"
+				codeline="67"
+				loglvl="Info">
+			</metainfo>
+		</item>
+		<item
+			timeRelativeToTestSuiteStartTime="00:27.424"
+			timeRelativeToTestModuleStartTime="00:27.424"
+			timeWallClock="11:49:12"
+			time="00:27.424"
+			level="Info"
+			category="User"
+			errimg="images_ui_searc_979935dd\ui_searc_979935dd_3ae5f083_trace.jpg"
+			errthumb="images_ui_searc_979935dd\ui_searc_979935dd_3ae5f083_trace_thumb.jpg">
+			<message>
+				&#21830;&#21697;[156]: Pure Cotton V-Neck&#32;
+			</message>
+			<metainfo
+				codefile="C:\Users\mo_ba\Documents\Ranorex\RanorexStudio Projects\AutomationExercise\AutomationExercise\ui_searching_product.UserCode.cs"
+				codeline="67"
+				loglvl="Info">
+			</metainfo>
+		</item>
+		<item
+			timeRelativeToTestSuiteStartTime="00:27.428"
+			timeRelativeToTestModuleStartTime="00:27.428"
+			timeWallClock="11:49:12"
+			time="00:27.428"
+			level="Info"
+			category="User"
+			errimg="images_ui_searc_979935dd\ui_searc_979935dd_3ae5f083_trace.jpg"
+			errthumb="images_ui_searc_979935dd\ui_searc_979935dd_3ae5f083_trace_thumb.jpg">
+			<message>
+				商品[157]: Green Side Placket Detail T-Shirt
+			</message>
+			<metainfo
+				codefile="C:\Users\mo_ba\Documents\Ranorex\RanorexStudio Projects\AutomationExercise\AutomationExercise\ui_searching_product.UserCode.cs"
+				codeline="67"
+				loglvl="Info">
+			</metainfo>
+		</item>
+		<item
+			timeRelativeToTestSuiteStartTime="00:27.433"
+			timeRelativeToTestModuleStartTime="00:27.433"
+			timeWallClock="11:49:12"
+			time="00:27.433"
+			level="Info"
+			category="User"
+			errimg="images_ui_searc_979935dd\ui_searc_979935dd_3ae5f083_trace.jpg"
+			errthumb="images_ui_searc_979935dd\ui_searc_979935dd_3ae5f083_trace_thumb.jpg">
+			<message>
+				&#21830;&#21697;[158]: Premium Polo&#32;
+			</message>
+			<metainfo
+				codefile="C:\Users\mo_ba\Documents\Ranorex\RanorexStudio Projects\AutomationExercise\AutomationExercise\ui_searching_product.UserCode.cs"
+				codeline="67"
+				loglvl="Info">
+			</metainfo>
+		</item>
+		<item
+			timeRelativeToTestSuiteStartTime="00:27.438"
+			timeRelativeToTestModuleStartTime="00:27.438"
+			timeWallClock="11:49:12"
+			time="00:27.438"
+			level="Info"
+			category="User"
+			errimg="images_ui_searc_979935dd\ui_searc_979935dd_3ae5f083_trace.jpg"
+			errthumb="images_ui_searc_979935dd\ui_searc_979935dd_3ae5f083_trace_thumb.jpg">
+			<message>
+				商品[159]: Pure Cotton Neon Green Tshirt
+			</message>
+			<metainfo
+				codefile="C:\Users\mo_ba\Documents\Ranorex\RanorexStudio Projects\AutomationExercise\AutomationExercise\ui_searching_product.UserCode.cs"
+				codeline="67"
+				loglvl="Info">
+			</metainfo>
+		</item>
+		<item
+			timeRelativeToTestSuiteStartTime="00:27.442"
+			timeRelativeToTestModuleStartTime="00:27.442"
+			timeWallClock="11:49:12"
+			time="00:27.442"
+			level="Info"
+			category="User"
+			errimg="images_ui_searc_979935dd\ui_searc_979935dd_3ae5f083_trace.jpg"
+			errthumb="images_ui_searc_979935dd\ui_searc_979935dd_3ae5f083_trace_thumb.jpg">
+			<message>
+				商品[160]: Soft Stretch Jeans
+			</message>
+			<metainfo
+				codefile="C:\Users\mo_ba\Documents\Ranorex\RanorexStudio Projects\AutomationExercise\AutomationExercise\ui_searching_product.UserCode.cs"
+				codeline="67"
+				loglvl="Info">
+			</metainfo>
+		</item>
+		<item
+			timeRelativeToTestSuiteStartTime="00:27.444"
+			timeRelativeToTestModuleStartTime="00:27.444"
+			timeWallClock="11:49:12"
+			time="00:27.444"
+			level="Info"
+			category="User"
+			errimg="images_ui_searc_979935dd\ui_searc_979935dd_3ae5f083_trace.jpg"
+			errthumb="images_ui_searc_979935dd\ui_searc_979935dd_3ae5f083_trace_thumb.jpg">
+			<message>
+				商品[161]: Regular Fit Straight Jeans
+			</message>
+			<metainfo
+				codefile="C:\Users\mo_ba\Documents\Ranorex\RanorexStudio Projects\AutomationExercise\AutomationExercise\ui_searching_product.UserCode.cs"
+				codeline="67"
+				loglvl="Info">
+			</metainfo>
+		</item>
+		<item
+			timeRelativeToTestSuiteStartTime="00:27.446"
+			timeRelativeToTestModuleStartTime="00:27.446"
+			timeWallClock="11:49:12"
+			time="00:27.446"
+			level="Info"
+			category="User"
+			errimg="images_ui_searc_979935dd\ui_searc_979935dd_3ae5f083_trace.jpg"
+			errthumb="images_ui_searc_979935dd\ui_searc_979935dd_3ae5f083_trace_thumb.jpg">
+			<message>
+				商品[162]: Grunt Blue Slim Fit Jeans
+			</message>
+			<metainfo
+				codefile="C:\Users\mo_ba\Documents\Ranorex\RanorexStudio Projects\AutomationExercise\AutomationExercise\ui_searching_product.UserCode.cs"
+				codeline="67"
+				loglvl="Info">
+			</metainfo>
+		</item>
+		<item
+			timeRelativeToTestSuiteStartTime="00:27.447"
+			timeRelativeToTestModuleStartTime="00:27.447"
+			timeWallClock="11:49:12"
+			time="00:27.447"
+			level="Info"
+			category="User"
+			errimg="images_ui_searc_979935dd\ui_searc_979935dd_3ae5f083_trace.jpg"
+			errthumb="images_ui_searc_979935dd\ui_searc_979935dd_3ae5f083_trace_thumb.jpg">
+			<message>
+				商品[163]: Rose Pink Embroidered Maxi Dress
+			</message>
+			<metainfo
+				codefile="C:\Users\mo_ba\Documents\Ranorex\RanorexStudio Projects\AutomationExercise\AutomationExercise\ui_searching_product.UserCode.cs"
+				codeline="67"
+				loglvl="Info">
+			</metainfo>
+		</item>
+		<item
+			timeRelativeToTestSuiteStartTime="00:27.448"
+			timeRelativeToTestModuleStartTime="00:27.448"
+			timeWallClock="11:49:12"
+			time="00:27.448"
+			level="Info"
+			category="User"
+			errimg="images_ui_searc_979935dd\ui_searc_979935dd_3ae5f083_trace.jpg"
+			errthumb="images_ui_searc_979935dd\ui_searc_979935dd_3ae5f083_trace_thumb.jpg">
+			<message>
+				商品[164]: Cotton Silk Hand Block Print Saree
+			</message>
+			<metainfo
+				codefile="C:\Users\mo_ba\Documents\Ranorex\RanorexStudio Projects\AutomationExercise\AutomationExercise\ui_searching_product.UserCode.cs"
+				codeline="67"
+				loglvl="Info">
+			</metainfo>
+		</item>
+		<item
+			timeRelativeToTestSuiteStartTime="00:27.450"
+			timeRelativeToTestModuleStartTime="00:27.450"
+			timeWallClock="11:49:12"
+			time="00:27.450"
+			level="Info"
+			category="User"
+			errimg="images_ui_searc_979935dd\ui_searc_979935dd_3ae5f083_trace.jpg"
+			errthumb="images_ui_searc_979935dd\ui_searc_979935dd_3ae5f083_trace_thumb.jpg">
+			<message>
+				商品[165]: Rust Red Linen Saree
+			</message>
+			<metainfo
+				codefile="C:\Users\mo_ba\Documents\Ranorex\RanorexStudio Projects\AutomationExercise\AutomationExercise\ui_searching_product.UserCode.cs"
+				codeline="67"
+				loglvl="Info">
+			</metainfo>
+		</item>
+		<item
+			timeRelativeToTestSuiteStartTime="00:27.451"
+			timeRelativeToTestModuleStartTime="00:27.451"
+			timeWallClock="11:49:12"
+			time="00:27.451"
+			level="Info"
+			category="User"
+			errimg="images_ui_searc_979935dd\ui_searc_979935dd_3ae5f083_trace.jpg"
+			errthumb="images_ui_searc_979935dd\ui_searc_979935dd_3ae5f083_trace_thumb.jpg">
+			<message>
+				商品[166]: Beautiful Peacock Blue Cotton Linen Saree
+			</message>
+			<metainfo
+				codefile="C:\Users\mo_ba\Documents\Ranorex\RanorexStudio Projects\AutomationExercise\AutomationExercise\ui_searching_product.UserCode.cs"
+				codeline="67"
+				loglvl="Info">
+			</metainfo>
+		</item>
+		<item
+			timeRelativeToTestSuiteStartTime="00:27.452"
+			timeRelativeToTestModuleStartTime="00:27.452"
+			timeWallClock="11:49:12"
+			time="00:27.452"
+			level="Info"
+			category="User"
+			errimg="images_ui_searc_979935dd\ui_searc_979935dd_3ae5f083_trace.jpg"
+			errthumb="images_ui_searc_979935dd\ui_searc_979935dd_3ae5f083_trace_thumb.jpg">
+			<message>
+				商品[167]: Lace Top For Women
+			</message>
+			<metainfo
+				codefile="C:\Users\mo_ba\Documents\Ranorex\RanorexStudio Projects\AutomationExercise\AutomationExercise\ui_searching_product.UserCode.cs"
+				codeline="67"
+				loglvl="Info">
+			</metainfo>
+		</item>
+		<item
+			timeRelativeToTestSuiteStartTime="00:27.455"
+			timeRelativeToTestModuleStartTime="00:27.455"
+			timeWallClock="11:49:12"
+			time="00:27.455"
+			level="Info"
+			category="User"
+			errimg="images_ui_searc_979935dd\ui_searc_979935dd_3ae5f083_trace.jpg"
+			errthumb="images_ui_searc_979935dd\ui_searc_979935dd_3ae5f083_trace_thumb.jpg">
+			<message>
+				商品[168]: GRAPHIC DESIGN MEN T SHIRT - BLUE
+			</message>
+			<metainfo
+				codefile="C:\Users\mo_ba\Documents\Ranorex\RanorexStudio Projects\AutomationExercise\AutomationExercise\ui_searching_product.UserCode.cs"
+				codeline="67"
+				loglvl="Info">
+			</metainfo>
+		</item>
+		<item
+			timeRelativeToTestSuiteStartTime="00:27.459"
+			timeRelativeToTestModuleStartTime="00:27.459"
+			timeWallClock="11:49:12"
+			time="00:27.459"
+			level="Info"
+			category="User"
+			errimg="images_ui_searc_979935dd\ui_searc_979935dd_3ae5f083_trace.jpg"
+			errthumb="images_ui_searc_979935dd\ui_searc_979935dd_3ae5f083_trace_thumb.jpg">
+			<message>
+				商品[169]: Blue Top
+			</message>
+			<metainfo
+				codefile="C:\Users\mo_ba\Documents\Ranorex\RanorexStudio Projects\AutomationExercise\AutomationExercise\ui_searching_product.UserCode.cs"
+				codeline="67"
+				loglvl="Info">
+			</metainfo>
+		</item>
+		<item
+			timeRelativeToTestSuiteStartTime="00:27.461"
+			timeRelativeToTestModuleStartTime="00:27.461"
+			timeWallClock="11:49:12"
+			time="00:27.461"
+			level="Info"
+			category="User"
+			errimg="images_ui_searc_979935dd\ui_searc_979935dd_3ae5f083_trace.jpg"
+			errthumb="images_ui_searc_979935dd\ui_searc_979935dd_3ae5f083_trace_thumb.jpg">
+			<message>
+				商品[170]: Men Tshirt
+			</message>
+			<metainfo
+				codefile="C:\Users\mo_ba\Documents\Ranorex\RanorexStudio Projects\AutomationExercise\AutomationExercise\ui_searching_product.UserCode.cs"
+				codeline="67"
+				loglvl="Info">
+			</metainfo>
+		</item>
+		<item
+			timeRelativeToTestSuiteStartTime="00:27.463"
+			timeRelativeToTestModuleStartTime="00:27.463"
+			timeWallClock="11:49:12"
+			time="00:27.463"
+			level="Info"
+			category="User"
+			errimg="images_ui_searc_979935dd\ui_searc_979935dd_3ae5f083_trace.jpg"
+			errthumb="images_ui_searc_979935dd\ui_searc_979935dd_3ae5f083_trace_thumb.jpg">
+			<message>
+				商品[171]: Rs. 1000
+			</message>
+			<metainfo
+				codefile="C:\Users\mo_ba\Documents\Ranorex\RanorexStudio Projects\AutomationExercise\AutomationExercise\ui_searching_product.UserCode.cs"
+				codeline="67"
+				loglvl="Info">
+			</metainfo>
+		</item>
+		<item
+			timeRelativeToTestSuiteStartTime="00:27.464"
+			timeRelativeToTestModuleStartTime="00:27.464"
+			timeWallClock="11:49:12"
+			time="00:27.464"
+			level="Info"
+			category="User"
+			errimg="images_ui_searc_979935dd\ui_searc_979935dd_3ae5f083_trace.jpg"
+			errthumb="images_ui_searc_979935dd\ui_searc_979935dd_3ae5f083_trace_thumb.jpg">
+			<message>
+				商品[172]: Stylish Dress
+			</message>
+			<metainfo
+				codefile="C:\Users\mo_ba\Documents\Ranorex\RanorexStudio Projects\AutomationExercise\AutomationExercise\ui_searching_product.UserCode.cs"
+				codeline="67"
+				loglvl="Info">
+			</metainfo>
+		</item>
+		<item
+			timeRelativeToTestSuiteStartTime="00:27.466"
+			timeRelativeToTestModuleStartTime="00:27.466"
+			timeWallClock="11:49:12"
+			time="00:27.466"
+			level="Info"
+			category="User"
+			errimg="images_ui_searc_979935dd\ui_searc_979935dd_3ae5f083_trace.jpg"
+			errthumb="images_ui_searc_979935dd\ui_searc_979935dd_3ae5f083_trace_thumb.jpg">
+			<message>
+				商品[173]: Winter Top
+			</message>
+			<metainfo
+				codefile="C:\Users\mo_ba\Documents\Ranorex\RanorexStudio Projects\AutomationExercise\AutomationExercise\ui_searching_product.UserCode.cs"
+				codeline="67"
+				loglvl="Info">
+			</metainfo>
+		</item>
+		<item
+			timeRelativeToTestSuiteStartTime="00:27.467"
+			timeRelativeToTestModuleStartTime="00:27.467"
+			timeWallClock="11:49:12"
+			time="00:27.467"
+			level="Info"
+			category="User"
+			errimg="images_ui_searc_979935dd\ui_searc_979935dd_3ae5f083_trace.jpg"
+			errthumb="images_ui_searc_979935dd\ui_searc_979935dd_3ae5f083_trace_thumb.jpg">
+			<message>
+				商品[174]: Summer White Top
+			</message>
+			<metainfo
+				codefile="C:\Users\mo_ba\Documents\Ranorex\RanorexStudio Projects\AutomationExercise\AutomationExercise\ui_searching_product.UserCode.cs"
+				codeline="67"
+				loglvl="Info">
+			</metainfo>
+		</item>
+		<item
+			timeRelativeToTestSuiteStartTime="00:27.470"
+			timeRelativeToTestModuleStartTime="00:27.470"
+			timeWallClock="11:49:12"
+			time="00:27.470"
+			level="Failure"
+			category="Validation"
+			errimg="images_ui_searc_979935dd\ui_searc_979935dd_3ae5f083_trace.jpg"
+			errthumb="images_ui_searc_979935dd\ui_searc_979935dd_3ae5f083_trace_thumb.jpg">
+			<message>
+				Objects are not equal (actual='174', expected='14').
+			</message>
+			<metainfo
+				codefile="C:\Users\mo_ba\Documents\Ranorex\RanorexStudio Projects\AutomationExercise\AutomationExercise\ui_searching_product.UserCode.cs"
+				codeline="75"
+				loglvl="Failure">
+			</metainfo>
+		</item>
+		<item
+			timeRelativeToTestSuiteStartTime="00:27.478"
+			timeRelativeToTestModuleStartTime="00:27.478"
+			timeWallClock="11:49:12"
+			time="00:27.478"
+			level="Error"
+			category="Module"
+			errimg="images_ui_searc_979935dd\ui_searc_979935dd_71a083c8_trace.jpg"
+			errthumb="images_ui_searc_979935dd\ui_searc_979935dd_71a083c8_trace_thumb.jpg">
+			<message>
+				Module execution was aborted because a validation step has failed. Objects are not equal (actual='174', expected='14').
+			</message>
+			<metainfo
+				stacktrace="   場所 Ranorex.Validate.ThrowValidationException(RepoItemInfo itemInfo, ValidationException ex)
+   場所 Ranorex.Validate.IsTrueInternal(Boolean condition, String message, Options options, RepoItemInfo itemInfo, RanorexException innerException)
+   場所 Ranorex.Validate.AreEqual(Object actual, Object expected, String message, Options options)
+   場所 Ranorex.Validate.AreEqual(Object actual, Object expected)
+   場所 AutomationExercise.ui_searching_product.ValidateUiProductCount() 場所 C:\Users\mo_ba\Documents\Ranorex\RanorexStudio Projects\AutomationExercise\AutomationExercise\ui_searching_product.UserCode.cs:行 75
+   場所 AutomationExercise.ui_searching_product.Ranorex.Core.Testing.ITestModule.Run() 場所 C:\Users\mo_ba\Documents\Ranorex\RanorexStudio Projects\AutomationExercise\AutomationExercise\ui_searching_product.cs:行 117
+   場所 Ranorex.Core.Testing.TestModuleLeaf.RunInternal(DataContext parentDataContext, Int32 iteration, Int32 iterationCount, Boolean skipIteration)"
+				codefile="C:\Users\mo_ba\Documents\Ranorex\RanorexStudio Projects\AutomationExercise\AutomationExercise\ui_searching_product.UserCode.cs"
+				codeline="75"
+				loglvl="Error">
+			</metainfo>
+		</item>
+	</activity>
+</report>

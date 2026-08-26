@@ -1,0 +1,69 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<recordtable
+embeddedrepository="False"
+id="f6231b86-3610-49f9-9148-3b63ecdc4c86"
+mode="Desktop">
+	<repeatcount>
+		1
+	</repeatcount>
+	<turbomode>
+		False
+	</turbomode>
+	<genreport>
+		True
+	</genreport>
+	<speedfactor>
+		1
+	</speedfactor>
+	<useDefaultItemLogging>
+		True
+	</useDefaultItemLogging>
+	<codegen
+	classname="OpenBrowser"
+	namespace="AutomationExercise.Common">
+	</codegen>
+	<variables>
+	</variables>
+	<recorditems>
+		<openwebsiterecorditem
+		args=""
+		browser="chrome"
+		clearcache="False"
+		clearcodecache="False"
+		clearcookies="False"
+		clearserviceworker="False"
+		enabled="True"
+		incognito="False"
+		instrument="True"
+		killexisting="False"
+		maximized="False"
+		optional="False">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<url>
+				https://www.automationexercise.com/
+			</url>
+		</openwebsiterecorditem>
+	</recorditems>
+	<repository
+	id="c0857d08-b99b-4d55-b197-ffd12d480039"
+	name="AutomationExerciseRepository"
+	relativepath="..\AutomationExerciseRepository.rxrep">
+		<codegen
+		classname="AutomationExerciseRepository"
+		namespace="AutomationExercise">
+		</codegen>
+		<rootfolder
+		id="198c1291-c4f8-440e-975f-c673da20c282"
+		name="_rootdummy_">
+		</rootfolder>
+	</repository>
+	<usercodefile
+	lang="CSharp">
+		OpenBrowser.UserCode.cs
+	</usercodefile>
+	<references>
+	</references>
+</recordtable>

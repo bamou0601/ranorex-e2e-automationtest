@@ -1,0 +1,866 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<report
+	progress="">
+	<activity
+		result="Failed"
+		duration="13.82s"
+		durationms="13818"
+		type="root"
+		rid="3e72e2810f000c0"
+		totalerrorcount="1"
+		totalwarningcount="2"
+		totalsuccesstestcasecount="0"
+		totalfailedtestcasecount="1"
+		totalblockedtestcasecount="0"
+		childsuccesscount="0"
+		childfailedcount="1"
+		childblockedcount="0"
+		totalsuccesscount="0"
+		totalfailedcount="1"
+		totalblockedcount="0"
+		totalmaintenancemodecount="0"
+		user="mo_ba"
+		rxversion="12.3.0.0"
+		host="01-0505716"
+		osversion="Windows 11 64bit"
+		runtimeversion="4.0.30319.42000"
+		procarch="32bit"
+		oslanguage="ja-JP"
+		dtnlanguage="ja-JP"
+		screenresolution="1920x1200"
+		timestamp="2026/08/25 17:15:14"
+		timestampiso="2026-08-25T08:15:14"
+		endtime="2026/08/25 17:15:28"
+		timeoutfactor="1"
+		runid=""
+		sutversion="">
+		<detail>
+			Ranorex Testscript
+		</detail>
+		<activity
+			result="Failed"
+			duration="11.08s"
+			durationms="11079"
+			type="test-suite"
+			rid="19b75713f840516e"
+			totalerrorcount="1"
+			totalwarningcount="2"
+			totalsuccesstestcasecount="0"
+			totalfailedtestcasecount="1"
+			totalblockedtestcasecount="0"
+			childsuccesscount="0"
+			childfailedcount="1"
+			childblockedcount="0"
+			totalsuccesscount="0"
+			totalfailedcount="1"
+			totalblockedcount="0"
+			totalmaintenancemodecount="0"
+			testsuitename="AutomationExercise"
+			headertext="AutomationExercise"
+			runconfigname="TestRun"
+			runlabel=""
+			reportdescription=""
+			filtersuccess="True"
+			filterfailed="True"
+			filterblocked="True">
+			<params>
+			</params>
+			<activity
+				result="Failed"
+				duration="11.03s"
+				durationms="11031"
+				type="test-case"
+				rid="f709cfc7c0d942"
+				totalerrorcount="1"
+				totalwarningcount="2"
+				totalsuccesstestcasecount="0"
+				totalfailedtestcasecount="1"
+				totalblockedtestcasecount="0"
+				childsuccesscount="3"
+				childfailedcount="1"
+				childblockedcount="0"
+				totalsuccesscount="0"
+				totalfailedcount="1"
+				totalblockedcount="0"
+				totalmaintenancemodecount="0"
+				testcontainername="TC01_API_UI_ProductSearch"
+				testcontainerid="f7c9d2b7-427e-436f-80cd-b489c93664cc"
+				headertext="TC01_API_UI_ProductSearch"
+				displayName="TC01_API_UI_ProductSearch"
+				iteration="1"
+				activity-exectype="execute"
+				conditionstate="none">
+				<activity
+					result="Success"
+					duration="447ms"
+					durationms="447"
+					type="setup-container"
+					rid="2d12142acf543c04"
+					totalerrorcount="0"
+					totalwarningcount="0"
+					totalsuccesstestcasecount="0"
+					totalfailedtestcasecount="0"
+					totalblockedtestcasecount="0"
+					childsuccesscount="1"
+					childfailedcount="0"
+					childblockedcount="0"
+					totalsuccesscount="0"
+					totalfailedcount="0"
+					totalblockedcount="0"
+					totalmaintenancemodecount="0">
+					<activity
+						result="Success"
+						duration="434ms"
+						durationms="434"
+						type="test-module"
+						rid="95e8bbd0149998c"
+						totalerrorcount="0"
+						totalwarningcount="0"
+						totalsuccesstestcasecount="0"
+						totalfailedtestcasecount="0"
+						totalblockedtestcasecount="0"
+						childsuccesscount="0"
+						childfailedcount="0"
+						childblockedcount="0"
+						totalsuccesscount="0"
+						totalfailedcount="0"
+						totalblockedcount="0"
+						totalmaintenancemodecount="0"
+						modulename="OpenBrowser"
+						displayName="OpenBrowser"
+						moduleid="f6231b86-3610-49f9-9148-3b63ecdc4c86"
+						moduletype="Recording"
+						iteration="1"
+						activity-exectype="execute"
+						testentry-activity-type="testmodule">
+						<varbindings>
+						</varbindings>
+						<item
+							timeRelativeToTestSuiteStartTime="00:00.053"
+							timeRelativeToTestModuleStartTime="00:00.009"
+							timeWallClock="17:15:17"
+							time="00:00.053"
+							level="Info"
+							category="Website">
+							<message>
+								Opening web site 'https://www.automationexercise.com/' in normal mode.
+							</message>
+							<metainfo
+								itemindex="0"
+								codefile="C:\Users\mo_ba\Documents\Ranorex\RanorexStudio Projects\AutomationExercise\AutomationExercise\OpenBrowser.cs"
+								codeline="82"
+								loglvl="Info">
+							</metainfo>
+						</item>
+					</activity>
+				</activity>
+				<activity
+					result="Success"
+					duration="1.44s"
+					durationms="1444"
+					type="test-module"
+					rid="b93a2d59b4374cb"
+					totalerrorcount="0"
+					totalwarningcount="1"
+					totalsuccesstestcasecount="0"
+					totalfailedtestcasecount="0"
+					totalblockedtestcasecount="0"
+					childsuccesscount="0"
+					childfailedcount="0"
+					childblockedcount="0"
+					totalsuccesscount="0"
+					totalfailedcount="0"
+					totalblockedcount="0"
+					totalmaintenancemodecount="0"
+					modulename="Api_searching_product"
+					displayName="Api_searching_product"
+					moduleid="8b6ce173-9cef-4bb7-94a7-f43981a6d60d"
+					moduletype="Recording"
+					iteration="1"
+					activity-exectype="execute"
+					testentry-activity-type="testmodule">
+					<varbindings>
+					</varbindings>
+					<item
+						timeRelativeToTestSuiteStartTime="00:00.482"
+						timeRelativeToTestModuleStartTime="00:00.001"
+						timeWallClock="17:15:17"
+						time="00:00.482"
+						level="Warn"
+						category="Data">
+						<message>
+							The following module variables are not bound to a data column:<br/>apiProductName, searchProduct, apiProductCount
+						</message>
+						<metainfo
+							loglvl="Warn">
+						</metainfo>
+					</item>
+					<item
+						timeRelativeToTestSuiteStartTime="00:01.478"
+						timeRelativeToTestModuleStartTime="00:00.997"
+						timeWallClock="17:15:18"
+						time="00:01.478"
+						level="Info"
+						category="User">
+						<message>
+							HTTP Status: 200
+						</message>
+						<metainfo
+							codefile="C:\Users\mo_ba\Documents\Ranorex\RanorexStudio Projects\AutomationExercise\AutomationExercise\api_searching_product.UserCode.cs"
+							codeline="97"
+							loglvl="Info">
+						</metainfo>
+					</item>
+					<item
+						timeRelativeToTestSuiteStartTime="00:01.522"
+						timeRelativeToTestModuleStartTime="00:01.040"
+						timeWallClock="17:15:18"
+						time="00:01.522"
+						level="Info"
+						category="User">
+						<message>
+							API Response: {&quot;responseCode&quot;: 200, &quot;products&quot;: [{&quot;id&quot;: 1, &quot;name&quot;: &quot;Blue Top&quot;, &quot;price&quot;: &quot;Rs. 500&quot;, &quot;brand&quot;: &quot;Polo&quot;, &quot;category&quot;: {&quot;usertype&quot;: {&quot;usertype&quot;: &quot;Women&quot;}, &quot;category&quot;: &quot;Tops&quot;}}, {&quot;id&quot;: 5, &quot;name&quot;: &quot;Winter Top&quot;, &quot;price&quot;: &quot;Rs. 600&quot;, &quot;brand&quot;: &quot;Mast &amp; Harbour&quot;, &quot;category&quot;: {&quot;usertype&quot;: {&quot;usertype&quot;: &quot;Women&quot;}, &quot;category&quot;: &quot;Tops&quot;}}, {&quot;id&quot;: 6, &quot;name&quot;: &quot;Summer White Top&quot;, &quot;price&quot;: &quot;Rs. 400&quot;, &quot;brand&quot;: &quot;H&amp;M&quot;, &quot;category&quot;: {&quot;usertype&quot;: {&quot;usertype&quot;: &quot;Women&quot;}, &quot;category&quot;: &quot;Tops&quot;}}, {&quot;id&quot;: 7, &quot;name&quot;: &quot;Madame Top For Women&quot;, &quot;price&quot;: &quot;Rs. 1000&quot;, &quot;brand&quot;: &quot;Madame&quot;, &quot;category&quot;: {&quot;usertype&quot;: {&quot;usertype&quot;: &quot;Women&quot;}, &quot;category&quot;: &quot;Tops&quot;}}, {&quot;id&quot;: 8, &quot;name&quot;: &quot;Fancy Green Top&quot;, &quot;price&quot;: &quot;Rs. 700&quot;, &quot;brand&quot;: &quot;Polo&quot;, &quot;category&quot;: {&quot;usertype&quot;: {&quot;usertype&quot;: &quot;Women&quot;}, &quot;category&quot;: &quot;Tops&quot;}}, {&quot;id&quot;: 11, &quot;name&quot;: &quot;Sleeves Printed Top - White&quot;, &quot;price&quot;: &quot;Rs. 499&quot;, &quot;brand&quot;: &quot;Babyhug&quot;, &quot;category&quot;: {&quot;usertype&quot;: {&quot;usertype&quot;: &quot;Kids&quot;}, &quot;category&quot;: &quot;Tops &amp; Shirts&quot;}}, {&quot;id&quot;: 12, &quot;name&quot;: &quot;Half Sleeves Top Schiffli Detailing - Pink&quot;, &quot;price&quot;: &quot;Rs. 359&quot;, &quot;brand&quot;: &quot;Babyhug&quot;, &quot;category&quot;: {&quot;usertype&quot;: {&quot;usertype&quot;: &quot;Kids&quot;}, &quot;category&quot;: &quot;Tops &amp; Shirts&quot;}}, {&quot;id&quot;: 13, &quot;name&quot;: &quot;Frozen Tops For Kids&quot;, &quot;price&quot;: &quot;Rs. 278&quot;, &quot;brand&quot;: &quot;Allen Solly Junior&quot;, &quot;category&quot;: {&quot;usertype&quot;: {&quot;usertype&quot;: &quot;Kids&quot;}, &quot;category&quot;: &quot;Tops &amp; Shirts&quot;}}, {&quot;id&quot;: 14, &quot;name&quot;: &quot;Full Sleeves Top Cherry - Pink&quot;, &quot;price&quot;: &quot;Rs. 679&quot;, &quot;brand&quot;: &quot;Kookie Kids&quot;, &quot;category&quot;: {&quot;usertype&quot;: {&quot;usertype&quot;: &quot;Kids&quot;}, &quot;category&quot;: &quot;Tops &amp; Shirts&quot;}}, {&quot;id&quot;: 15, &quot;name&quot;: &quot;Printed Off Shoulder Top - White&quot;, &quot;price&quot;: &quot;Rs. 315&quot;, &quot;brand&quot;: &quot;Babyhug&quot;, &quot;category&quot;: {&quot;usertype&quot;: {&quot;usertype&quot;: &quot;Kids&quot;}, &quot;category&quot;: &quot;Tops &amp; Shirts&quot;}}, {&quot;id&quot;: 16, &quot;name&quot;: &quot;Sleeves Top and Short - Blue &amp; Pink&quot;, &quot;price&quot;: &quot;Rs. 478&quot;, &quot;brand&quot;: &quot;Babyhug&quot;, &quot;category&quot;: {&quot;usertype&quot;: {&quot;usertype&quot;: &quot;Kids&quot;}, &quot;category&quot;: &quot;Dress&quot;}}, {&quot;id&quot;: 18, &quot;name&quot;: &quot;Little Girls Mr. Panda Shirt&quot;, &quot;price&quot;: &quot;Rs. 1200&quot;, &quot;brand&quot;: &quot;Kookie Kids&quot;, &quot;category&quot;: {&quot;usertype&quot;: {&quot;usertype&quot;: &quot;Kids&quot;}, &quot;category&quot;: &quot;Tops &amp; Shirts&quot;}}, {&quot;id&quot;: 24, &quot;name&quot;: &quot;Colour Blocked Shirt \u2013 Sky Blue&quot;, &quot;price&quot;: &quot;Rs. 849&quot;, &quot;brand&quot;: &quot;Allen Solly Junior&quot;, &quot;category&quot;: {&quot;usertype&quot;: {&quot;usertype&quot;: &quot;Kids&quot;}, &quot;category&quot;: &quot;Tops &amp; Shirts&quot;}}, {&quot;id&quot;: 42, &quot;name&quot;: &quot;Lace Top For Women&quot;, &quot;price&quot;: &quot;Rs. 1400&quot;, &quot;brand&quot;: &quot;Mast &amp; Harbour&quot;, &quot;category&quot;: {&quot;usertype&quot;: {&quot;usertype&quot;: &quot;Women&quot;}, &quot;category&quot;: &quot;Tops&quot;}}]}
+						</message>
+						<metainfo
+							codefile="C:\Users\mo_ba\Documents\Ranorex\RanorexStudio Projects\AutomationExercise\AutomationExercise\api_searching_product.UserCode.cs"
+							codeline="103"
+							loglvl="Info">
+						</metainfo>
+					</item>
+					<item
+						timeRelativeToTestSuiteStartTime="00:01.572"
+						timeRelativeToTestModuleStartTime="00:01.091"
+						timeWallClock="17:15:19"
+						time="00:01.572"
+						level="Success"
+						category="Validation">
+						<message>
+							Objects are equal (actual='200', expected='200').
+						</message>
+						<metainfo
+							codefile="C:\Users\mo_ba\Documents\Ranorex\RanorexStudio Projects\AutomationExercise\AutomationExercise\api_searching_product.UserCode.cs"
+							codeline="108"
+							loglvl="Success">
+						</metainfo>
+					</item>
+					<item
+						timeRelativeToTestSuiteStartTime="00:01.667"
+						timeRelativeToTestModuleStartTime="00:01.186"
+						timeWallClock="17:15:19"
+						time="00:01.667"
+						level="Success"
+						category="Validation">
+						<message>
+							Objects are equal (actual='200', expected='200').
+						</message>
+						<metainfo
+							codefile="C:\Users\mo_ba\Documents\Ranorex\RanorexStudio Projects\AutomationExercise\AutomationExercise\api_searching_product.UserCode.cs"
+							codeline="123"
+							loglvl="Success">
+						</metainfo>
+					</item>
+					<item
+						timeRelativeToTestSuiteStartTime="00:01.720"
+						timeRelativeToTestModuleStartTime="00:01.238"
+						timeWallClock="17:15:19"
+						time="00:01.720"
+						level="Success"
+						category="Validation">
+						<message>
+							Condition is true.
+						</message>
+						<metainfo
+							codefile="C:\Users\mo_ba\Documents\Ranorex\RanorexStudio Projects\AutomationExercise\AutomationExercise\api_searching_product.UserCode.cs"
+							codeline="129"
+							loglvl="Success">
+						</metainfo>
+					</item>
+					<item
+						timeRelativeToTestSuiteStartTime="00:01.772"
+						timeRelativeToTestModuleStartTime="00:01.291"
+						timeWallClock="17:15:19"
+						time="00:01.772"
+						level="Info"
+						category="User">
+						<message>
+							検索キーワード: top
+						</message>
+						<metainfo
+							codefile="C:\Users\mo_ba\Documents\Ranorex\RanorexStudio Projects\AutomationExercise\AutomationExercise\api_searching_product.UserCode.cs"
+							codeline="140"
+							loglvl="Info">
+						</metainfo>
+					</item>
+					<item
+						timeRelativeToTestSuiteStartTime="00:01.821"
+						timeRelativeToTestModuleStartTime="00:01.340"
+						timeWallClock="17:15:19"
+						time="00:01.821"
+						level="Info"
+						category="User">
+						<message>
+							API取得商品名: Blue Top
+						</message>
+						<metainfo
+							codefile="C:\Users\mo_ba\Documents\Ranorex\RanorexStudio Projects\AutomationExercise\AutomationExercise\api_searching_product.UserCode.cs"
+							codeline="144"
+							loglvl="Info">
+						</metainfo>
+					</item>
+					<item
+						timeRelativeToTestSuiteStartTime="00:01.869"
+						timeRelativeToTestModuleStartTime="00:01.387"
+						timeWallClock="17:15:19"
+						time="00:01.869"
+						level="Info"
+						category="User">
+						<message>
+							API取得商品数: 14
+						</message>
+						<metainfo
+							codefile="C:\Users\mo_ba\Documents\Ranorex\RanorexStudio Projects\AutomationExercise\AutomationExercise\api_searching_product.UserCode.cs"
+							codeline="148"
+							loglvl="Info">
+						</metainfo>
+					</item>
+				</activity>
+				<activity
+					result="Failed"
+					duration="8.89s"
+					durationms="8888"
+					type="test-module"
+					rid="25a56e8d1bb270a5"
+					totalerrorcount="1"
+					totalwarningcount="1"
+					totalsuccesstestcasecount="0"
+					totalfailedtestcasecount="0"
+					totalblockedtestcasecount="0"
+					childsuccesscount="0"
+					childfailedcount="0"
+					childblockedcount="0"
+					totalsuccesscount="0"
+					totalfailedcount="0"
+					totalblockedcount="0"
+					totalmaintenancemodecount="0"
+					modulename="ui_searching_product"
+					displayName="ui_searching_product"
+					moduleid="80f826fc-aac1-46bb-b1a4-39e06eeb5d60"
+					moduletype="Recording"
+					iteration="1"
+					activity-exectype="execute"
+					testentry-activity-type="testmodule">
+					<errormessage>
+						Objects are not equal (actual='13', expected='14').
+					</errormessage>
+					<varbindings>
+					</varbindings>
+					<item
+						timeRelativeToTestSuiteStartTime="00:01.927"
+						timeRelativeToTestModuleStartTime="00:00.000"
+						timeWallClock="17:15:19"
+						time="00:01.927"
+						level="Warn"
+						category="Data">
+						<message>
+							The following module variables are not bound to a data column:<br/>search_content, apiProductCount
+						</message>
+						<metainfo
+							loglvl="Warn">
+						</metainfo>
+					</item>
+					<item
+						timeRelativeToTestSuiteStartTime="00:01.971"
+						timeRelativeToTestModuleStartTime="00:00.045"
+						timeWallClock="17:15:19"
+						time="00:01.971"
+						level="Info"
+						category="Website">
+						<message>
+							Opening web site 'https://www.automationexercise.com/' in normal mode.
+						</message>
+						<metainfo
+							itemindex="0"
+							codefile="C:\Users\mo_ba\Documents\Ranorex\RanorexStudio Projects\AutomationExercise\AutomationExercise\ui_searching_product.cs"
+							codeline="108"
+							loglvl="Info">
+						</metainfo>
+					</item>
+					<item
+						timeRelativeToTestSuiteStartTime="00:02.047"
+						timeRelativeToTestModuleStartTime="00:00.121"
+						timeWallClock="17:15:19"
+						time="00:02.047"
+						level="Info"
+						category="Mouse">
+						<message>
+							Mouse Left Click item 'ApplicationUnderTest.Products_Menu' at Center.
+						</message>
+						<metainfo
+							type="repoitem"
+							path="/dom[@domain='www.automationexercise.com']//header[#'header']/div/div/div/div[2]/?/?/ul/li[2]/a[@innertext=' Products']"
+							itempath=".//header[#'header']/div/div/div/div[2]/?/?/ul/li[2]/a[@innertext=' Products']"
+							fullname="AutomationExerciseRepository.ApplicationUnderTest.Products_Menu"
+							id="ece49e18a2974a30bf9ef0faa070e73a"
+							timeout="60000"
+							codefile="C:\Users\mo_ba\Documents\Ranorex\RanorexStudio Projects\AutomationExercise\AutomationExercise\ui_searching_product.cs"
+							codeline="112"
+							itemindex="1"
+							loglvl="Info">
+						</metainfo>
+					</item>
+					<item
+						timeRelativeToTestSuiteStartTime="00:05.509"
+						timeRelativeToTestModuleStartTime="00:03.583"
+						timeWallClock="17:15:22"
+						time="00:05.509"
+						level="Info"
+						category="Delay">
+						<message>
+							Waiting for 300ms.
+						</message>
+						<metainfo
+							itemindex="2"
+							codefile="C:\Users\mo_ba\Documents\Ranorex\RanorexStudio Projects\AutomationExercise\AutomationExercise\ui_searching_product.cs"
+							codeline="116"
+							loglvl="Info">
+						</metainfo>
+					</item>
+					<item
+						timeRelativeToTestSuiteStartTime="00:05.855"
+						timeRelativeToTestModuleStartTime="00:03.929"
+						timeWallClock="17:15:23"
+						time="00:05.855"
+						level="Info"
+						category="Set value">
+						<message>
+							Setting attribute Value to '$search_content' on item 'ApplicationUnderTest.SearchProduct'.
+						</message>
+						<metainfo
+							type="repoitem"
+							path="/dom[@domain='www.automationexercise.com']//input[#'search_product']"
+							itempath=".//input[#'search_product']"
+							fullname="AutomationExerciseRepository.ApplicationUnderTest.SearchProduct"
+							id="fd0b7cc1fc3f4bebaa4be221a80d531f"
+							timeout="60000"
+							codefile="C:\Users\mo_ba\Documents\Ranorex\RanorexStudio Projects\AutomationExercise\AutomationExercise\ui_searching_product.cs"
+							codeline="119"
+							itemindex="3"
+							loglvl="Info">
+						</metainfo>
+					</item>
+					<item
+						timeRelativeToTestSuiteStartTime="00:06.431"
+						timeRelativeToTestModuleStartTime="00:04.504"
+						timeWallClock="17:15:23"
+						time="00:06.431"
+						level="Info"
+						category="Mouse">
+						<message>
+							Mouse Left Click item 'ApplicationUnderTest.SubmitSearch' at Center.
+						</message>
+						<metainfo
+							type="repoitem"
+							path="/dom[@domain='www.automationexercise.com']//button[#'submit_search']"
+							itempath=".//button[#'submit_search']"
+							fullname="AutomationExerciseRepository.ApplicationUnderTest.SubmitSearch"
+							id="f6a14cf7d44141738fcaa751a345d1a5"
+							timeout="60000"
+							codefile="C:\Users\mo_ba\Documents\Ranorex\RanorexStudio Projects\AutomationExercise\AutomationExercise\ui_searching_product.cs"
+							codeline="123"
+							itemindex="4"
+							loglvl="Info">
+						</metainfo>
+					</item>
+					<item
+						timeRelativeToTestSuiteStartTime="00:07.560"
+						timeRelativeToTestModuleStartTime="00:05.633"
+						timeWallClock="17:15:25"
+						time="00:07.560"
+						level="Info"
+						category="Delay">
+						<message>
+							Waiting for 1s.
+						</message>
+						<metainfo
+							itemindex="5"
+							codefile="C:\Users\mo_ba\Documents\Ranorex\RanorexStudio Projects\AutomationExercise\AutomationExercise\ui_searching_product.cs"
+							codeline="127"
+							loglvl="Info">
+						</metainfo>
+					</item>
+					<item
+						timeRelativeToTestSuiteStartTime="00:08.854"
+						timeRelativeToTestModuleStartTime="00:06.928"
+						timeWallClock="17:15:26"
+						time="00:08.854"
+						level="Info"
+						category="User">
+						<message>
+							WebDocument取得成功
+						</message>
+						<metainfo
+							codefile="C:\Users\mo_ba\Documents\Ranorex\RanorexStudio Projects\AutomationExercise\AutomationExercise\ui_searching_product.UserCode.cs"
+							codeline="47"
+							loglvl="Info">
+						</metainfo>
+					</item>
+					<item
+						timeRelativeToTestSuiteStartTime="00:09.907"
+						timeRelativeToTestModuleStartTime="00:07.980"
+						timeWallClock="17:15:27"
+						time="00:09.907"
+						level="Info"
+						category="User">
+						<message>
+							API検索結果の商品数: 14
+						</message>
+						<metainfo
+							codefile="C:\Users\mo_ba\Documents\Ranorex\RanorexStudio Projects\AutomationExercise\AutomationExercise\ui_searching_product.UserCode.cs"
+							codeline="64"
+							loglvl="Info">
+						</metainfo>
+					</item>
+					<item
+						timeRelativeToTestSuiteStartTime="00:09.953"
+						timeRelativeToTestModuleStartTime="00:08.027"
+						timeWallClock="17:15:27"
+						time="00:09.953"
+						level="Info"
+						category="User">
+						<message>
+							DOM取得商品数: 13
+						</message>
+						<metainfo
+							codefile="C:\Users\mo_ba\Documents\Ranorex\RanorexStudio Projects\AutomationExercise\AutomationExercise\ui_searching_product.UserCode.cs"
+							codeline="70"
+							loglvl="Info">
+						</metainfo>
+					</item>
+					<item
+						timeRelativeToTestSuiteStartTime="00:10.005"
+						timeRelativeToTestModuleStartTime="00:08.078"
+						timeWallClock="17:15:27"
+						time="00:10.005"
+						level="Info"
+						category="User">
+						<message>
+							商品[1]: Blue Top
+						</message>
+						<metainfo
+							codefile="C:\Users\mo_ba\Documents\Ranorex\RanorexStudio Projects\AutomationExercise\AutomationExercise\ui_searching_product.UserCode.cs"
+							codeline="78"
+							loglvl="Info">
+						</metainfo>
+					</item>
+					<item
+						timeRelativeToTestSuiteStartTime="00:10.057"
+						timeRelativeToTestModuleStartTime="00:08.130"
+						timeWallClock="17:15:27"
+						time="00:10.057"
+						level="Info"
+						category="User">
+						<message>
+							商品[2]: Winter Top
+						</message>
+						<metainfo
+							codefile="C:\Users\mo_ba\Documents\Ranorex\RanorexStudio Projects\AutomationExercise\AutomationExercise\ui_searching_product.UserCode.cs"
+							codeline="78"
+							loglvl="Info">
+						</metainfo>
+					</item>
+					<item
+						timeRelativeToTestSuiteStartTime="00:10.104"
+						timeRelativeToTestModuleStartTime="00:08.177"
+						timeWallClock="17:15:27"
+						time="00:10.104"
+						level="Info"
+						category="User">
+						<message>
+							商品[3]: Summer White Top
+						</message>
+						<metainfo
+							codefile="C:\Users\mo_ba\Documents\Ranorex\RanorexStudio Projects\AutomationExercise\AutomationExercise\ui_searching_product.UserCode.cs"
+							codeline="78"
+							loglvl="Info">
+						</metainfo>
+					</item>
+					<item
+						timeRelativeToTestSuiteStartTime="00:10.152"
+						timeRelativeToTestModuleStartTime="00:08.225"
+						timeWallClock="17:15:27"
+						time="00:10.152"
+						level="Info"
+						category="User">
+						<message>
+							商品[4]: Madame Top For Women
+						</message>
+						<metainfo
+							codefile="C:\Users\mo_ba\Documents\Ranorex\RanorexStudio Projects\AutomationExercise\AutomationExercise\ui_searching_product.UserCode.cs"
+							codeline="78"
+							loglvl="Info">
+						</metainfo>
+					</item>
+					<item
+						timeRelativeToTestSuiteStartTime="00:10.200"
+						timeRelativeToTestModuleStartTime="00:08.273"
+						timeWallClock="17:15:27"
+						time="00:10.200"
+						level="Info"
+						category="User">
+						<message>
+							商品[5]: Fancy Green Top
+						</message>
+						<metainfo
+							codefile="C:\Users\mo_ba\Documents\Ranorex\RanorexStudio Projects\AutomationExercise\AutomationExercise\ui_searching_product.UserCode.cs"
+							codeline="78"
+							loglvl="Info">
+						</metainfo>
+					</item>
+					<item
+						timeRelativeToTestSuiteStartTime="00:10.252"
+						timeRelativeToTestModuleStartTime="00:08.325"
+						timeWallClock="17:15:27"
+						time="00:10.252"
+						level="Info"
+						category="User">
+						<message>
+							商品[6]: Sleeves Printed Top - White
+						</message>
+						<metainfo
+							codefile="C:\Users\mo_ba\Documents\Ranorex\RanorexStudio Projects\AutomationExercise\AutomationExercise\ui_searching_product.UserCode.cs"
+							codeline="78"
+							loglvl="Info">
+						</metainfo>
+					</item>
+					<item
+						timeRelativeToTestSuiteStartTime="00:10.301"
+						timeRelativeToTestModuleStartTime="00:08.374"
+						timeWallClock="17:15:27"
+						time="00:10.301"
+						level="Info"
+						category="User">
+						<message>
+							商品[7]: Half Sleeves Top Schiffli Detailing - Pink
+						</message>
+						<metainfo
+							codefile="C:\Users\mo_ba\Documents\Ranorex\RanorexStudio Projects\AutomationExercise\AutomationExercise\ui_searching_product.UserCode.cs"
+							codeline="78"
+							loglvl="Info">
+						</metainfo>
+					</item>
+					<item
+						timeRelativeToTestSuiteStartTime="00:10.352"
+						timeRelativeToTestModuleStartTime="00:08.425"
+						timeWallClock="17:15:27"
+						time="00:10.352"
+						level="Info"
+						category="User">
+						<message>
+							商品[8]: Frozen Tops For Kids
+						</message>
+						<metainfo
+							codefile="C:\Users\mo_ba\Documents\Ranorex\RanorexStudio Projects\AutomationExercise\AutomationExercise\ui_searching_product.UserCode.cs"
+							codeline="78"
+							loglvl="Info">
+						</metainfo>
+					</item>
+					<item
+						timeRelativeToTestSuiteStartTime="00:10.399"
+						timeRelativeToTestModuleStartTime="00:08.472"
+						timeWallClock="17:15:27"
+						time="00:10.399"
+						level="Info"
+						category="User">
+						<message>
+							商品[9]: Full Sleeves Top Cherry - Pink
+						</message>
+						<metainfo
+							codefile="C:\Users\mo_ba\Documents\Ranorex\RanorexStudio Projects\AutomationExercise\AutomationExercise\ui_searching_product.UserCode.cs"
+							codeline="78"
+							loglvl="Info">
+						</metainfo>
+					</item>
+					<item
+						timeRelativeToTestSuiteStartTime="00:10.433"
+						timeRelativeToTestModuleStartTime="00:08.507"
+						timeWallClock="17:15:27"
+						time="00:10.433"
+						level="Info"
+						category="User">
+						<message>
+							商品[10]: Printed Off Shoulder Top - White
+						</message>
+						<metainfo
+							codefile="C:\Users\mo_ba\Documents\Ranorex\RanorexStudio Projects\AutomationExercise\AutomationExercise\ui_searching_product.UserCode.cs"
+							codeline="78"
+							loglvl="Info">
+						</metainfo>
+					</item>
+					<item
+						timeRelativeToTestSuiteStartTime="00:10.482"
+						timeRelativeToTestModuleStartTime="00:08.556"
+						timeWallClock="17:15:27"
+						time="00:10.482"
+						level="Info"
+						category="User">
+						<message>
+							&#21830;&#21697;[11]: Sleeves Top and Short - Blue &amp; Pink
+						</message>
+						<metainfo
+							codefile="C:\Users\mo_ba\Documents\Ranorex\RanorexStudio Projects\AutomationExercise\AutomationExercise\ui_searching_product.UserCode.cs"
+							codeline="78"
+							loglvl="Info">
+						</metainfo>
+					</item>
+					<item
+						timeRelativeToTestSuiteStartTime="00:10.534"
+						timeRelativeToTestModuleStartTime="00:08.608"
+						timeWallClock="17:15:28"
+						time="00:10.534"
+						level="Info"
+						category="User">
+						<message>
+							商品[12]: Little Girls Mr. Panda Shirt
+						</message>
+						<metainfo
+							codefile="C:\Users\mo_ba\Documents\Ranorex\RanorexStudio Projects\AutomationExercise\AutomationExercise\ui_searching_product.UserCode.cs"
+							codeline="78"
+							loglvl="Info">
+						</metainfo>
+					</item>
+					<item
+						timeRelativeToTestSuiteStartTime="00:10.586"
+						timeRelativeToTestModuleStartTime="00:08.659"
+						timeWallClock="17:15:28"
+						time="00:10.586"
+						level="Info"
+						category="User"
+						errimg="images_Automati_ca7e69be\Automati_ca7e69be_bfbc5328_trace.jpg"
+						errthumb="images_Automati_ca7e69be\Automati_ca7e69be_bfbc5328_trace_thumb.jpg">
+						<message>
+							商品[13]: Lace Top For Women
+						</message>
+						<metainfo
+							codefile="C:\Users\mo_ba\Documents\Ranorex\RanorexStudio Projects\AutomationExercise\AutomationExercise\ui_searching_product.UserCode.cs"
+							codeline="78"
+							loglvl="Info">
+						</metainfo>
+					</item>
+					<item
+						timeRelativeToTestSuiteStartTime="00:10.633"
+						timeRelativeToTestModuleStartTime="00:08.707"
+						timeWallClock="17:15:28"
+						time="00:10.633"
+						level="Failure"
+						category="Validation"
+						errimg="images_Automati_ca7e69be\Automati_ca7e69be_75a9daad_trace.jpg"
+						errthumb="images_Automati_ca7e69be\Automati_ca7e69be_75a9daad_trace_thumb.jpg">
+						<message>
+							Objects are not equal (actual='13', expected='14').
+						</message>
+						<metainfo
+							codefile="C:\Users\mo_ba\Documents\Ranorex\RanorexStudio Projects\AutomationExercise\AutomationExercise\ui_searching_product.UserCode.cs"
+							codeline="87"
+							loglvl="Failure">
+						</metainfo>
+					</item>
+					<item
+						timeRelativeToTestSuiteStartTime="00:10.691"
+						timeRelativeToTestModuleStartTime="00:08.764"
+						timeWallClock="17:15:28"
+						time="00:10.691"
+						level="Error"
+						category="Module"
+						errimg="images_Automati_ca7e69be\Automati_ca7e69be_b580e432_trace.jpg"
+						errthumb="images_Automati_ca7e69be\Automati_ca7e69be_b580e432_trace_thumb.jpg">
+						<message>
+							Module execution was aborted because a validation step has failed. Objects are not equal (actual='13', expected='14').
+						</message>
+						<metainfo
+							stacktrace="   場所 Ranorex.Validate.ThrowValidationException(RepoItemInfo itemInfo, ValidationException ex)
+   場所 Ranorex.Validate.IsTrueInternal(Boolean condition, String message, Options options, RepoItemInfo itemInfo, RanorexException innerException)
+   場所 Ranorex.Validate.AreEqual(Object actual, Object expected, String message, Options options)
+   場所 Ranorex.Validate.AreEqual(Object actual, Object expected)
+   場所 AutomationExercise.ui_searching_product.ValidateUiProductCount() 場所 C:\Users\mo_ba\Documents\Ranorex\RanorexStudio Projects\AutomationExercise\AutomationExercise\ui_searching_product.UserCode.cs:行 87
+   場所 AutomationExercise.ui_searching_product.Ranorex.Core.Testing.ITestModule.Run() 場所 C:\Users\mo_ba\Documents\Ranorex\RanorexStudio Projects\AutomationExercise\AutomationExercise\ui_searching_product.cs:行 130
+   場所 Ranorex.Core.Testing.TestModuleLeaf.RunInternal(DataContext parentDataContext, Int32 iteration, Int32 iterationCount, Boolean skipIteration)"
+							codefile="C:\Users\mo_ba\Documents\Ranorex\RanorexStudio Projects\AutomationExercise\AutomationExercise\ui_searching_product.UserCode.cs"
+							codeline="87"
+							loglvl="Error">
+						</metainfo>
+					</item>
+				</activity>
+				<activity
+					result="Success"
+					duration="243ms"
+					durationms="243"
+					type="teardown-container"
+					rid="3ce7ad2f16510ba0"
+					totalerrorcount="0"
+					totalwarningcount="0"
+					totalsuccesstestcasecount="0"
+					totalfailedtestcasecount="0"
+					totalblockedtestcasecount="0"
+					childsuccesscount="1"
+					childfailedcount="0"
+					childblockedcount="0"
+					totalsuccesscount="0"
+					totalfailedcount="0"
+					totalblockedcount="0"
+					totalmaintenancemodecount="0">
+					<activity
+						result="Success"
+						duration="241ms"
+						durationms="241"
+						type="test-module"
+						rid="1ab8aab1d99b73a4"
+						totalerrorcount="0"
+						totalwarningcount="0"
+						totalsuccesstestcasecount="0"
+						totalfailedtestcasecount="0"
+						totalblockedtestcasecount="0"
+						childsuccesscount="0"
+						childfailedcount="0"
+						childblockedcount="0"
+						totalsuccesscount="0"
+						totalfailedcount="0"
+						totalblockedcount="0"
+						totalmaintenancemodecount="0"
+						modulename="CloseBrowser"
+						displayName="CloseBrowser"
+						moduleid="fb6760ef-a294-4a17-98df-55c29763301e"
+						moduletype="Recording"
+						iteration="1"
+						activity-exectype="execute"
+						testentry-activity-type="testmodule">
+						<varbindings>
+						</varbindings>
+						<item
+							timeRelativeToTestSuiteStartTime="00:10.819"
+							timeRelativeToTestModuleStartTime="00:00.001"
+							timeWallClock="17:15:28"
+							time="00:10.819"
+							level="Info"
+							category="Application">
+							<message>
+								Closing application containing item 'ApplicationUnderTest'.
+							</message>
+							<metainfo
+								type="repoitem"
+								path="/dom[@domain='www.automationexercise.com']"
+								itempath="/dom[@domain='www.automationexercise.com']"
+								fullname="AutomationExerciseRepository.ApplicationUnderTest.Self"
+								id="40c7c42aab6542439e6f85d8108535bc"
+								timeout="30000"
+								codefile="C:\Users\mo_ba\Documents\Ranorex\RanorexStudio Projects\AutomationExercise\AutomationExercise\CloseBrowser.cs"
+								codeline="82"
+								itemindex="0"
+								loglvl="Info">
+							</metainfo>
+						</item>
+					</activity>
+				</activity>
+			</activity>
+		</activity>
+	</activity>
+</report>

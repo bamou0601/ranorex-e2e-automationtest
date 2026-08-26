@@ -1,0 +1,98 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<report
+	progress="">
+	<activity
+		result="Failed"
+		duration="21.86s"
+		durationms="21856"
+		type="root"
+		rid="6f7a098c030b339"
+		totalerrorcount="1"
+		totalwarningcount="0"
+		totalsuccesstestcasecount="0"
+		totalfailedtestcasecount="0"
+		totalblockedtestcasecount="0"
+		childsuccesscount="0"
+		childfailedcount="0"
+		childblockedcount="0"
+		totalsuccesscount="0"
+		totalfailedcount="0"
+		totalblockedcount="0"
+		totalmaintenancemodecount="0"
+		user="mo_ba"
+		rxversion="12.3.0.0"
+		host="01-0505716"
+		osversion="Windows 11 64bit"
+		runtimeversion="4.0.30319.42000"
+		procarch="32bit"
+		oslanguage="ja-JP"
+		dtnlanguage="ja-JP"
+		screenresolution="1920x1200"
+		timestamp="2026/08/25 10:22:50"
+		timestampiso="2026-08-25T01:22:50"
+		endtime="2026/08/25 10:23:12"
+		timeoutfactor="1"
+		runid=""
+		sutversion=""
+		module="ui_searching_product">
+		<detail>
+			ui_searching_product
+		</detail>
+		<varbindings>
+		</varbindings>
+		<item
+			timeRelativeToTestSuiteStartTime="00:05.695"
+			timeRelativeToTestModuleStartTime="00:05.695"
+			timeWallClock="10:22:55"
+			time="00:05.695"
+			level="Info"
+			category="Website">
+			<message>
+				Opening web site 'https://www.automationexercise.com/' in normal mode.
+			</message>
+			<metainfo
+				itemindex="0"
+				codefile="C:\Users\mo_ba\Documents\Ranorex\RanorexStudio Projects\AutomationExercise\AutomationExercise\ui_searching_product.cs"
+				codeline="82"
+				loglvl="Info">
+			</metainfo>
+		</item>
+		<item
+			timeRelativeToTestSuiteStartTime="00:05.797"
+			timeRelativeToTestModuleStartTime="00:05.797"
+			timeWallClock="10:22:56"
+			time="00:05.797"
+			level="Info"
+			category="Mouse">
+			<message>
+				Mouse Left Click item 'AutomationExerciseGoogleChrome.View20' at 34;19.
+			</message>
+			<metainfo
+				type="repoitem"
+				path="/form[@title>'Automation Exercise - Google']/container[@name>'Automation Exercise - Google']//container[@classname='HorizontalTabStripRegionView']/container[@automationid='view_21']/tabpagelist/tabpage[9]"
+				itempath="container[@name>'Automation Exercise - Google']//container[@classname='HorizontalTabStripRegionView']/container[@automationid='view_21']/tabpagelist/tabpage[9]"
+				fullname="AutomationExerciseRepository.AutomationExerciseGoogleChrome.View20"
+				id="0efa235f217c49e982453cbf54dd4554"
+				timeout="60000"
+				codefile="C:\Users\mo_ba\Documents\Ranorex\RanorexStudio Projects\AutomationExercise\AutomationExercise\ui_searching_product.cs"
+				codeline="86"
+				itemindex="1"
+				loglvl="Info">
+			</metainfo>
+		</item>
+		<item
+			timeRelativeToTestSuiteStartTime="00:21.855"
+			timeRelativeToTestModuleStartTime="00:21.855"
+			timeWallClock="10:23:12"
+			time="00:21.855"
+			level="Error"
+			category="Module">
+			<message>
+				The test run has been aborted by the user.
+			</message>
+			<metainfo
+				loglvl="Error">
+			</metainfo>
+		</item>
+	</activity>
+</report>

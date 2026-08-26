@@ -1,0 +1,124 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<report
+	progress="">
+	<activity
+		result="Success"
+		duration="6.17s"
+		durationms="6173"
+		type="root"
+		rid="225bed71c8177f00"
+		totalerrorcount="0"
+		totalwarningcount="0"
+		totalsuccesstestcasecount="0"
+		totalfailedtestcasecount="0"
+		totalblockedtestcasecount="0"
+		childsuccesscount="0"
+		childfailedcount="0"
+		childblockedcount="0"
+		totalsuccesscount="0"
+		totalfailedcount="0"
+		totalblockedcount="0"
+		totalmaintenancemodecount="0"
+		user="mo_ba"
+		rxversion="12.3.0.0"
+		host="01-0505716"
+		osversion="Windows 11 64bit"
+		runtimeversion="4.0.30319.42000"
+		procarch="32bit"
+		oslanguage="ja-JP"
+		dtnlanguage="ja-JP"
+		screenresolution="1920x1200"
+		timestamp="2026/08/26 15:59:32"
+		timestampiso="2026-08-26T06:59:32"
+		endtime="2026/08/26 15:59:38"
+		timeoutfactor="1"
+		runid=""
+		sutversion=""
+		module="api_product_list">
+		<detail>
+			api_product_list
+		</detail>
+		<varbindings>
+		</varbindings>
+		<item
+			timeRelativeToTestSuiteStartTime="00:06.072"
+			timeRelativeToTestModuleStartTime="00:06.072"
+			timeWallClock="15:59:38"
+			time="00:06.072"
+			level="Info"
+			category="User">
+			<message>
+				HTTP Status: 200
+			</message>
+			<metainfo
+				codefile="C:\Users\mo_ba\Documents\Ranorex\RanorexStudio Projects\AutomationExercise\AutomationExercise\api_product_list.UserCode.cs"
+				codeline="82"
+				loglvl="Info">
+			</metainfo>
+		</item>
+		<item
+			timeRelativeToTestSuiteStartTime="00:06.105"
+			timeRelativeToTestModuleStartTime="00:06.105"
+			timeWallClock="15:59:38"
+			time="00:06.105"
+			level="Success"
+			category="Validation">
+			<message>
+				Objects are equal (actual='200', expected='200').
+			</message>
+			<metainfo
+				codefile="C:\Users\mo_ba\Documents\Ranorex\RanorexStudio Projects\AutomationExercise\AutomationExercise\api_product_list.UserCode.cs"
+				codeline="87"
+				loglvl="Success">
+			</metainfo>
+		</item>
+		<item
+			timeRelativeToTestSuiteStartTime="00:06.156"
+			timeRelativeToTestModuleStartTime="00:06.156"
+			timeWallClock="15:59:38"
+			time="00:06.156"
+			level="Success"
+			category="Validation">
+			<message>
+				Objects are equal (actual='200', expected='200').
+			</message>
+			<metainfo
+				codefile="C:\Users\mo_ba\Documents\Ranorex\RanorexStudio Projects\AutomationExercise\AutomationExercise\api_product_list.UserCode.cs"
+				codeline="102"
+				loglvl="Success">
+			</metainfo>
+		</item>
+		<item
+			timeRelativeToTestSuiteStartTime="00:06.158"
+			timeRelativeToTestModuleStartTime="00:06.158"
+			timeWallClock="15:59:38"
+			time="00:06.158"
+			level="Success"
+			category="Validation">
+			<message>
+				Condition is true.
+			</message>
+			<metainfo
+				codefile="C:\Users\mo_ba\Documents\Ranorex\RanorexStudio Projects\AutomationExercise\AutomationExercise\api_product_list.UserCode.cs"
+				codeline="108"
+				loglvl="Success">
+			</metainfo>
+		</item>
+		<item
+			timeRelativeToTestSuiteStartTime="00:06.159"
+			timeRelativeToTestModuleStartTime="00:06.159"
+			timeWallClock="15:59:38"
+			time="00:06.159"
+			level="Info"
+			category="User">
+			<message>
+				API商品総数: 34
+			</message>
+			<metainfo
+				codefile="C:\Users\mo_ba\Documents\Ranorex\RanorexStudio Projects\AutomationExercise\AutomationExercise\api_product_list.UserCode.cs"
+				codeline="119"
+				loglvl="Info">
+			</metainfo>
+		</item>
+	</activity>
+</report>

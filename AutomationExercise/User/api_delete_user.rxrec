@@ -1,0 +1,48 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<recordtable
+embeddedrepository="False"
+id="82097f47-14c7-4177-9353-3ae1192c940e"
+mode="Global">
+	<repeatcount>
+		1
+	</repeatcount>
+	<turbomode>
+		False
+	</turbomode>
+	<genreport>
+		True
+	</genreport>
+	<speedfactor>
+		1
+	</speedfactor>
+	<useDefaultItemLogging>
+		True
+	</useDefaultItemLogging>
+	<codegen
+	classname="api_delete_user"
+	namespace="AutomationExercise.User">
+	</codegen>
+	<variables>
+	</variables>
+	<recorditems>
+	</recorditems>
+	<repository
+	id="c0857d08-b99b-4d55-b197-ffd12d480039"
+	name="AutomationExerciseRepository"
+	relativepath="..\AutomationExerciseRepository.rxrep">
+		<codegen
+		classname="AutomationExerciseRepository"
+		namespace="AutomationExercise">
+		</codegen>
+		<rootfolder
+		id="198c1291-c4f8-440e-975f-c673da20c282"
+		name="_rootdummy_">
+		</rootfolder>
+	</repository>
+	<usercodefile
+	lang="CSharp">
+		api_delete_user.UserCode.cs
+	</usercodefile>
+	<references>
+	</references>
+</recordtable>

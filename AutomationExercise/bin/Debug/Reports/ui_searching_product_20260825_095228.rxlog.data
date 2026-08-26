@@ -1,0 +1,173 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<report
+	progress="">
+	<activity
+		result="Failed"
+		duration="44.18s"
+		durationms="44179"
+		type="root"
+		rid="1bba062e0de2704"
+		totalerrorcount="1"
+		totalwarningcount="0"
+		totalsuccesstestcasecount="0"
+		totalfailedtestcasecount="0"
+		totalblockedtestcasecount="0"
+		childsuccesscount="0"
+		childfailedcount="0"
+		childblockedcount="0"
+		totalsuccesscount="0"
+		totalfailedcount="0"
+		totalblockedcount="0"
+		totalmaintenancemodecount="0"
+		user="mo_ba"
+		rxversion="12.3.0.0"
+		host="01-0505716"
+		osversion="Windows 11 64bit"
+		runtimeversion="4.0.30319.42000"
+		procarch="32bit"
+		oslanguage="ja-JP"
+		dtnlanguage="ja-JP"
+		screenresolution="1920x1200"
+		timestamp="2026/08/25 9:52:33"
+		timestampiso="2026-08-25T00:52:33"
+		endtime="2026/08/25 9:53:17"
+		timeoutfactor="1"
+		runid=""
+		sutversion=""
+		module="ui_searching_product">
+		<detail>
+			ui_searching_product
+		</detail>
+		<varbindings>
+		</varbindings>
+		<item
+			timeRelativeToTestSuiteStartTime="00:08.288"
+			timeRelativeToTestModuleStartTime="00:08.288"
+			timeWallClock="09:52:41"
+			time="00:08.288"
+			level="Info"
+			category="Mouse">
+			<message>
+				Mouse Left Click item 'AutomationExerciseGoogleChrome' at 776;21.
+			</message>
+			<metainfo
+				type="repoitem"
+				path="/form[@title>'Automation Exercise - Google']"
+				itempath="/form[@title>'Automation Exercise - Google']"
+				fullname="AutomationExerciseRepository.AutomationExerciseGoogleChrome.Self"
+				id="187d9d6da8924dc49270b79727b6e861"
+				timeout="30000"
+				codefile="C:\Users\mo_ba\Documents\Ranorex\RanorexStudio Projects\AutomationExercise\AutomationExercise\ui_searching_product.cs"
+				codeline="82"
+				itemindex="0"
+				loglvl="Info">
+			</metainfo>
+		</item>
+		<item
+			timeRelativeToTestSuiteStartTime="00:11.039"
+			timeRelativeToTestModuleStartTime="00:11.039"
+			timeWallClock="09:52:44"
+			time="00:11.039"
+			level="Info"
+			category="Keyboard">
+			<message>
+				Key sequence '{LControlKey down}' with focus on 'AutomationExerciseGoogleChrome'.
+			</message>
+			<metainfo
+				type="repoitem"
+				path="/form[@title>'Automation Exercise - Google']"
+				itempath="/form[@title>'Automation Exercise - Google']"
+				fullname="AutomationExerciseRepository.AutomationExerciseGoogleChrome.Self"
+				id="187d9d6da8924dc49270b79727b6e861"
+				timeout="30000"
+				codefile="C:\Users\mo_ba\Documents\Ranorex\RanorexStudio Projects\AutomationExercise\AutomationExercise\ui_searching_product.cs"
+				codeline="86"
+				itemindex="1"
+				loglvl="Info">
+			</metainfo>
+		</item>
+		<item
+			timeRelativeToTestSuiteStartTime="00:11.056"
+			timeRelativeToTestModuleStartTime="00:11.056"
+			timeWallClock="09:52:44"
+			time="00:11.056"
+			level="Info"
+			category="Keyboard">
+			<message>
+				Key 'Ctrl+V' Press with focus on 'AutomationExerciseGoogleChrome'.
+			</message>
+			<metainfo
+				type="repoitem"
+				path="/form[@title>'Automation Exercise - Google']"
+				itempath="/form[@title>'Automation Exercise - Google']"
+				fullname="AutomationExerciseRepository.AutomationExerciseGoogleChrome.Self"
+				id="187d9d6da8924dc49270b79727b6e861"
+				timeout="30000"
+				codefile="C:\Users\mo_ba\Documents\Ranorex\RanorexStudio Projects\AutomationExercise\AutomationExercise\ui_searching_product.cs"
+				codeline="90"
+				itemindex="2"
+				loglvl="Info">
+			</metainfo>
+		</item>
+		<item
+			timeRelativeToTestSuiteStartTime="00:11.106"
+			timeRelativeToTestModuleStartTime="00:11.106"
+			timeWallClock="09:52:44"
+			time="00:11.106"
+			level="Info"
+			category="Keyboard">
+			<message>
+				Key sequence '{Return}' with focus on 'AutomationExerciseGoogleChrome'.
+			</message>
+			<metainfo
+				type="repoitem"
+				path="/form[@title>'Automation Exercise - Google']"
+				itempath="/form[@title>'Automation Exercise - Google']"
+				fullname="AutomationExerciseRepository.AutomationExerciseGoogleChrome.Self"
+				id="187d9d6da8924dc49270b79727b6e861"
+				timeout="30000"
+				codefile="C:\Users\mo_ba\Documents\Ranorex\RanorexStudio Projects\AutomationExercise\AutomationExercise\ui_searching_product.cs"
+				codeline="95"
+				itemindex="3"
+				loglvl="Info">
+			</metainfo>
+		</item>
+		<item
+			timeRelativeToTestSuiteStartTime="00:11.133"
+			timeRelativeToTestModuleStartTime="00:11.133"
+			timeWallClock="09:52:44"
+			time="00:11.133"
+			level="Info"
+			category="Mouse">
+			<message>
+				Mouse Left Click item 'このページを翻訳しますか.BubbleFrameView' at -4;62.
+			</message>
+			<metainfo
+				type="repoitem"
+				path="/form[@title='このページを翻訳しますか？']/text[@name='このページを翻訳しますか？']/?/?/container[@classname='BubbleFrameView']"
+				itempath="text[@name='このページを翻訳しますか？']/?/?/container[@classname='BubbleFrameView']"
+				fullname="AutomationExerciseRepository.このページを翻訳しますか.BubbleFrameView"
+				id="723011ba10b4407ca6fb1ff470f4be2f"
+				timeout="60000"
+				codefile="C:\Users\mo_ba\Documents\Ranorex\RanorexStudio Projects\AutomationExercise\AutomationExercise\ui_searching_product.cs"
+				codeline="99"
+				itemindex="4"
+				loglvl="Info">
+			</metainfo>
+		</item>
+		<item
+			timeRelativeToTestSuiteStartTime="00:44.178"
+			timeRelativeToTestModuleStartTime="00:44.178"
+			timeWallClock="09:53:17"
+			time="00:44.178"
+			level="Error"
+			category="Module">
+			<message>
+				The test run has been aborted by the user.
+			</message>
+			<metainfo
+				loglvl="Error">
+			</metainfo>
+		</item>
+	</activity>
+</report>

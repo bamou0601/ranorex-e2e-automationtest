@@ -1,0 +1,131 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<report
+	progress="">
+	<activity
+		result="Failed"
+		duration="20.34s"
+		durationms="20342"
+		type="root"
+		rid="625fba2b81a0e90"
+		totalerrorcount="1"
+		totalwarningcount="0"
+		totalsuccesstestcasecount="0"
+		totalfailedtestcasecount="0"
+		totalblockedtestcasecount="0"
+		childsuccesscount="0"
+		childfailedcount="0"
+		childblockedcount="0"
+		totalsuccesscount="0"
+		totalfailedcount="0"
+		totalblockedcount="0"
+		totalmaintenancemodecount="0"
+		user="mo_ba"
+		rxversion="12.3.0.0"
+		host="01-0505716"
+		osversion="Windows 11 64bit"
+		runtimeversion="4.0.30319.42000"
+		procarch="32bit"
+		oslanguage="ja-JP"
+		dtnlanguage="ja-JP"
+		screenresolution="1920x1200"
+		timestamp="2026/08/26 16:35:07"
+		timestampiso="2026-08-26T07:35:07"
+		endtime="2026/08/26 16:35:27"
+		timeoutfactor="1"
+		runid=""
+		sutversion=""
+		module="ui_product_list">
+		<detail>
+			ui_product_list
+		</detail>
+		<errormessage>
+			No element found for path '/dom[@domain='www\.automationexercise.com']' at step 'dom[@domain='www\.automationexercise.com']' after 55 attempts within 10s.
+		</errormessage>
+		<varbindings>
+		</varbindings>
+		<item
+			timeRelativeToTestSuiteStartTime="00:06.445"
+			timeRelativeToTestModuleStartTime="00:06.445"
+			timeWallClock="16:35:14"
+			time="00:06.445"
+			level="Info"
+			category="Website">
+			<message>
+				Opening web site 'http://www.ranorex.com' in normal mode.
+			</message>
+			<metainfo
+				itemindex="0"
+				codefile="C:\Users\mo_ba\Documents\Ranorex\RanorexStudio Projects\AutomationExercise\AutomationExercise\ui_product_list.cs"
+				codeline="82"
+				loglvl="Info">
+			</metainfo>
+		</item>
+		<item
+			timeRelativeToTestSuiteStartTime="00:06.577"
+			timeRelativeToTestModuleStartTime="00:06.577"
+			timeWallClock="16:35:14"
+			time="00:06.577"
+			level="Info"
+			category="Mouse"
+			errimg="images_ui_produ_54a0df1\ui_produ_54a0df1_202f788e_trace.jpg"
+			errthumb="images_ui_produ_54a0df1\ui_produ_54a0df1_202f788e_trace_thumb.jpg">
+			<message>
+				Mouse Left Click item 'ApplicationUnderTest.Products_Menu' at Center.
+			</message>
+			<metainfo
+				type="repoitem"
+				path="/dom[@domain='www.automationexercise.com']//header[#'header']/div/div/div/div[2]/?/?/ul/li[2]/a[@innertext=' Products']"
+				itempath=".//header[#'header']/div/div/div/div[2]/?/?/ul/li[2]/a[@innertext=' Products']"
+				fullname="AutomationExerciseRepository.ApplicationUnderTest.Products_Menu"
+				id="ece49e18a2974a30bf9ef0faa070e73a"
+				timeout="60000"
+				codefile="C:\Users\mo_ba\Documents\Ranorex\RanorexStudio Projects\AutomationExercise\AutomationExercise\ui_product_list.cs"
+				codeline="86"
+				itemindex="1"
+				loglvl="Info">
+			</metainfo>
+		</item>
+		<item
+			timeRelativeToTestSuiteStartTime="00:09.126"
+			timeRelativeToTestModuleStartTime="00:09.126"
+			timeWallClock="16:35:16"
+			time="00:09.126"
+			level="Info"
+			category="Delay"
+			errimg="images_ui_produ_54a0df1\ui_produ_54a0df1_3e283597_trace.jpg"
+			errthumb="images_ui_produ_54a0df1\ui_produ_54a0df1_3e283597_trace_thumb.jpg">
+			<message>
+				Waiting for 1s.
+			</message>
+			<metainfo
+				itemindex="2"
+				codefile="C:\Users\mo_ba\Documents\Ranorex\RanorexStudio Projects\AutomationExercise\AutomationExercise\ui_product_list.cs"
+				codeline="90"
+				loglvl="Info">
+			</metainfo>
+		</item>
+		<item
+			timeRelativeToTestSuiteStartTime="00:20.235"
+			timeRelativeToTestModuleStartTime="00:20.235"
+			timeWallClock="16:35:27"
+			time="00:20.235"
+			level="Error"
+			category="Module"
+			errimg="images_ui_produ_54a0df1\ui_produ_54a0df1_4b71e788_trace.jpg"
+			errthumb="images_ui_produ_54a0df1\ui_produ_54a0df1_4b71e788_trace_thumb.jpg">
+			<message>
+				No element found for path '/dom[@domain='www\.automationexercise.com']' at step 'dom[@domain='www\.automationexercise.com']' after 55 attempts within 10s.
+			</message>
+			<metainfo
+				stacktrace="   場所 Ranorex.Core.Element.FindSingle(RxPath path, Duration timeout)
+   場所 Ranorex.Adapter.FindSingle[T](RxPath path, Duration timeout)
+   場所 AutomationExercise.ui_product_list.ValidateUiProductListCount() 場所 C:\Users\mo_ba\Documents\Ranorex\RanorexStudio Projects\AutomationExercise\AutomationExercise\ui_product_list.UserCode.cs:行 39
+   場所 AutomationExercise.ui_product_list.Ranorex.Core.Testing.ITestModule.Run() 場所 C:\Users\mo_ba\Documents\Ranorex\RanorexStudio Projects\AutomationExercise\AutomationExercise\ui_product_list.cs:行 93
+   場所 Ranorex.Core.Testing.TestModuleLeaf.RunInternal(DataContext parentDataContext, Int32 iteration, Int32 iterationCount, Boolean skipIteration)"
+				codefile="C:\Users\mo_ba\Documents\Ranorex\RanorexStudio Projects\AutomationExercise\AutomationExercise\ui_product_list.UserCode.cs"
+				codeline="39"
+				loglvl="Error">
+			</metainfo>
+		</item>
+	</activity>
+</report>
