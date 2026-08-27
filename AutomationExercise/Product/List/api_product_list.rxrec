@@ -30,7 +30,7 @@ mode="Global">
 		enabled="True"
 		isexternaltestmethod="False"
 		methodname="GetProductListByApi"
-		namespace="AutomationExercise"
+		namespace="AutomationExercise.Product.List"
 		optional="False">
 			<comment>
 			</comment>

@@ -220,28 +220,13 @@
       <id>1c76be27-c819-41ea-b7b8-a224c866893a</id>
     </Compile>
     <Compile Include="User\api_create_user.cs">
-      <BoundTo>85a1c159-35c1-42ee-b52e-ccebcd4ec19d</BoundTo>
-      <DependentUpon>api_create_user.rxrec</DependentUpon>
-      <RecorderCode>true</RecorderCode>
-      <id>cc929523-ece5-4f37-b97b-ec3206dc3672</id>
+      <id>f3f0f4a5-9144-44c8-9031-84060e668671</id>
     </Compile>
-    <Compile Include="User\api_create_user.UserCode.cs">
-      <BoundTo>85a1c159-35c1-42ee-b52e-ccebcd4ec19d</BoundTo>
-      <DependentUpon>api_create_user.rxrec</DependentUpon>
-      <UserCode>true</UserCode>
-      <id>55066b12-083f-4917-a0e7-c831a732e766</id>
+    <Compile Include="User\api_deleate_user.cs">
+      <id>012343f3-3e1b-4fd9-807d-9ead7896e3ca</id>
     </Compile>
-    <Compile Include="User\api_delete_user.cs">
-      <BoundTo>32510417-a3c6-45e0-8c0f-cbd2212914b5</BoundTo>
-      <DependentUpon>api_delete_user.rxrec</DependentUpon>
-      <RecorderCode>true</RecorderCode>
-      <id>24d61a2b-4d93-4039-a464-b659e08c0439</id>
-    </Compile>
-    <Compile Include="User\api_delete_user.UserCode.cs">
-      <BoundTo>32510417-a3c6-45e0-8c0f-cbd2212914b5</BoundTo>
-      <DependentUpon>api_delete_user.rxrec</DependentUpon>
-      <UserCode>true</UserCode>
-      <id>ec4ed9d9-7947-4d66-8609-c0bc383bc033</id>
+    <Compile Include="User\api_verify_deleted_user.cs">
+      <id>b9a64776-a6b8-4ada-9cbe-bcc13cb266e7</id>
     </Compile>
     <Compile Include="User\ui_login.cs">
       <BoundTo>b571a008-3c64-4d8b-b487-506c410bb985</BoundTo>
@@ -300,16 +285,6 @@
       <BoundTo>1ed1c375-d5eb-415d-a015-d6455a96b978</BoundTo>
       <id>a84a851a-94f1-4e84-85dc-4473a51c22c9</id>
       <recordtableid>80f826fc-aac1-46bb-b1a4-39e06eeb5d60</recordtableid>
-    </None>
-    <None Include="User\api_create_user.rxrec">
-      <BoundTo>1ed1c375-d5eb-415d-a015-d6455a96b978</BoundTo>
-      <id>85a1c159-35c1-42ee-b52e-ccebcd4ec19d</id>
-      <recordtableid>4ef86fb2-ff4c-4f0f-8775-6b736771996b</recordtableid>
-    </None>
-    <None Include="User\api_delete_user.rxrec">
-      <BoundTo>1ed1c375-d5eb-415d-a015-d6455a96b978</BoundTo>
-      <id>32510417-a3c6-45e0-8c0f-cbd2212914b5</id>
-      <recordtableid>82097f47-14c7-4177-9353-3ae1192c940e</recordtableid>
     </None>
     <None Include="User\ui_login.rxrec">
       <BoundTo>1ed1c375-d5eb-415d-a015-d6455a96b978</BoundTo>

@@ -25,12 +25,28 @@ namespace AutomationExercise.User
     public partial class ui_login
     {
         /// <summary>
-        /// This method gets called right after the recording has been started.
-        /// It can be used to execute recording specific initialization code.
+        /// Recording開始時の初期化処理。
+        ///
+        /// 処理内容:
+        /// ・APIで作成したメールアドレスを取得する。
+        /// ・APIで作成したパスワードを取得する。
+        /// ・Recording変数へ設定する。
+        ///
+        /// Returns:
+        /// なし。
         /// </summary>
         private void Init()
         {
             // Your recording specific initialization code goes here.
+            // APIで作成したユーザー情報を取得
+            email = global:: AutomationExercise.TestContext.UserEmail;
+            
+            password = global:: AutomationExercise.TestContext.UserPassword;
+            
+            // ログ出力
+            Report.Info("ログインメールアドレス: " + email);
+            
+            Report.Info("ログインパスワードをTestContextから取得しました。");
         }
 
     }

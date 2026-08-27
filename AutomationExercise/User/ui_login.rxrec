@@ -23,8 +23,270 @@ mode="Global">
 	namespace="AutomationExercise.User">
 	</codegen>
 	<variables>
+		<var
+		id="a51ba0c1-8b95-4498-b1b4-fdcb1e528969"
+		name="email">
+			test_20260827164436571@example.com&#32;
+		</var>
+		<var
+		id="13576797-d398-4c5a-8c4e-7d6fdd73a4b6"
+		name="password">
+			test1234
+		</var>
 	</variables>
 	<recorditems>
+		<mouseitem
+		action="Click"
+		button="Left"
+		duration="300ms"
+		enabled="True"
+		loc="37;14"
+		movetime="300ms"
+		optional="False"
+		searchpropertyid="d2b32650-c36b-4623-ab10-5c528505505e"
+		sx="710"
+		sy="190"
+		warnoutofbounds="False">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="18715491-e9e5-4244-bd9d-08d3796fa309"
+			sourcename="Recorder">
+				<element
+				capabilities="webelement, atag"
+				dontcache="True"
+				enabled="True"
+				flavor="chromeweb"
+				hasfocus="False"
+				index="0"
+				prefcap="atag"
+				rect="673,176,132,25"
+				role="unknown"
+				snapElem=""
+				valid="True"
+				visible="True">
+					<attribute
+					name="draggable"
+					type="System.String">
+						True
+					</attribute>
+					<attribute
+					name="hidden"
+					type="System.String">
+						False
+					</attribute>
+					<attribute
+					name="innertext"
+					type="System.String">
+						&#32;Signup / Login
+					</attribute>
+					<attribute
+					name="tagname"
+					type="System.String">
+						a
+					</attribute>
+					<attribute
+					name="href"
+					type="System.String">
+						https://www.automationexercise.com/login
+					</attribute>
+				</element>
+				<path>
+					/dom[@domain='www.automationexercise.com']//header[#'header']/div/div/div/div[2]/?/?/ul/li[4]/a[@innertext=' Signup / Login']
+				</path>
+				<robustPath>
+					/dom[@domain='www.automationexercise.com']//header[#'header']//a[@innertext=' Signup / Login']
+				</robustPath>
+			</info>
+			<helperscreenshot
+			guid="91766ce0-7927-4784-9944-e538af8164a3">
+				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
+UUUAFFFFABRRRQAUUUUAFFFFAH//2Q==
+			</helperscreenshot>
+		</mouseitem>
+		<WaitForRecordItem
+		enabled="True"
+		optional="False"
+		searchpropertyid="24a81a7e-8382-41b2-9b2c-c7069f14fe7e"
+		waitaction="Exists"
+		waittimeout="15000ms">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="fb752a5d-8eab-4a75-9b99-91ba48a8460b"
+			sourcename="ItemRecorderEditor">
+				<path>
+					/dom[@domain='www.automationexercise.com']//section[#'form']/div/div/div[1]/?/?/form[@action='https://www.automationexercise.com/login']/button[@innertext='Login']
+				</path>
+				<robustPath>
+				</robustPath>
+			</info>
+		</WaitForRecordItem>
+		<setvaluerecorditem
+		attrname="Value"
+		enabled="True"
+		optional="False"
+		searchpropertyid="6ca76389-16f7-4170-9a22-5c2b0d9edd23">
+			<comment>
+			</comment>
+			<bindings>
+				<binding
+				target="AttributeValue"
+				variable="email">
+				</binding>
+			</bindings>
+			<info
+			id="56f07783-f8a1-4b0e-904a-3bfd55319073"
+			sourcename="ItemRecorderEditor">
+				<path>
+					/dom[@domain='www.automationexercise.com']//section[#'form']/div/div/div[1]/?/?/form[@action='https://www.automationexercise.com/login']/input[@name='email']
+				</path>
+				<robustPath>
+				</robustPath>
+			</info>
+			<AttributeValue>
+			</AttributeValue>
+		</setvaluerecorditem>
+		<setvaluerecorditem
+		attrname="Value"
+		enabled="True"
+		optional="False"
+		searchpropertyid="b22c3f00-4cf9-4e08-86ef-bd96a34a27d4">
+			<comment>
+			</comment>
+			<bindings>
+				<binding
+				target="AttributeValue"
+				variable="password">
+				</binding>
+			</bindings>
+			<info
+			id="bc78f211-ee4b-410f-88c1-0e0cfadaf899"
+			sourcename="ItemRecorderEditor">
+				<path>
+					/dom[@domain='www.automationexercise.com']//section[#'form']/div/div/div[1]/?/?/form[@action='https://www.automationexercise.com/login']/input[@name='password']
+				</path>
+				<robustPath>
+				</robustPath>
+			</info>
+			<AttributeValue>
+			</AttributeValue>
+		</setvaluerecorditem>
+		<mouseitem
+		action="Click"
+		button="Left"
+		duration="300ms"
+		enabled="True"
+		loc="Center"
+		movetime="300ms"
+		optional="False"
+		searchpropertyid="12c45851-be51-475d-8416-10919a64f708"
+		sx="0"
+		sy="0"
+		warnoutofbounds="False">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="fb752a5d-8eab-4a75-9b99-91ba48a8460b"
+			sourcename="ItemRecorderEditor">
+				<path>
+					/dom[@domain='www.automationexercise.com']//section[#'form']/div/div/div[1]/?/?/form[@action='https://www.automationexercise.com/login']/button[@innertext='Login']
+				</path>
+				<robustPath>
+				</robustPath>
+			</info>
+		</mouseitem>
+		<validationitem
+		action="Exists"
+		enabled="True"
+		optional="False"
+		searchpropertyid="9b569a7c-62c7-4672-8ae4-ad8c2cb99e43"
+		similarity="1">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="683a1e01-4431-4dae-ab21-b18c832d829a"
+			sourcename="ItemRecorderEditor">
+				<path>
+					/dom[@domain='www.automationexercise.com']//header[#'header']/div/div/div/div[2]/?/?/ul/li[4]/a[@innertext=' Logout']
+				</path>
+				<robustPath>
+				</robustPath>
+			</info>
+			<matchname>
+				Text
+			</matchname>
+			<matchvalue>
+				yourtext
+			</matchvalue>
+		</validationitem>
+		<validationitem
+		action="AttributeContains"
+		enabled="True"
+		optional="False"
+		searchpropertyid="2ac2b74a-707a-4226-8093-8c59123f7af8"
+		similarity="1">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="10390275-c35e-41de-89d4-d2639dbb6908"
+			sourcename="ItemRecorderEditor">
+				<path>
+					/dom[@domain='www.automationexercise.com']//header[#'header']/div/div/div/div[2]/?/?/ul/li[10]/a[@innertext=' Logged in as ']
+				</path>
+				<robustPath>
+				</robustPath>
+			</info>
+			<matchname>
+				Text
+			</matchname>
+			<matchvalue>
+				&#32;Logged in as&#32;
+			</matchvalue>
+		</validationitem>
 	</recorditems>
 	<repository
 	id="c0857d08-b99b-4d55-b197-ffd12d480039"

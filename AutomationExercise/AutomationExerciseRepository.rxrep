@@ -18,7 +18,7 @@ name="AutomationExerciseRepository">
 		id="40c7c42a-ab65-4243-9e6f-85d8108535bc"
 		isrooted="True"
 		name="ApplicationUnderTest"
-		refimgid="4c6b00a5-29c1-406b-91b4-63c20ca6e479"
+		refimgid="ca3e3dd5-a647-46ae-a0fd-d74272eb0c3a"
 		searchtimeout="30000ms"
 		usecache="False">
 			<item
@@ -53,6 +53,57 @@ name="AutomationExerciseRepository">
 			robustPath="/dom[@domain='www.automationexercise.com']//button[#'submit_search']"
 			searchtimeout="30000ms">
 				/dom[@domain='www.automationexercise.com']//button[#'submit_search']
+			</item>
+			<item
+			addcaps="unknown,webelement,atag"
+			capname="atag"
+			id="18715491-e9e5-4244-bd9d-08d3796fa309"
+			name="SignupLogin"
+			refimgid="d42b075a-f330-4054-867d-d64d68b6d6d2"
+			refpath="/dom[@domain='www.automationexercise.com']//header[#'header']/div/div/div/div[2]/div/ul/li[4]/a[@innertext=' Signup / Login']"
+			robustPath="/dom[@domain='www.automationexercise.com']//header[#'header']//a[@innertext=' Signup / Login']"
+			searchtimeout="30000ms">
+				/dom[@domain='www.automationexercise.com']//header[#'header']/div/div/div/div[2]/?/?/ul/li[4]/a[@innertext=' Signup / Login']
+			</item>
+			<item
+			capname="inputtag"
+			id="56f07783-f8a1-4b0e-904a-3bfd55319073"
+			name="email_address"
+			robustPath="/dom[@domain='www.automationexercise.com']//section[#'form']//input[@name='email']"
+			searchtimeout="30000ms">
+				/dom[@domain='www.automationexercise.com']//section[#'form']/div/div/div[1]/?/?/form[@action='https://www.automationexercise.com/login']/input[@name='email']
+			</item>
+			<item
+			capname="inputtag"
+			id="bc78f211-ee4b-410f-88c1-0e0cfadaf899"
+			name="password"
+			robustPath="/dom[@domain='www.automationexercise.com']//section[#'form']//input[@name='password']"
+			searchtimeout="30000ms">
+				/dom[@domain='www.automationexercise.com']//section[#'form']/div/div/div[1]/?/?/form[@action='https://www.automationexercise.com/login']/input[@name='password']
+			</item>
+			<item
+			capname="button"
+			id="fb752a5d-8eab-4a75-9b99-91ba48a8460b"
+			name="login_button"
+			robustPath="/dom[@domain='www.automationexercise.com']//section[#'form']//button[@innertext='Login']"
+			searchtimeout="30000ms">
+				/dom[@domain='www.automationexercise.com']//section[#'form']/div/div/div[1]/?/?/form[@action='https://www.automationexercise.com/login']/button[@innertext='Login']
+			</item>
+			<item
+			capname="atag"
+			id="683a1e01-4431-4dae-ab21-b18c832d829a"
+			name="logout_button"
+			robustPath="/dom[@domain='www.automationexercise.com']//header[#'header']//a[@innertext=' Logout']"
+			searchtimeout="30000ms">
+				/dom[@domain='www.automationexercise.com']//header[#'header']/div/div/div/div[2]/?/?/ul/li[4]/a[@innertext=' Logout']
+			</item>
+			<item
+			capname="atag"
+			id="10390275-c35e-41de-89d4-d2639dbb6908"
+			name="login_as_testuser"
+			robustPath="/dom[@domain='www.automationexercise.com']//header[#'header']//a[@innertext=' Logged in as ']"
+			searchtimeout="30000ms">
+				/dom[@domain='www.automationexercise.com']//header[#'header']/div/div/div/div[2]/?/?/ul/li[10]/a[@innertext=' Logged in as ']
 			</item>
 			<basepath>
 				/dom[@domain='www.automationexercise.com']

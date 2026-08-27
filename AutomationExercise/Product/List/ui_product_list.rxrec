@@ -65,7 +65,7 @@ mode="Global">
 		enabled="True"
 		isexternaltestmethod="False"
 		methodname="ValidateUiProductListCount"
-		namespace="AutomationExercise"
+		namespace="AutomationExercise.Product.List"
 		optional="False">
 			<comment>
 			</comment>

@@ -22,13 +22,17 @@ namespace AutomationExercise
 		
         // APIで取得した商品名
         public static string ApiProductName { get; set; }
-		
         
 		// APIで取得した商品件数
         public static int ApiProductCount { get; set; }
         
         // APIで取得した商品名一覧
         public static List<string> ApiProductNames { get; set; }
-				
+        
+        
+        // ユーザー関連
+        public static string UserName { get; set; }
+        public static string UserEmail { get; set; }
+        public static string UserPassword { get; set; }
 	}
 }

@@ -22,6 +22,16 @@
 			ref="f6231b86-3610-49f9-9148-3b63ecdc4c86"
 			type="Recording">
 			</testmodule>
+			<teardown
+			id="0f5fa927-d757-4beb-b1d4-2655d638bac1"
+			name="teardown">
+			</teardown>
+			<testmodule
+			id="10e8e2c9-a13d-4ba8-afea-1718f9f5aa9c"
+			name="ui_login"
+			ref="9e7f8747-4f9e-46ce-8ebb-32ecbebc41b6"
+			type="Recording">
+			</testmodule>
 			<testmodule
 			id="125c87d4-4d3c-4aaf-be9b-54963d86c9ac"
 			name="ui_product_list"
@@ -35,7 +45,19 @@
 			type="Recording">
 			</testmodule>
 			<testmodule
+			id="33f1191a-f0ab-4b46-91ef-9a298e001be5"
+			name="CloseBrowser"
+			ref="fb6760ef-a294-4a17-98df-55c29763301e"
+			type="Recording">
+			</testmodule>
+			<testmodule
 			id="444603ab-dd4f-49e5-a4ae-52e316aef159"
+			name="OpenBrowser"
+			ref="f6231b86-3610-49f9-9148-3b63ecdc4c86"
+			type="Recording">
+			</testmodule>
+			<testmodule
+			id="460e989a-e787-47b2-aa87-8b5d78f8535f"
 			name="OpenBrowser"
 			ref="f6231b86-3610-49f9-9148-3b63ecdc4c86"
 			type="Recording">
@@ -76,6 +98,18 @@
 			id="7a28b1e8-8768-42e1-ac68-16147fcba8e5"
 			name="teardown">
 			</teardown>
+			<testmodule
+			id="8059ef2b-7173-4e25-a5be-1b0aa234f9ba"
+			name="api_deleate_user"
+			ref="5cf745f8-f3dd-4b30-870c-81a91ce85841"
+			type="UserCode">
+			</testmodule>
+			<testmodule
+			id="8103b93a-3031-4fdb-9c45-585d7116a4e5"
+			name="CloseBrowser"
+			ref="fb6760ef-a294-4a17-98df-55c29763301e"
+			type="Recording">
+			</testmodule>
 			<testcase
 			id="81fb9297-d399-437f-afd0-5fb6669085e0"
 			name="TC05_API_UI_UserLifecycle">
@@ -96,6 +130,20 @@
 			ref="fb6760ef-a294-4a17-98df-55c29763301e"
 			type="Recording">
 			</testmodule>
+			<setup
+			id="8f450cdc-ff3e-4c07-86cc-c32df9602fe0"
+			name="setup">
+			</setup>
+			<testmodule
+			id="a2bf87c8-6ffd-4d82-afe3-8bbf9a6016b4"
+			name="api_verify_deleted_user"
+			ref="ここはranorexが生成したguidを使用"
+			type="UserCode">
+			</testmodule>
+			<teardown
+			id="a7c7caed-5b24-4eb4-a7f9-22628ee19dc1"
+			name="teardown">
+			</teardown>
 			<teardown
 			id="adea8282-b97e-480c-b79b-d61f76b87c97"
 			name="teardown">
@@ -118,6 +166,12 @@
 			name="api_product_list"
 			ref="d7d73a24-5060-48d2-9a06-d5d305abb4ae"
 			type="Recording">
+			</testmodule>
+			<testmodule
+			id="cef0d8d5-4263-46e2-8f7b-231635d8b4e2"
+			name="api_create_user"
+			ref="86b70d3c-d1bd-4f6a-9b69-e31636e72a68"
+			type="UserCode">
 			</testmodule>
 			<testsuite
 			ExportColumnList="None"
@@ -156,8 +210,18 @@
 			showtestmodulefullpath="False"
 			singlereportpdfdirectory="SingleReportPDF">
 			</testsuite>
+			<testmodule
+			id="dee05512-8254-4efd-a9ba-fd13ca856ce9"
+			name="OpenBrowser"
+			ref="f6231b86-3610-49f9-9148-3b63ecdc4c86"
+			type="Recording">
+			</testmodule>
 			<setup
 			id="f20ef91c-c507-413c-a8aa-4729a456afa8"
+			name="setup">
+			</setup>
+			<setup
+			id="f56b0c73-caaf-4c04-9e18-e6d9f4730970"
 			name="setup">
 			</setup>
 			<testcase
@@ -253,10 +317,58 @@
 					<testcase
 					id="ba35efae-de25-4c90-a0c9-1c1dfc89fdcd"
 					name="TC04_UI_ProductDetail">
+						<setup
+						id="8f450cdc-ff3e-4c07-86cc-c32df9602fe0"
+						name="setup">
+							<testmodule
+							id="460e989a-e787-47b2-aa87-8b5d78f8535f"
+							name="OpenBrowser">
+							</testmodule>
+						</setup>
+						<teardown
+						id="a7c7caed-5b24-4eb4-a7f9-22628ee19dc1"
+						name="teardown">
+							<testmodule
+							id="8103b93a-3031-4fdb-9c45-585d7116a4e5"
+							name="CloseBrowser">
+							</testmodule>
+						</teardown>
 					</testcase>
 					<testcase
 					id="81fb9297-d399-437f-afd0-5fb6669085e0"
 					name="TC05_API_UI_UserLifecycle">
+						<setup
+						id="f56b0c73-caaf-4c04-9e18-e6d9f4730970"
+						name="setup">
+							<testmodule
+							id="dee05512-8254-4efd-a9ba-fd13ca856ce9"
+							name="OpenBrowser">
+							</testmodule>
+						</setup>
+						<testmodule
+						id="cef0d8d5-4263-46e2-8f7b-231635d8b4e2"
+						name="api_create_user">
+						</testmodule>
+						<testmodule
+						id="10e8e2c9-a13d-4ba8-afea-1718f9f5aa9c"
+						name="ui_login">
+						</testmodule>
+						<testmodule
+						id="8059ef2b-7173-4e25-a5be-1b0aa234f9ba"
+						name="api_deleate_user">
+						</testmodule>
+						<testmodule
+						id="a2bf87c8-6ffd-4d82-afe3-8bbf9a6016b4"
+						name="api_verify_deleted_user">
+						</testmodule>
+						<teardown
+						id="0f5fa927-d757-4beb-b1d4-2655d638bac1"
+						name="teardown">
+							<testmodule
+							id="33f1191a-f0ab-4b46-91ef-9a298e001be5"
+							name="CloseBrowser">
+							</testmodule>
+						</teardown>
 					</testcase>
 				</testcase>
 			</testsuite>

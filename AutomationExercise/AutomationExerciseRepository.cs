@@ -88,6 +88,12 @@ namespace AutomationExercise
             RepoItemInfo _products_menuInfo;
             RepoItemInfo _searchproductInfo;
             RepoItemInfo _submitsearchInfo;
+            RepoItemInfo _signuploginInfo;
+            RepoItemInfo _email_addressInfo;
+            RepoItemInfo _passwordInfo;
+            RepoItemInfo _login_buttonInfo;
+            RepoItemInfo _logout_buttonInfo;
+            RepoItemInfo _login_as_testuserInfo;
 
             /// <summary>
             /// Creates a new ApplicationUnderTest  folder.
@@ -98,6 +104,12 @@ namespace AutomationExercise
                 _products_menuInfo = new RepoItemInfo(this, "Products_Menu", ".//header[#'header']/div/div/div/div[2]/?/?/ul/li[2]/a[@innertext=' Products']", "", 30000, null, "ece49e18-a297-4a30-bf9e-f0faa070e73a");
                 _searchproductInfo = new RepoItemInfo(this, "SearchProduct", ".//input[#'search_product']", "", 30000, null, "fd0b7cc1-fc3f-4beb-aa4b-e221a80d531f");
                 _submitsearchInfo = new RepoItemInfo(this, "SubmitSearch", ".//button[#'submit_search']", ".//button[#'submit_search']", 30000, null, "f6a14cf7-d441-4173-8fca-a751a345d1a5");
+                _signuploginInfo = new RepoItemInfo(this, "SignupLogin", ".//header[#'header']/div/div/div/div[2]/?/?/ul/li[4]/a[@innertext=' Signup / Login']", ".//header[#'header']//a[@innertext=' Signup / Login']", 30000, null, "18715491-e9e5-4244-bd9d-08d3796fa309");
+                _email_addressInfo = new RepoItemInfo(this, "email_address", ".//section[#'form']/div/div/div[1]/?/?/form[@action='https://www.automationexercise.com/login']/input[@name='email']", ".//section[#'form']//input[@name='email']", 30000, null, "56f07783-f8a1-4b0e-904a-3bfd55319073");
+                _passwordInfo = new RepoItemInfo(this, "password", ".//section[#'form']/div/div/div[1]/?/?/form[@action='https://www.automationexercise.com/login']/input[@name='password']", ".//section[#'form']//input[@name='password']", 30000, null, "bc78f211-ee4b-410f-88c1-0e0cfadaf899");
+                _login_buttonInfo = new RepoItemInfo(this, "login_button", ".//section[#'form']/div/div/div[1]/?/?/form[@action='https://www.automationexercise.com/login']/button[@innertext='Login']", ".//section[#'form']//button[@innertext='Login']", 30000, null, "fb752a5d-8eab-4a75-9b99-91ba48a8460b");
+                _logout_buttonInfo = new RepoItemInfo(this, "logout_button", ".//header[#'header']/div/div/div/div[2]/?/?/ul/li[4]/a[@innertext=' Logout']", ".//header[#'header']//a[@innertext=' Logout']", 30000, null, "683a1e01-4431-4dae-ab21-b18c832d829a");
+                _login_as_testuserInfo = new RepoItemInfo(this, "login_as_testuser", ".//header[#'header']/div/div/div/div[2]/?/?/ul/li[10]/a[@innertext=' Logged in as ']", ".//header[#'header']//a[@innertext=' Logged in as ']", 30000, null, "10390275-c35e-41de-89d4-d2639dbb6908");
             }
 
             /// <summary>
@@ -193,6 +205,150 @@ namespace AutomationExercise
                 get
                 {
                     return _submitsearchInfo;
+                }
+            }
+
+            /// <summary>
+            /// The SignupLogin item.
+            /// </summary>
+            [RepositoryItem("18715491-e9e5-4244-bd9d-08d3796fa309")]
+            public virtual Ranorex.ATag SignupLogin
+            {
+                get
+                {
+                    return _signuploginInfo.CreateAdapter<Ranorex.ATag>(true);
+                }
+            }
+
+            /// <summary>
+            /// The SignupLogin item info.
+            /// </summary>
+            [RepositoryItemInfo("18715491-e9e5-4244-bd9d-08d3796fa309")]
+            public virtual RepoItemInfo SignupLoginInfo
+            {
+                get
+                {
+                    return _signuploginInfo;
+                }
+            }
+
+            /// <summary>
+            /// The email_address item.
+            /// </summary>
+            [RepositoryItem("56f07783-f8a1-4b0e-904a-3bfd55319073")]
+            public virtual Ranorex.InputTag email_address
+            {
+                get
+                {
+                    return _email_addressInfo.CreateAdapter<Ranorex.InputTag>(true);
+                }
+            }
+
+            /// <summary>
+            /// The email_address item info.
+            /// </summary>
+            [RepositoryItemInfo("56f07783-f8a1-4b0e-904a-3bfd55319073")]
+            public virtual RepoItemInfo email_addressInfo
+            {
+                get
+                {
+                    return _email_addressInfo;
+                }
+            }
+
+            /// <summary>
+            /// The password item.
+            /// </summary>
+            [RepositoryItem("bc78f211-ee4b-410f-88c1-0e0cfadaf899")]
+            public virtual Ranorex.InputTag password
+            {
+                get
+                {
+                    return _passwordInfo.CreateAdapter<Ranorex.InputTag>(true);
+                }
+            }
+
+            /// <summary>
+            /// The password item info.
+            /// </summary>
+            [RepositoryItemInfo("bc78f211-ee4b-410f-88c1-0e0cfadaf899")]
+            public virtual RepoItemInfo passwordInfo
+            {
+                get
+                {
+                    return _passwordInfo;
+                }
+            }
+
+            /// <summary>
+            /// The login_button item.
+            /// </summary>
+            [RepositoryItem("fb752a5d-8eab-4a75-9b99-91ba48a8460b")]
+            public virtual Ranorex.Button login_button
+            {
+                get
+                {
+                    return _login_buttonInfo.CreateAdapter<Ranorex.Button>(true);
+                }
+            }
+
+            /// <summary>
+            /// The login_button item info.
+            /// </summary>
+            [RepositoryItemInfo("fb752a5d-8eab-4a75-9b99-91ba48a8460b")]
+            public virtual RepoItemInfo login_buttonInfo
+            {
+                get
+                {
+                    return _login_buttonInfo;
+                }
+            }
+
+            /// <summary>
+            /// The logout_button item.
+            /// </summary>
+            [RepositoryItem("683a1e01-4431-4dae-ab21-b18c832d829a")]
+            public virtual Ranorex.ATag logout_button
+            {
+                get
+                {
+                    return _logout_buttonInfo.CreateAdapter<Ranorex.ATag>(true);
+                }
+            }
+
+            /// <summary>
+            /// The logout_button item info.
+            /// </summary>
+            [RepositoryItemInfo("683a1e01-4431-4dae-ab21-b18c832d829a")]
+            public virtual RepoItemInfo logout_buttonInfo
+            {
+                get
+                {
+                    return _logout_buttonInfo;
+                }
+            }
+
+            /// <summary>
+            /// The login_as_testuser item.
+            /// </summary>
+            [RepositoryItem("10390275-c35e-41de-89d4-d2639dbb6908")]
+            public virtual Ranorex.ATag login_as_testuser
+            {
+                get
+                {
+                    return _login_as_testuserInfo.CreateAdapter<Ranorex.ATag>(true);
+                }
+            }
+
+            /// <summary>
+            /// The login_as_testuser item info.
+            /// </summary>
+            [RepositoryItemInfo("10390275-c35e-41de-89d4-d2639dbb6908")]
+            public virtual RepoItemInfo login_as_testuserInfo
+            {
+                get
+                {
+                    return _login_as_testuserInfo;
                 }
             }
         }
