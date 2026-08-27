@@ -40,7 +40,11 @@ jobs:
         # Ranorex Test Suite実行
       - name: Run Ranorex Test Suite
         shell: powershell
-        run: .\AutomationExercise\bin\Debug\AutomationExercise.exe
+        run: |
+          New-Item -ItemType Directory -Force -Path "TestResults"
+
+          .\AutomationExercise\bin\Debug\AutomationExercise.exe `
+            /reportfile:"TestResults\AutomationExercise.rxlog"
         
       
       - name: Upload Ranorex Reports
@@ -48,4 +52,5 @@ jobs:
         uses: actions/upload-artifact@v4
         with:
           name: ranorex-reports
-          path: AutomationExercise/Reports/
+          path: TestResults/
+          if-no-files-found: warn
