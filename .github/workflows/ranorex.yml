@@ -1,0 +1,43 @@
+name: Ranorex CI
+
+on:
+  push:
+    branches:
+      - main
+
+  pull_request:
+    branches:
+      - main
+
+  workflow_dispatch:
+
+jobs:
+  ranorex-test:
+    runs-on:
+      - self-hosted
+      - windows
+      - x64
+
+    steps:
+        # GitHub repository コード取得
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        
+        # MSBuild环境セットアップ       
+      - name: Setup MSBuild
+        uses: microsoft/setup-msbuild@v2
+        
+        # Ranorex Solution　ビルド
+      - name: Build Ranorex solution
+        run: msbuild AutomationExercise.sln /p:Configuration=Debug
+        
+      - name: Check build output
+        shell: powershell
+        run: |
+          Write-Host "=== Ranorex Build Output ==="
+          Get-ChildItem ".\AutomationExercise\bin\Debug" -Recurse
+               
+        # Ranorex Test Suite実行
+      - name: Run Ranorex Test Suite
+        shell: powershell
+        run: .\AutomationExercise\bin\Debug\AutomationExercise.exe

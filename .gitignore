@@ -1,14 +1,13 @@
-# Ranorex test reports
-Reports/
+# Ranorex build output
+**/bin/
+**/obj/
+
+# Ranorex reports
 **/Reports/
+*.rxlog
+*.rxlog.data
+*.rxlog.lnk
 
-# Ranorex user preferences
+# User-specific files
 *.pref
-
-# Visual Studio / build output
-bin/
-obj/
-
-# Temporary files
-*.tmp
-*.log
+*.rxuser
