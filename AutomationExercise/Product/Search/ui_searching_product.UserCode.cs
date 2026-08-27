@@ -33,6 +33,52 @@ namespace AutomationExercise.Product.Search
             // Your recording specific initialization code goes here.
         }
         
+        /// <summary>
+		/// ポップアップ広告が表示された場合に閉じる。
+		///
+		/// 処理内容:
+		/// ・広告iframe内のClose要素を検索する。
+		/// ・Closeが存在する場合のみクリックする。
+		/// ・広告が存在しない場合はテストを継続する。
+		///
+		/// Returns:
+		/// なし。
+		/// </summary>
+		public void ClosePopupAdIfExists() 
+		{
+			// 広告CloseボタンのRxPath
+			string closePath =
+        		"/dom[@domain='www.automationexercise.com']" +
+        		"//iframe//div[#'dismiss-button-element']" +
+        		"/div[@innertext='Close']";
+			
+			IList<Ranorex.Unknown> closeButtons = 
+				Host.Local.Find<Ranorex.Unknown>(
+					closePath
+				);
+			
+			// 広告が存在しない場合
+    		if (closeButtons.Count == 0)
+    		{
+        		Report.Info(
+        		    "ポップアップ広告なし。処理を継続します。"
+        		);
+
+        		return;
+    		}
+    		
+    		// 広告を閉じる
+    		closeButtons[0].Click();
+    		
+    		
+    		Report.Info(
+        		"ポップアップ広告を閉じました。"
+    		);
+					
+		}
+        
+        
+        
         public void ValidateUiProductCount()
 		{
     		// Automation ExerciseのDOMを取得

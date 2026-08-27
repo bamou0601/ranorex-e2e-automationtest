@@ -162,6 +162,7 @@
 			</setup>
 			<testcase
 			datasource="NewConnector"
+			errorbehavior="ContinueNextIteration"
 			id="f7c9d2b7-427e-436f-80cd-b489c93664cc"
 			name="TC01_API_UI_ProductSearch">
 			</testcase>

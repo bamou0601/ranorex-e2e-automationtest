@@ -96,18 +96,21 @@ namespace AutomationExercise.Product.Search
             repo.ApplicationUnderTest.Products_Menu.Click();
             Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Delay", "Waiting for 300ms.", new RecordItemIndex(1));
-            Delay.Duration(300, false);
+            Report.Log(ReportLevel.Info, "Delay", "Waiting for 500ms.", new RecordItemIndex(1));
+            Delay.Duration(500, false);
             
-            Report.Log(ReportLevel.Info, "Set value", "Setting attribute Value to '$search_content' on item 'ApplicationUnderTest.SearchProduct'.", repo.ApplicationUnderTest.SearchProductInfo, new RecordItemIndex(2));
+            ClosePopupAdIfExists();
+            Delay.Milliseconds(0);
+            
+            Report.Log(ReportLevel.Info, "Set value", "Setting attribute Value to '$search_content' on item 'ApplicationUnderTest.SearchProduct'.", repo.ApplicationUnderTest.SearchProductInfo, new RecordItemIndex(3));
             repo.ApplicationUnderTest.SearchProduct.Element.SetAttributeValue("Value", search_content);
             Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ApplicationUnderTest.SubmitSearch' at Center.", repo.ApplicationUnderTest.SubmitSearchInfo, new RecordItemIndex(3));
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ApplicationUnderTest.SubmitSearch' at Center.", repo.ApplicationUnderTest.SubmitSearchInfo, new RecordItemIndex(4));
             repo.ApplicationUnderTest.SubmitSearch.Click();
             Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Delay", "Waiting for 1s.", new RecordItemIndex(4));
+            Report.Log(ReportLevel.Info, "Delay", "Waiting for 1s.", new RecordItemIndex(5));
             Delay.Duration(1000, false);
             
             ValidateUiProductCount();

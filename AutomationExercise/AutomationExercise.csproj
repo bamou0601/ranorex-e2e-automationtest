@@ -162,6 +162,9 @@
       <id>c318a2fe-f03c-43a1-b744-3d3f40523a95</id>
       <BoundTo>fdabcc6a-9ece-4217-933e-6f363fbc74cf</BoundTo>
     </Compile>
+    <Compile Include="Common\PopupHandler.cs">
+      <id>59331146-d52b-4c25-acff-59d49198ae80</id>
+    </Compile>
     <Compile Include="Common\TestContext.cs">
       <id>5c7b84f0-7b8f-4f8d-8cbe-6553dba5b414</id>
     </Compile>

@@ -57,7 +57,7 @@ mode="Global">
 			</info>
 		</mouseitem>
 		<explicitdelayitem
-		duration="300ms"
+		duration="500ms"
 		enabled="True"
 		optional="False">
 			<comment>
@@ -65,6 +65,21 @@ mode="Global">
 			<bindings>
 			</bindings>
 		</explicitdelayitem>
+		<userrecorditem
+		classname="ui_searching_product"
+		enabled="True"
+		isexternaltestmethod="False"
+		methodname="ClosePopupAdIfExists"
+		namespace="AutomationExercise.Product.Search"
+		optional="False">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<arguments
+			id="47f19840-9eee-42cc-891d-598751ee4e4d">
+			</arguments>
+		</userrecorditem>
 		<setvaluerecorditem
 		attrname="Value"
 		enabled="True"
@@ -130,7 +145,7 @@ mode="Global">
 		enabled="True"
 		isexternaltestmethod="False"
 		methodname="ValidateUiProductCount"
-		namespace="AutomationExercise"
+		namespace="AutomationExercise.Product.Search"
 		optional="False">
 			<comment>
 			</comment>
