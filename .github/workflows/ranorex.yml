@@ -41,3 +41,11 @@ jobs:
       - name: Run Ranorex Test Suite
         shell: powershell
         run: .\AutomationExercise\bin\Debug\AutomationExercise.exe
+        
+      
+      - name: Upload Ranorex Reports
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: ranorex-reports
+          path: AutomationExercise/Reports/
