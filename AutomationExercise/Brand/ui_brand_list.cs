@@ -20,51 +20,38 @@ using Ranorex.Core;
 using Ranorex.Core.Testing;
 using Ranorex.Core.Repository;
 
-namespace AutomationExercise.Product.Search
+namespace AutomationExercise.Brand
 {
 #pragma warning disable 0436 //(CS0436) The type 'type' in 'assembly' conflicts with the imported type 'type2' in 'assembly'. Using the type defined in 'assembly'.
     /// <summary>
-    ///The ui_searching_product recording.
+    ///The ui_brand_list recording.
     /// </summary>
-    [TestModule("80f826fc-aac1-46bb-b1a4-39e06eeb5d60", ModuleType.Recording, 1)]
-    public partial class ui_searching_product : ITestModule
+    [TestModule("66fc7681-3e4b-4413-95a1-27f02c5796a9", ModuleType.Recording, 1)]
+    public partial class ui_brand_list : ITestModule
     {
         /// <summary>
         /// Holds an instance of the global::AutomationExercise.AutomationExerciseRepository repository.
         /// </summary>
         public static global::AutomationExercise.AutomationExerciseRepository repo = global::AutomationExercise.AutomationExerciseRepository.Instance;
 
-        static ui_searching_product instance = new ui_searching_product();
+        static ui_brand_list instance = new ui_brand_list();
 
         /// <summary>
         /// Constructs a new instance.
         /// </summary>
-        public ui_searching_product()
+        public ui_brand_list()
         {
-            search_content = "top";
         }
 
         /// <summary>
         /// Gets a static instance of this recording.
         /// </summary>
-        public static ui_searching_product Instance
+        public static ui_brand_list Instance
         {
             get { return instance; }
         }
 
 #region Variables
-
-        string _search_content;
-
-        /// <summary>
-        /// Gets or sets the value of variable search_content.
-        /// </summary>
-        [TestVariable("2814eeac-03b5-4290-b0c6-ff34f0d1d5bf")]
-        public string search_content
-        {
-            get { return _search_content; }
-            set { _search_content = value; }
-        }
 
 #endregion
 
@@ -96,27 +83,16 @@ namespace AutomationExercise.Product.Search
             repo.ApplicationUnderTest.Products_Menu.Click();
             Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Delay", "Waiting for 500ms.", new RecordItemIndex(1));
-            Delay.Duration(500, false);
+            Report.Log(ReportLevel.Info, "Delay", "Waiting for 2s.", new RecordItemIndex(1));
+            Delay.Duration(2000, false);
             
             ClosePopupAdIfExists();
             Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Wait", "Waiting 10s to exist. Associated repository item: 'ApplicationUnderTest.SearchProduct'", repo.ApplicationUnderTest.SearchProductInfo, new ActionTimeout(10000), new RecordItemIndex(3));
-            repo.ApplicationUnderTest.SearchProductInfo.WaitForExists(10000);
+            Report.Log(ReportLevel.Info, "Wait", "Waiting 5s to exist. Associated repository item: 'ApplicationUnderTest.brands'", repo.ApplicationUnderTest.brandsInfo, new ActionTimeout(5000), new RecordItemIndex(3));
+            repo.ApplicationUnderTest.brandsInfo.WaitForExists(5000);
             
-            Report.Log(ReportLevel.Info, "Set value", "Setting attribute Value to '$search_content' on item 'ApplicationUnderTest.SearchProduct'.", repo.ApplicationUnderTest.SearchProductInfo, new RecordItemIndex(4));
-            repo.ApplicationUnderTest.SearchProduct.Element.SetAttributeValue("Value", search_content);
-            Delay.Milliseconds(0);
-            
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ApplicationUnderTest.SubmitSearch' at Center.", repo.ApplicationUnderTest.SubmitSearchInfo, new RecordItemIndex(5));
-            repo.ApplicationUnderTest.SubmitSearch.Click();
-            Delay.Milliseconds(0);
-            
-            Report.Log(ReportLevel.Info, "Delay", "Waiting for 1s.", new RecordItemIndex(6));
-            Delay.Duration(1000, false);
-            
-            ValidateUiProductCount();
+            ValidateBrandList();
             Delay.Milliseconds(0);
             
         }

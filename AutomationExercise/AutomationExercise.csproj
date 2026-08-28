@@ -138,6 +138,21 @@
       <RepositoryCode>true</RepositoryCode>
       <id>1ecfa87e-2c79-48d9-a0df-e8d007b8e595</id>
     </Compile>
+    <Compile Include="Brand\api_brand_list.cs">
+      <id>c33a7785-a8ec-4629-9be3-2452cea07b92</id>
+    </Compile>
+    <Compile Include="Brand\ui_brand_list.cs">
+      <BoundTo>ba6c7175-9d5a-4f13-959e-e8a1848fb415</BoundTo>
+      <DependentUpon>ui_brand_list.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>e02b6e2d-94ba-4507-b590-2dd3b22b0717</id>
+    </Compile>
+    <Compile Include="Brand\ui_brand_list.UserCode.cs">
+      <BoundTo>ba6c7175-9d5a-4f13-959e-e8a1848fb415</BoundTo>
+      <DependentUpon>ui_brand_list.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>9e741a34-b332-4a60-a8e9-f8e0a3d11acf</id>
+    </Compile>
     <Compile Include="Common\CloseBrowser.cs">
       <DependentUpon>CloseBrowser.rxrec</DependentUpon>
       <RecorderCode>true</RecorderCode>
@@ -169,16 +184,7 @@
       <id>5c7b84f0-7b8f-4f8d-8cbe-6553dba5b414</id>
     </Compile>
     <Compile Include="Product\List\api_product_list.cs">
-      <DependentUpon>api_product_list.rxrec</DependentUpon>
-      <RecorderCode>true</RecorderCode>
-      <id>22898f9b-52c5-4e8f-bdb7-23783694487a</id>
-      <BoundTo>a9cb13ac-804f-4bb7-9768-ec979e30c787</BoundTo>
-    </Compile>
-    <Compile Include="Product\List\api_product_list.UserCode.cs">
-      <DependentUpon>api_product_list.rxrec</DependentUpon>
-      <UserCode>true</UserCode>
-      <id>af0a2cef-1931-4a4d-8ca2-0bb0590cbeda</id>
-      <BoundTo>a9cb13ac-804f-4bb7-9768-ec979e30c787</BoundTo>
+      <id>5ab05185-d98b-4e37-bfc2-ea3e21476195</id>
     </Compile>
     <Compile Include="Product\List\ui_product_list.cs">
       <DependentUpon>ui_product_list.rxrec</DependentUpon>
@@ -193,16 +199,7 @@
       <BoundTo>13631076-7a79-4d3d-ac4d-fc7dc7f837f8</BoundTo>
     </Compile>
     <Compile Include="Product\Search\api_searching_product.cs">
-      <DependentUpon>api_searching_product.rxrec</DependentUpon>
-      <RecorderCode>true</RecorderCode>
-      <id>840b8462-ec30-4267-b377-84e0e4125393</id>
-      <BoundTo>922b9f5a-093a-4795-ad8e-e0e91c0b12d3</BoundTo>
-    </Compile>
-    <Compile Include="Product\Search\api_searching_product.UserCode.cs">
-      <DependentUpon>api_searching_product.rxrec</DependentUpon>
-      <UserCode>true</UserCode>
-      <id>8ad7df44-a519-473b-9835-c57027a889fa</id>
-      <BoundTo>922b9f5a-093a-4795-ad8e-e0e91c0b12d3</BoundTo>
+      <id>b0bcd528-71e8-4408-b862-967f4ee9defa</id>
     </Compile>
     <Compile Include="Product\Search\ui_searching_product.cs">
       <DependentUpon>ui_searching_product.rxrec</DependentUpon>
@@ -256,6 +253,11 @@
       <repoid>c0857d08-b99b-4d55-b197-ffd12d480039</repoid>
       <reporootid>198c1291-c4f8-440e-975f-c673da20c282</reporootid>
     </None>
+    <None Include="Brand\ui_brand_list.rxrec">
+      <BoundTo>1ed1c375-d5eb-415d-a015-d6455a96b978</BoundTo>
+      <id>ba6c7175-9d5a-4f13-959e-e8a1848fb415</id>
+      <recordtableid>66fc7681-3e4b-4413-95a1-27f02c5796a9</recordtableid>
+    </None>
     <None Include="Common\CloseBrowser.rxrec">
       <BoundTo>1ed1c375-d5eb-415d-a015-d6455a96b978</BoundTo>
       <id>dce1dc48-ec0b-4dcb-8cb7-1fbbbb7650a5</id>
@@ -266,20 +268,10 @@
       <id>fdabcc6a-9ece-4217-933e-6f363fbc74cf</id>
       <recordtableid>f6231b86-3610-49f9-9148-3b63ecdc4c86</recordtableid>
     </None>
-    <None Include="Product\List\api_product_list.rxrec">
-      <BoundTo>1ed1c375-d5eb-415d-a015-d6455a96b978</BoundTo>
-      <id>a9cb13ac-804f-4bb7-9768-ec979e30c787</id>
-      <recordtableid>d7d73a24-5060-48d2-9a06-d5d305abb4ae</recordtableid>
-    </None>
     <None Include="Product\List\ui_product_list.rxrec">
       <BoundTo>1ed1c375-d5eb-415d-a015-d6455a96b978</BoundTo>
       <id>13631076-7a79-4d3d-ac4d-fc7dc7f837f8</id>
       <recordtableid>e9ec20a3-43b3-410f-9840-d3f200fe88e5</recordtableid>
-    </None>
-    <None Include="Product\Search\api_searching_product.rxrec">
-      <BoundTo>1ed1c375-d5eb-415d-a015-d6455a96b978</BoundTo>
-      <id>922b9f5a-093a-4795-ad8e-e0e91c0b12d3</id>
-      <recordtableid>8b6ce173-9cef-4bb7-94a7-f43981a6d60d</recordtableid>
     </None>
     <None Include="Product\Search\ui_searching_product.rxrec">
       <BoundTo>1ed1c375-d5eb-415d-a015-d6455a96b978</BoundTo>

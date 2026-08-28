@@ -80,6 +80,26 @@ mode="Global">
 			id="47f19840-9eee-42cc-891d-598751ee4e4d">
 			</arguments>
 		</userrecorditem>
+		<WaitForRecordItem
+		enabled="True"
+		optional="False"
+		searchpropertyid="209d2ae5-f145-441d-bd24-e6065ee8614e"
+		waitaction="Exists"
+		waittimeout="10000ms">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="fd0b7cc1-fc3f-4beb-aa4b-e221a80d531f"
+			sourcename="ItemRecorderEditor">
+				<path>
+					/dom[@domain='www.automationexercise.com']//input[#'search_product']
+				</path>
+				<robustPath>
+				</robustPath>
+			</info>
+		</WaitForRecordItem>
 		<setvaluerecorditem
 		attrname="Value"
 		enabled="True"

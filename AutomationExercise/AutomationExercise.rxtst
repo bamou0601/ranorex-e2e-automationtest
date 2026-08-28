@@ -3,18 +3,10 @@
 	<testsuiteentryhierarchy>
 		<flatlistofchildren>
 			<testmodule
-			id="0b17e114-10c8-411a-81b9-8a802832b61f"
-			name="Api_searching_product"
-			ref="8b6ce173-9cef-4bb7-94a7-f43981a6d60d"
+			id="0a8b6712-6ca4-41af-9de6-155cc50e4e71"
+			name="ui_brand_list"
+			ref="66fc7681-3e4b-4413-95a1-27f02c5796a9"
 			type="Recording">
-				<databinding>
-					<var
-					dataname="searchProduct"
-					datasourceid="c1498980-d4b4-44e0-8e9c-bf5250757b04"
-					variableid="3f988ed2-c26c-4490-b48b-97e04a055a00"
-					variablename="searchProduct">
-					</var>
-				</databinding>
 			</testmodule>
 			<testmodule
 			id="0ccacfeb-647e-4be3-b5b9-2794d5766b0d"
@@ -37,6 +29,12 @@
 			name="ui_product_list"
 			ref="e9ec20a3-43b3-410f-9840-d3f200fe88e5"
 			type="Recording">
+			</testmodule>
+			<testmodule
+			id="14336d60-ce1e-4550-a3f2-fbf124468be8"
+			name="api_brand_list"
+			ref="0668dca6-0f77-457f-a083-13c9c3898048"
+			type="UserCode">
 			</testmodule>
 			<testmodule
 			id="25940899-8076-4783-81ee-ac00c8b0cd6f"
@@ -94,6 +92,12 @@
 			id="5fd8d533-0e00-4aa1-bffc-5d6bf0d6ea0f"
 			name="setup">
 			</setup>
+			<testmodule
+			id="71480cbe-a3d8-473a-b6bd-32bd030c7a53"
+			name="api_product_list"
+			ref="41c273ff-f9ac-4e16-b3a5-6b10a0cfc6c0"
+			type="UserCode">
+			</testmodule>
 			<teardown
 			id="7a28b1e8-8768-42e1-ac68-16147fcba8e5"
 			name="teardown">
@@ -162,10 +166,18 @@
 			name="setup">
 			</setup>
 			<testmodule
-			id="cc5322c3-7b34-4aca-a49e-e0ee7b60b89c"
-			name="api_product_list"
-			ref="d7d73a24-5060-48d2-9a06-d5d305abb4ae"
-			type="Recording">
+			id="ced02887-ffb3-454f-b0eb-7f00546ceef4"
+			name="api_searching_product"
+			ref="b958290d-4f68-4ff9-affd-03d37b45dfa3"
+			type="UserCode">
+				<databinding>
+					<var
+					dataname="searchProduct"
+					datasourceid="c1498980-d4b4-44e0-8e9c-bf5250757b04"
+					variableid="5e9b2cb9-e1cb-4d44-b562-8381c8b426f9"
+					variablename="SearchProduct">
+					</var>
+				</databinding>
 			</testmodule>
 			<testmodule
 			id="cef0d8d5-4263-46e2-8f7b-231635d8b4e2"
@@ -250,8 +262,8 @@
 							</testmodule>
 						</setup>
 						<testmodule
-						id="0b17e114-10c8-411a-81b9-8a802832b61f"
-						name="Api_searching_product">
+						id="ced02887-ffb3-454f-b0eb-7f00546ceef4"
+						name="api_searching_product">
 						</testmodule>
 						<testmodule
 						id="4a54c431-2d78-4d57-b997-6e2161a85b61"
@@ -278,7 +290,7 @@
 							</testmodule>
 						</setup>
 						<testmodule
-						id="cc5322c3-7b34-4aca-a49e-e0ee7b60b89c"
+						id="71480cbe-a3d8-473a-b6bd-32bd030c7a53"
 						name="api_product_list">
 						</testmodule>
 						<testmodule
@@ -305,6 +317,14 @@
 							name="OpenBrowser">
 							</testmodule>
 						</setup>
+						<testmodule
+						id="14336d60-ce1e-4550-a3f2-fbf124468be8"
+						name="api_brand_list">
+						</testmodule>
+						<testmodule
+						id="0a8b6712-6ca4-41af-9de6-155cc50e4e71"
+						name="ui_brand_list">
+						</testmodule>
 						<teardown
 						id="544bf6b0-8af2-4c71-a2be-fec806ac24fa"
 						name="teardown">

@@ -34,5 +34,9 @@ namespace AutomationExercise
         public static string UserName { get; set; }
         public static string UserEmail { get; set; }
         public static string UserPassword { get; set; }
+        
+        // ブランド関連
+        public static int ApiBrandCount { get; set; }
+        public static List<string> ApiBrandNames { get; set; }
 	}
 }

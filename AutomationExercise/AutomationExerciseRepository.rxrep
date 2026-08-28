@@ -105,6 +105,14 @@ name="AutomationExerciseRepository">
 			searchtimeout="30000ms">
 				/dom[@domain='www.automationexercise.com']//header[#'header']/div/div/div/div[2]/?/?/ul/li[10]/a[@innertext=' Logged in as ']
 			</item>
+			<item
+			capname="h2tag"
+			id="5589a3aa-1e3d-4cae-a647-7012049364d9"
+			name="brands"
+			robustPath="/dom[@domain='www.automationexercise.com']//h2[@innertext='Brands']"
+			searchtimeout="30000ms">
+				/dom[@domain='www.automationexercise.com']/body/section[2]/div/div/div[1]/div/div[2]/h2[@innertext='Brands']
+			</item>
 			<basepath>
 				/dom[@domain='www.automationexercise.com']
 			</basepath>

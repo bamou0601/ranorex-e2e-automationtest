@@ -94,6 +94,7 @@ namespace AutomationExercise
             RepoItemInfo _login_buttonInfo;
             RepoItemInfo _logout_buttonInfo;
             RepoItemInfo _login_as_testuserInfo;
+            RepoItemInfo _brandsInfo;
 
             /// <summary>
             /// Creates a new ApplicationUnderTest  folder.
@@ -110,6 +111,7 @@ namespace AutomationExercise
                 _login_buttonInfo = new RepoItemInfo(this, "login_button", ".//section[#'form']/div/div/div[1]/?/?/form[@action='https://www.automationexercise.com/login']/button[@innertext='Login']", ".//section[#'form']//button[@innertext='Login']", 30000, null, "fb752a5d-8eab-4a75-9b99-91ba48a8460b");
                 _logout_buttonInfo = new RepoItemInfo(this, "logout_button", ".//header[#'header']/div/div/div/div[2]/?/?/ul/li[4]/a[@innertext=' Logout']", ".//header[#'header']//a[@innertext=' Logout']", 30000, null, "683a1e01-4431-4dae-ab21-b18c832d829a");
                 _login_as_testuserInfo = new RepoItemInfo(this, "login_as_testuser", ".//header[#'header']/div/div/div/div[2]/?/?/ul/li[10]/a[@innertext=' Logged in as ']", ".//header[#'header']//a[@innertext=' Logged in as ']", 30000, null, "10390275-c35e-41de-89d4-d2639dbb6908");
+                _brandsInfo = new RepoItemInfo(this, "brands", "body/section[2]/div/div/div[1]/div/div[2]/h2[@innertext='Brands']", ".//h2[@innertext='Brands']", 30000, null, "5589a3aa-1e3d-4cae-a647-7012049364d9");
             }
 
             /// <summary>
@@ -349,6 +351,30 @@ namespace AutomationExercise
                 get
                 {
                     return _login_as_testuserInfo;
+                }
+            }
+
+            /// <summary>
+            /// The brands item.
+            /// </summary>
+            [RepositoryItem("5589a3aa-1e3d-4cae-a647-7012049364d9")]
+            public virtual Ranorex.H2Tag brands
+            {
+                get
+                {
+                    return _brandsInfo.CreateAdapter<Ranorex.H2Tag>(true);
+                }
+            }
+
+            /// <summary>
+            /// The brands item info.
+            /// </summary>
+            [RepositoryItemInfo("5589a3aa-1e3d-4cae-a647-7012049364d9")]
+            public virtual RepoItemInfo brandsInfo
+            {
+                get
+                {
+                    return _brandsInfo;
                 }
             }
         }
