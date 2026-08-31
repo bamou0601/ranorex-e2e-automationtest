@@ -85,6 +85,8 @@ namespace AutomationExercise
         [RepositoryFolder("40c7c42a-ab65-4243-9e6f-85d8108535bc")]
         public partial class ApplicationUnderTestAppFolder : RepoGenBaseFolder
         {
+            AutomationExerciseRepositoryFolders.ProductsPageFolder _productspage;
+            AutomationExerciseRepositoryFolders.ProductDetailPageFolder _productdetailpage;
             RepoItemInfo _products_menuInfo;
             RepoItemInfo _searchproductInfo;
             RepoItemInfo _submitsearchInfo;
@@ -102,6 +104,8 @@ namespace AutomationExercise
             public ApplicationUnderTestAppFolder(RepoGenBaseFolder parentFolder) :
                     base("ApplicationUnderTest", "/dom[@domain='www.automationexercise.com']", parentFolder, 30000, null, false, "40c7c42a-ab65-4243-9e6f-85d8108535bc", "")
             {
+                _productspage = new AutomationExerciseRepositoryFolders.ProductsPageFolder(this);
+                _productdetailpage = new AutomationExerciseRepositoryFolders.ProductDetailPageFolder(this);
                 _products_menuInfo = new RepoItemInfo(this, "Products_Menu", ".//header[#'header']/div/div/div/div[2]/?/?/ul/li[2]/a[@innertext=' Products']", "", 30000, null, "ece49e18-a297-4a30-bf9e-f0faa070e73a");
                 _searchproductInfo = new RepoItemInfo(this, "SearchProduct", ".//input[#'search_product']", "", 30000, null, "fd0b7cc1-fc3f-4beb-aa4b-e221a80d531f");
                 _submitsearchInfo = new RepoItemInfo(this, "SubmitSearch", ".//button[#'submit_search']", ".//button[#'submit_search']", 30000, null, "f6a14cf7-d441-4173-8fca-a751a345d1a5");
@@ -375,6 +379,314 @@ namespace AutomationExercise
                 get
                 {
                     return _brandsInfo;
+                }
+            }
+
+            /// <summary>
+            /// The ProductsPage folder.
+            /// </summary>
+            [RepositoryFolder("dcaa75a2-fa57-4751-b20f-044b8777ac55")]
+            public virtual AutomationExerciseRepositoryFolders.ProductsPageFolder ProductsPage
+            {
+                get { return _productspage; }
+            }
+
+            /// <summary>
+            /// The ProductDetailPage folder.
+            /// </summary>
+            [RepositoryFolder("1c639b65-f904-4938-8237-ac80516f2680")]
+            public virtual AutomationExerciseRepositoryFolders.ProductDetailPageFolder ProductDetailPage
+            {
+                get { return _productdetailpage; }
+            }
+        }
+
+        /// <summary>
+        /// The ProductsPageFolder folder.
+        /// </summary>
+        [RepositoryFolder("dcaa75a2-fa57-4751-b20f-044b8777ac55")]
+        public partial class ProductsPageFolder : RepoGenBaseFolder
+        {
+            RepoItemInfo _viewproductInfo;
+            RepoItemInfo _productpriceInfo;
+            RepoItemInfo _productnameInfo;
+
+            /// <summary>
+            /// Creates a new ProductsPage  folder.
+            /// </summary>
+            public ProductsPageFolder(RepoGenBaseFolder parentFolder) :
+                    base("ProductsPage", "", parentFolder, 0, null, false, "dcaa75a2-fa57-4751-b20f-044b8777ac55", "")
+            {
+                _viewproductInfo = new RepoItemInfo(this, "ViewProduct", ".//div[@class='features_items']//div[@class='product-image-wrapper'][1]//div[@class='choose']//a", ".//a[@innertext='View Product']", 30000, null, "6191fab7-7a78-42ed-89c7-9b51d2cba165");
+                _productpriceInfo = new RepoItemInfo(this, "ProductPrice", ".//div[@class='features_items']//div[@class='product-image-wrapper'][1]//div[@class~'productinfo']/h2", "element", 30000, null, "85b57e9c-59d4-4f1b-9c59-71f41b53a880");
+                _productnameInfo = new RepoItemInfo(this, "ProductName", ".//div[@class='features_items']//div[@class='product-image-wrapper'][1]//div[@class~'productinfo']/p", "element", 30000, null, "5543d3da-21a7-4feb-8d0d-4d2d318ce1de");
+            }
+
+            /// <summary>
+            /// The Self item info.
+            /// </summary>
+            [RepositoryItemInfo("dcaa75a2-fa57-4751-b20f-044b8777ac55")]
+            public virtual RepoItemInfo SelfInfo
+            {
+                get
+                {
+                    return _selfInfo;
+                }
+            }
+
+            /// <summary>
+            /// The ViewProduct item.
+            /// </summary>
+            [RepositoryItem("6191fab7-7a78-42ed-89c7-9b51d2cba165")]
+            public virtual Ranorex.ATag ViewProduct
+            {
+                get
+                {
+                    return _viewproductInfo.CreateAdapter<Ranorex.ATag>(true);
+                }
+            }
+
+            /// <summary>
+            /// The ViewProduct item info.
+            /// </summary>
+            [RepositoryItemInfo("6191fab7-7a78-42ed-89c7-9b51d2cba165")]
+            public virtual RepoItemInfo ViewProductInfo
+            {
+                get
+                {
+                    return _viewproductInfo;
+                }
+            }
+
+            /// <summary>
+            /// The ProductPrice item.
+            /// </summary>
+            [RepositoryItem("85b57e9c-59d4-4f1b-9c59-71f41b53a880")]
+            public virtual Ranorex.H2Tag ProductPrice
+            {
+                get
+                {
+                    return _productpriceInfo.CreateAdapter<Ranorex.H2Tag>(true);
+                }
+            }
+
+            /// <summary>
+            /// The ProductPrice item info.
+            /// </summary>
+            [RepositoryItemInfo("85b57e9c-59d4-4f1b-9c59-71f41b53a880")]
+            public virtual RepoItemInfo ProductPriceInfo
+            {
+                get
+                {
+                    return _productpriceInfo;
+                }
+            }
+
+            /// <summary>
+            /// The ProductName item.
+            /// </summary>
+            [RepositoryItem("5543d3da-21a7-4feb-8d0d-4d2d318ce1de")]
+            public virtual Ranorex.PTag ProductName
+            {
+                get
+                {
+                    return _productnameInfo.CreateAdapter<Ranorex.PTag>(true);
+                }
+            }
+
+            /// <summary>
+            /// The ProductName item info.
+            /// </summary>
+            [RepositoryItemInfo("5543d3da-21a7-4feb-8d0d-4d2d318ce1de")]
+            public virtual RepoItemInfo ProductNameInfo
+            {
+                get
+                {
+                    return _productnameInfo;
+                }
+            }
+        }
+
+        /// <summary>
+        /// The ProductDetailPageFolder folder.
+        /// </summary>
+        [RepositoryFolder("1c639b65-f904-4938-8237-ac80516f2680")]
+        public partial class ProductDetailPageFolder : RepoGenBaseFolder
+        {
+            RepoItemInfo _productnameInfo;
+            RepoItemInfo _productpriceInfo;
+            RepoItemInfo _categoryInfo;
+            RepoItemInfo _availabilityInfo;
+            RepoItemInfo _brandInfo;
+            RepoItemInfo _conditionInfo;
+
+            /// <summary>
+            /// Creates a new ProductDetailPage  folder.
+            /// </summary>
+            public ProductDetailPageFolder(RepoGenBaseFolder parentFolder) :
+                    base("ProductDetailPage", "", parentFolder, 0, null, false, "1c639b65-f904-4938-8237-ac80516f2680", "")
+            {
+                _productnameInfo = new RepoItemInfo(this, "ProductName", ".//div[@class~'product-information']/h2", ".//p[@innertext='Category: Women > Tops']", 30000, null, "5efda0cf-083d-42ea-8496-bd172f96b31a");
+                _productpriceInfo = new RepoItemInfo(this, "ProductPrice", ".//div[@class~'product-information']//span/span", "element", 30000, null, "7e6f2c93-d243-437f-bde4-89bf3605b817");
+                _categoryInfo = new RepoItemInfo(this, "Category", ".//div[@class~'product-information']/p[@innertext~'Category:']", "element", 30000, null, "06defa88-4919-4c43-8e79-5a532190f2cb");
+                _availabilityInfo = new RepoItemInfo(this, "Availability", ".//div[@class~'product-information']//b[@innertext='Availability:']", ".//b[@innertext='Availability:']", 30000, null, "5286bf82-e4c4-4588-86ce-b6be5f933440");
+                _brandInfo = new RepoItemInfo(this, "Brand", ".//div[@class~'product-information']//b[@innertext='Brand:']", ".//b[@innertext='Brand:']", 30000, null, "52bcbe19-e180-49af-b231-eaa2cbaf6130");
+                _conditionInfo = new RepoItemInfo(this, "Condition", ".//div[@class~'product-information']//b[@innertext='Condition:']", ".//b[@innertext='Condition:']", 30000, null, "a558f3a6-36a6-45da-9a7c-7a152634b48b");
+            }
+
+            /// <summary>
+            /// The Self item info.
+            /// </summary>
+            [RepositoryItemInfo("1c639b65-f904-4938-8237-ac80516f2680")]
+            public virtual RepoItemInfo SelfInfo
+            {
+                get
+                {
+                    return _selfInfo;
+                }
+            }
+
+            /// <summary>
+            /// The ProductName item.
+            /// </summary>
+            [RepositoryItem("5efda0cf-083d-42ea-8496-bd172f96b31a")]
+            public virtual Ranorex.H2Tag ProductName
+            {
+                get
+                {
+                    return _productnameInfo.CreateAdapter<Ranorex.H2Tag>(true);
+                }
+            }
+
+            /// <summary>
+            /// The ProductName item info.
+            /// </summary>
+            [RepositoryItemInfo("5efda0cf-083d-42ea-8496-bd172f96b31a")]
+            public virtual RepoItemInfo ProductNameInfo
+            {
+                get
+                {
+                    return _productnameInfo;
+                }
+            }
+
+            /// <summary>
+            /// The ProductPrice item.
+            /// </summary>
+            [RepositoryItem("7e6f2c93-d243-437f-bde4-89bf3605b817")]
+            public virtual Ranorex.SpanTag ProductPrice
+            {
+                get
+                {
+                    return _productpriceInfo.CreateAdapter<Ranorex.SpanTag>(true);
+                }
+            }
+
+            /// <summary>
+            /// The ProductPrice item info.
+            /// </summary>
+            [RepositoryItemInfo("7e6f2c93-d243-437f-bde4-89bf3605b817")]
+            public virtual RepoItemInfo ProductPriceInfo
+            {
+                get
+                {
+                    return _productpriceInfo;
+                }
+            }
+
+            /// <summary>
+            /// The Category item.
+            /// </summary>
+            [RepositoryItem("06defa88-4919-4c43-8e79-5a532190f2cb")]
+            public virtual Ranorex.PTag Category
+            {
+                get
+                {
+                    return _categoryInfo.CreateAdapter<Ranorex.PTag>(true);
+                }
+            }
+
+            /// <summary>
+            /// The Category item info.
+            /// </summary>
+            [RepositoryItemInfo("06defa88-4919-4c43-8e79-5a532190f2cb")]
+            public virtual RepoItemInfo CategoryInfo
+            {
+                get
+                {
+                    return _categoryInfo;
+                }
+            }
+
+            /// <summary>
+            /// The Availability item.
+            /// </summary>
+            [RepositoryItem("5286bf82-e4c4-4588-86ce-b6be5f933440")]
+            public virtual Ranorex.BTag Availability
+            {
+                get
+                {
+                    return _availabilityInfo.CreateAdapter<Ranorex.BTag>(true);
+                }
+            }
+
+            /// <summary>
+            /// The Availability item info.
+            /// </summary>
+            [RepositoryItemInfo("5286bf82-e4c4-4588-86ce-b6be5f933440")]
+            public virtual RepoItemInfo AvailabilityInfo
+            {
+                get
+                {
+                    return _availabilityInfo;
+                }
+            }
+
+            /// <summary>
+            /// The Brand item.
+            /// </summary>
+            [RepositoryItem("52bcbe19-e180-49af-b231-eaa2cbaf6130")]
+            public virtual Ranorex.BTag Brand
+            {
+                get
+                {
+                    return _brandInfo.CreateAdapter<Ranorex.BTag>(true);
+                }
+            }
+
+            /// <summary>
+            /// The Brand item info.
+            /// </summary>
+            [RepositoryItemInfo("52bcbe19-e180-49af-b231-eaa2cbaf6130")]
+            public virtual RepoItemInfo BrandInfo
+            {
+                get
+                {
+                    return _brandInfo;
+                }
+            }
+
+            /// <summary>
+            /// The Condition item.
+            /// </summary>
+            [RepositoryItem("a558f3a6-36a6-45da-9a7c-7a152634b48b")]
+            public virtual Ranorex.BTag Condition
+            {
+                get
+                {
+                    return _conditionInfo.CreateAdapter<Ranorex.BTag>(true);
+                }
+            }
+
+            /// <summary>
+            /// The Condition item info.
+            /// </summary>
+            [RepositoryItemInfo("a558f3a6-36a6-45da-9a7c-7a152634b48b")]
+            public virtual RepoItemInfo ConditionInfo
+            {
+                get
+                {
+                    return _conditionInfo;
                 }
             }
         }

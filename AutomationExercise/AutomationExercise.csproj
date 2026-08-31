@@ -183,6 +183,30 @@
     <Compile Include="Common\TestContext.cs">
       <id>5c7b84f0-7b8f-4f8d-8cbe-6553dba5b414</id>
     </Compile>
+    <Compile Include="Product\Detail\ui_open_product_detail.cs">
+      <BoundTo>e92cc426-52ee-4301-b049-b35667fa3c6f</BoundTo>
+      <DependentUpon>ui_open_product_detail.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>f2452b74-675c-4f84-836a-a222de9a6dd9</id>
+    </Compile>
+    <Compile Include="Product\Detail\ui_open_product_detail.UserCode.cs">
+      <BoundTo>e92cc426-52ee-4301-b049-b35667fa3c6f</BoundTo>
+      <DependentUpon>ui_open_product_detail.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>7bbf9455-7294-4a25-8f3e-4378484e7fd7</id>
+    </Compile>
+    <Compile Include="Product\Detail\ui_validate_product_detail.cs">
+      <BoundTo>dacc7381-e807-4bcd-a352-e0a5f903eb9c</BoundTo>
+      <DependentUpon>ui_validate_product_detail.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>17943ebf-54e7-4a62-8765-65d48d982e45</id>
+    </Compile>
+    <Compile Include="Product\Detail\ui_validate_product_detail.UserCode.cs">
+      <BoundTo>dacc7381-e807-4bcd-a352-e0a5f903eb9c</BoundTo>
+      <DependentUpon>ui_validate_product_detail.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>282fda0c-d349-4942-a281-ff85fd6a2cf6</id>
+    </Compile>
     <Compile Include="Product\List\api_product_list.cs">
       <id>5ab05185-d98b-4e37-bfc2-ea3e21476195</id>
     </Compile>
@@ -268,6 +292,16 @@
       <id>fdabcc6a-9ece-4217-933e-6f363fbc74cf</id>
       <recordtableid>f6231b86-3610-49f9-9148-3b63ecdc4c86</recordtableid>
     </None>
+    <None Include="Product\Detail\ui_open_product_detail.rxrec">
+      <BoundTo>1ed1c375-d5eb-415d-a015-d6455a96b978</BoundTo>
+      <id>e92cc426-52ee-4301-b049-b35667fa3c6f</id>
+      <recordtableid>1c71580b-c51d-4f54-b9ae-17602393e54e</recordtableid>
+    </None>
+    <None Include="Product\Detail\ui_validate_product_detail.rxrec">
+      <BoundTo>1ed1c375-d5eb-415d-a015-d6455a96b978</BoundTo>
+      <id>dacc7381-e807-4bcd-a352-e0a5f903eb9c</id>
+      <recordtableid>c80814ff-655f-45d8-a96f-a68f44c45e00</recordtableid>
+    </None>
     <None Include="Product\List\ui_product_list.rxrec">
       <BoundTo>1ed1c375-d5eb-415d-a015-d6455a96b978</BoundTo>
       <id>13631076-7a79-4d3d-ac4d-fc7dc7f837f8</id>
@@ -309,6 +343,9 @@
     </Folder>
     <Folder Include="Brand">
       <id>86d6f193-0e41-4fc5-bea8-e2d510fcdb89</id>
+    </Folder>
+    <Folder Include="Product\Detail">
+      <id>1e1fff06-8459-4806-8904-5db7e5113e64</id>
     </Folder>
     <Folder Include="User">
       <id>20c17929-3a45-4b53-82e8-1366db85f3fd</id>

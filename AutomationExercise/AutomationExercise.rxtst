@@ -228,6 +228,12 @@
 			ref="f6231b86-3610-49f9-9148-3b63ecdc4c86"
 			type="Recording">
 			</testmodule>
+			<testmodule
+			id="e5b22931-68aa-4996-8f93-b5e1ce5afe93"
+			name="ui_validate_product_detail"
+			ref="c80814ff-655f-45d8-a96f-a68f44c45e00"
+			type="Recording">
+			</testmodule>
 			<setup
 			id="f20ef91c-c507-413c-a8aa-4729a456afa8"
 			name="setup">
@@ -242,6 +248,12 @@
 			id="f7c9d2b7-427e-436f-80cd-b489c93664cc"
 			name="TC01_API_UI_ProductSearch">
 			</testcase>
+			<testmodule
+			id="fa5a1dfe-5240-4375-ac94-448f5fdd74f8"
+			name="ui_open_product_detail"
+			ref="1c71580b-c51d-4f54-b9ae-17602393e54e"
+			type="Recording">
+			</testmodule>
 		</flatlistofchildren>
 		<childhierarchy>
 			<testsuite
@@ -345,6 +357,14 @@
 							name="OpenBrowser">
 							</testmodule>
 						</setup>
+						<testmodule
+						id="fa5a1dfe-5240-4375-ac94-448f5fdd74f8"
+						name="ui_open_product_detail">
+						</testmodule>
+						<testmodule
+						id="e5b22931-68aa-4996-8f93-b5e1ce5afe93"
+						name="ui_validate_product_detail">
+						</testmodule>
 						<teardown
 						id="a7c7caed-5b24-4eb4-a7f9-22628ee19dc1"
 						name="teardown">

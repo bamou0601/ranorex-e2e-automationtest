@@ -38,5 +38,11 @@ namespace AutomationExercise
         // ブランド関連
         public static int ApiBrandCount { get; set; }
         public static List<string> ApiBrandNames { get; set; }
+        
+		/// 商品一覧画面の商品名。
+		public static string ListProductName { get; set; }
+
+		/// 商品一覧画面の商品価格。
+		public static string ListProductPrice { get; set; }
 	}
 }

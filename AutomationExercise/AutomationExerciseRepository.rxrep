@@ -18,7 +18,7 @@ name="AutomationExerciseRepository">
 		id="40c7c42a-ab65-4243-9e6f-85d8108535bc"
 		isrooted="True"
 		name="ApplicationUnderTest"
-		refimgid="ca3e3dd5-a647-46ae-a0fd-d74272eb0c3a"
+		refimgid="7cb6abf1-3133-483d-8fce-af79bcacc0a9"
 		searchtimeout="30000ms"
 		usecache="False">
 			<item
@@ -113,6 +113,94 @@ name="AutomationExerciseRepository">
 			searchtimeout="30000ms">
 				/dom[@domain='www.automationexercise.com']/body/section[2]/div/div/div[1]/div/div[2]/h2[@innertext='Brands']
 			</item>
+			<folder
+			capname="unknown"
+			id="dcaa75a2-fa57-4751-b20f-044b8777ac55"
+			isrooted="False"
+			name="ProductsPage"
+			searchtimeout="0ms">
+				<item
+				addcaps="unknown,webelement,atag"
+				capname="atag"
+				id="6191fab7-7a78-42ed-89c7-9b51d2cba165"
+				name="ViewProduct"
+				refimgid="f7cd362c-079a-40b9-a622-142e00f99433"
+				robustPath="/dom[@domain='www.automationexercise.com']//a[@innertext='View Product']"
+				searchtimeout="30000ms">
+					/dom[@domain='www.automationexercise.com']//div[@class='features_items']//div[@class='product-image-wrapper'][1]//div[@class='choose']//a
+				</item>
+				<item
+				capname="h2tag"
+				id="85b57e9c-59d4-4f1b-9c59-71f41b53a880"
+				name="ProductPrice"
+				robustPath="/dom[@domain='www.automationexercise.com']/element"
+				searchtimeout="30000ms">
+					/dom[@domain='www.automationexercise.com']//div[@class='features_items']//div[@class='product-image-wrapper'][1]//div[@class~'productinfo']/h2
+				</item>
+				<item
+				capname="ptag"
+				id="5543d3da-21a7-4feb-8d0d-4d2d318ce1de"
+				name="ProductName"
+				robustPath="/dom[@domain='www.automationexercise.com']/element"
+				searchtimeout="30000ms">
+					/dom[@domain='www.automationexercise.com']//div[@class='features_items']//div[@class='product-image-wrapper'][1]//div[@class~'productinfo']/p
+				</item>
+			</folder>
+			<folder
+			capname="unknown"
+			id="1c639b65-f904-4938-8237-ac80516f2680"
+			isrooted="False"
+			name="ProductDetailPage"
+			searchtimeout="0ms">
+				<item
+				capname="h2tag"
+				id="5efda0cf-083d-42ea-8496-bd172f96b31a"
+				name="ProductName"
+				robustPath="/dom[@domain='www.automationexercise.com']//p[@innertext='Category: Women > Tops']"
+				searchtimeout="30000ms">
+					/dom[@domain='www.automationexercise.com']//div[@class~'product-information']/h2
+				</item>
+				<item
+				capname="spantag"
+				id="7e6f2c93-d243-437f-bde4-89bf3605b817"
+				name="ProductPrice"
+				robustPath="/dom[@domain='www.automationexercise.com']/element"
+				searchtimeout="30000ms">
+					/dom[@domain='www.automationexercise.com']//div[@class~'product-information']//span/span
+				</item>
+				<item
+				capname="ptag"
+				id="06defa88-4919-4c43-8e79-5a532190f2cb"
+				name="Category"
+				robustPath="/dom[@domain='www.automationexercise.com']/element"
+				searchtimeout="30000ms">
+					/dom[@domain='www.automationexercise.com']//div[@class~'product-information']/p[@innertext~'Category:']
+				</item>
+				<item
+				capname="btag"
+				id="5286bf82-e4c4-4588-86ce-b6be5f933440"
+				name="Availability"
+				robustPath="/dom[@domain='www.automationexercise.com']//b[@innertext='Availability:']"
+				searchtimeout="30000ms">
+					/dom[@domain='www.automationexercise.com']//div[@class~'product-information']//b[@innertext='Availability:']
+				</item>
+				<item
+				capname="btag"
+				id="52bcbe19-e180-49af-b231-eaa2cbaf6130"
+				name="Brand"
+				robustPath="/dom[@domain='www.automationexercise.com']//b[@innertext='Brand:']"
+				searchtimeout="30000ms">
+					/dom[@domain='www.automationexercise.com']//div[@class~'product-information']//b[@innertext='Brand:']
+				</item>
+				<item
+				capname="btag"
+				id="a558f3a6-36a6-45da-9a7c-7a152634b48b"
+				name="Condition"
+				robustPath="/dom[@domain='www.automationexercise.com']//b[@innertext='Condition:']"
+				searchtimeout="30000ms">
+					/dom[@domain='www.automationexercise.com']//div[@class~'product-information']//b[@innertext='Condition:']
+				</item>
+			</folder>
 			<basepath>
 				/dom[@domain='www.automationexercise.com']
 			</basepath>
