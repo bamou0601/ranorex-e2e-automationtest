@@ -83,14 +83,8 @@ namespace AutomationExercise.Brand
             repo.ApplicationUnderTest.Products_Menu.Click();
             Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Delay", "Waiting for 2s.", new RecordItemIndex(1));
-            Delay.Duration(2000, false);
-            
             ClosePopupAdIfExists();
             Delay.Milliseconds(0);
-            
-            Report.Log(ReportLevel.Info, "Wait", "Waiting 5s to exist. Associated repository item: 'ApplicationUnderTest.brands'", repo.ApplicationUnderTest.brandsInfo, new ActionTimeout(5000), new RecordItemIndex(3));
-            repo.ApplicationUnderTest.brandsInfo.WaitForExists(5000);
             
             ValidateBrandList();
             Delay.Milliseconds(0);

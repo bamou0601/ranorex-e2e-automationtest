@@ -51,15 +51,6 @@ mode="Global">
 				</robustPath>
 			</info>
 		</mouseitem>
-		<explicitdelayitem
-		duration="2000ms"
-		enabled="True"
-		optional="False">
-			<comment>
-			</comment>
-			<bindings>
-			</bindings>
-		</explicitdelayitem>
 		<userrecorditem
 		classname="ui_brand_list"
 		enabled="True"
@@ -75,26 +66,6 @@ mode="Global">
 			id="d683d143-81dd-4cd0-a69b-605af0f8f5b8">
 			</arguments>
 		</userrecorditem>
-		<WaitForRecordItem
-		enabled="True"
-		optional="False"
-		searchpropertyid="80126289-05bd-4296-b48f-90d8c42501ca"
-		waitaction="Exists"
-		waittimeout="5000ms">
-			<comment>
-			</comment>
-			<bindings>
-			</bindings>
-			<info
-			id="5589a3aa-1e3d-4cae-a647-7012049364d9"
-			sourcename="ItemRecorderEditor">
-				<path>
-					/dom[@domain='www.automationexercise.com']/body/section[2]/div/div/div[1]/div/div[2]/h2[@innertext='Brands']
-				</path>
-				<robustPath>
-				</robustPath>
-			</info>
-		</WaitForRecordItem>
 		<userrecorditem
 		classname="ui_brand_list"
 		enabled="True"

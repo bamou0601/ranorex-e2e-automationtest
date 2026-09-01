@@ -91,122 +91,174 @@ namespace AutomationExercise.Brand
 		/// なし。
 		/// </summary>
 		public void ValidateBrandList()
-		{
-			// Automation ExerciseのDOMを取得
-			WebDocument document =
-				Host.Local.FindSingle<WebDocument>(
-					"/dom[@domain='www.automationexercise.com']",
-					15000
-				);
-		
-			// UIブランド一覧のRxPath
-			string brandPath =
-				".//div[@class='brands_products']//ul/li";
-		
-			// UIブランド要素を取得
-			IList<LiTag> brandItems =
-				document.Find<LiTag>(
-					brandPath
-				);
-		
-			Report.Info(
-				"UIブランド取得件数: " +
-				brandItems.Count
-			);
-		
-			// UIブランド名を格納
-			List<string> uiBrandNames =
-				new List<string>();
-		
-			foreach (LiTag brandItem in brandItems)
-			{	
-				// li配下のaタグを取得
-				ATag brandLink =
-        			brandItem.FindSingle<ATag>(
-            			".//a",
-            			5000
-        			);
-				
-				// aタグから表示文字列を取得
-    			string brandText =
-        			brandLink.InnerText.Trim();
-    			
-    			
-    			Report.Info(
-        			"UIブランド原文: " +
-        			brandText
-    			);
-				
-				// UI上の件数表示などを除去する
-				// 例: "(6) Polo" → "Polo"
-				string brandName =
-					Regex.Replace(
-						brandText,
-						@"^\s*\(\d+\)\s*",
-						""
-					).Trim();
-		
-				uiBrandNames.Add(
-					brandName
-				);
-		
-				Report.Info(
-					"UIブランド: " +
-					brandName
-				);
-			}
-		
-			// APIブランド名を重複除去
-			List<string> apiUniqueBrandNames =
-				new List<string>();
-		
-			foreach (string brandName
-				in TestContext.ApiBrandNames)
-			{
-				if (!apiUniqueBrandNames.Contains(
-					brandName))
-				{
-					apiUniqueBrandNames.Add(
-						brandName
-					);
-				}
-			}
-		
-			Report.Info(
-				"APIユニークブランド数: " +
-				apiUniqueBrandNames.Count
-			);
-		
-			Report.Info(
-				"UIブランド数: " +
-				uiBrandNames.Count
-			);
-		
-			// ブランド件数を比較
-			Validate.AreEqual(
-				uiBrandNames.Count,
-				apiUniqueBrandNames.Count
-			);
-		
-			// APIブランド名がUIに存在することを確認
-			foreach (string apiBrandName
-				in apiUniqueBrandNames)
-			{
-				Report.Info(
-					"ブランド確認: " +
-					apiBrandName
-				);
-		
-				Validate.IsTrue(
-					uiBrandNames.Contains(
-						apiBrandName
-					)
-				);
-			}
-		}
-		
-		
-		
+        {
+            // APIブランド一覧が取得済みであることを確認
+            Validate.IsTrue(
+                TestContext.ApiBrandNames != null &&
+                TestContext.ApiBrandNames.Count > 0
+            );
 
+            // APIブランド名から重複を除外
+            List<string> apiUniqueBrandNames =
+                new List<string>();
+
+            foreach (string brandName in TestContext.ApiBrandNames)
+            {
+                if (!apiUniqueBrandNames.Contains(brandName))
+                {
+                    apiUniqueBrandNames.Add(brandName);
+                }
+            }
+
+            // API側の期待ブランド件数
+            int expectedBrandCount =
+                apiUniqueBrandNames.Count;
+
+            Report.Info(
+                "APIユニークブランド数: " +
+                expectedBrandCount
+            );
+
+            // Automation ExerciseのDOMを取得
+            WebDocument document =
+                Host.Local.FindSingle<WebDocument>(
+                    "/dom[@domain='www.automationexercise.com']",
+                    15000
+                );
+
+            // UIブランド一覧のRxPath
+            string brandPath =
+                ".//div[@class='brands_products']//ul/li";
+
+            IList<LiTag> brandItems =
+                null;
+
+            // 最大15秒間、UIブランド一覧のロード完了を待機
+            // 500ms × 30回 = 最大15秒
+            for (int retry = 0; retry < 30; retry++)
+            {
+                // UIブランド要素を取得
+                brandItems =
+                    document.Find<LiTag>(
+                        brandPath
+                    );
+
+                Report.Info(
+                    "UIブランド取得試行[" +
+                    (retry + 1) +
+                    "]: " +
+                    brandItems.Count +
+                    "件"
+                );
+
+                // APIの期待件数と一致した場合は待機終了
+                if (brandItems.Count == expectedBrandCount)
+                {
+                    Report.Info(
+                        "UIブランド一覧のロード完了を確認しました。"
+                    );
+
+                    break;
+                }
+
+                // 次の検索まで500ms待機
+                Delay.Milliseconds(500);
+            }
+
+            // UIブランド要素を取得できなかった場合
+            if (brandItems == null)
+            {
+                Report.Error(
+                    "UIブランド一覧を取得できませんでした。"
+                );
+
+                Validate.Fail(
+                    "UIブランド一覧の取得に失敗しました。"
+                );
+
+                return;
+            }
+
+            Report.Info(
+                "UIブランド取得件数: " +
+                brandItems.Count
+            );
+
+            // UIブランド名を格納
+            List<string> uiBrandNames =
+                new List<string>();
+
+            foreach (LiTag brandItem in brandItems)
+            {
+                // li配下のaタグを取得
+                ATag brandLink =
+                    brandItem.FindSingle<ATag>(
+                        ".//a",
+                        5000
+                    );
+
+                // aタグから表示文字列を取得
+                string brandText =
+                    brandLink.InnerText.Trim();
+
+                Report.Info(
+                    "UIブランド原文: " +
+                    brandText
+                );
+
+                // UI上の件数表示を除去
+                // 例: "(6) Polo" → "Polo"
+                string brandName =
+                    Regex.Replace(
+                        brandText,
+                        @"^\s*\(\d+\)\s*",
+                        ""
+                    ).Trim();
+
+                uiBrandNames.Add(
+                    brandName
+                );
+
+                Report.Info(
+                    "UIブランド: " +
+                    brandName
+                );
+            }
+
+            Report.Info(
+                "APIユニークブランド数: " +
+                apiUniqueBrandNames.Count
+            );
+
+            Report.Info(
+                "UIブランド数: " +
+                uiBrandNames.Count
+            );
+
+            // ブランド件数を比較
+            Validate.AreEqual(
+                uiBrandNames.Count,
+                apiUniqueBrandNames.Count
+            );
+
+            // APIブランド名がUIに存在することを確認
+            foreach (string apiBrandName in apiUniqueBrandNames)
+            {
+                Report.Info(
+                    "ブランド確認: " +
+                    apiBrandName
+                );
+
+                bool exists =
+                    uiBrandNames.Contains(
+                        apiBrandName
+                    );
+
+                Validate.IsTrue(
+                    exists
+                );
+            }
+        }
+		
     }
 }
