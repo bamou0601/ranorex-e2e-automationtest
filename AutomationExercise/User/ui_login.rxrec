@@ -23,16 +23,6 @@ mode="Global">
 	namespace="AutomationExercise.User">
 	</codegen>
 	<variables>
-		<var
-		id="a51ba0c1-8b95-4498-b1b4-fdcb1e528969"
-		name="email">
-			test_20260827164436571@example.com&#32;
-		</var>
-		<var
-		id="13576797-d398-4c5a-8c4e-7d6fdd73a4b6"
-		name="password">
-			test1234
-		</var>
 	</variables>
 	<recorditems>
 		<mouseitem
@@ -97,7 +87,6 @@ mode="Global">
 					/dom[@domain='www.automationexercise.com']//header[#'header']/div/div/div/div[2]/?/?/ul/li[4]/a[@innertext=' Signup / Login']
 				</path>
 				<robustPath>
-					/dom[@domain='www.automationexercise.com']//header[#'header']//a[@innertext=' Signup / Login']
 				</robustPath>
 			</info>
 			<helperscreenshot
@@ -139,76 +128,36 @@ kaLr/cH/AKCtT67/AMg1/wAf5GgCfTWL2QfBAd3cZHYuSD+Rq1VfTf8AkGWv/XFP5CrFABRRRQAU
 UUUAFFFFABRRRQAUUUUAFFFFAH//2Q==
 			</helperscreenshot>
 		</mouseitem>
-		<WaitForRecordItem
+		<userrecorditem
+		classname="ui_login"
 		enabled="True"
-		optional="False"
-		searchpropertyid="24a81a7e-8382-41b2-9b2c-c7069f14fe7e"
-		waitaction="Exists"
-		waittimeout="15000ms">
+		isexternaltestmethod="False"
+		methodname="WaitForLoginPage"
+		namespace="AutomationExercise.User"
+		optional="False">
 			<comment>
 			</comment>
 			<bindings>
 			</bindings>
-			<info
-			id="fb752a5d-8eab-4a75-9b99-91ba48a8460b"
-			sourcename="ItemRecorderEditor">
-				<path>
-					/dom[@domain='www.automationexercise.com']//section[#'form']/div/div/div[1]/?/?/form[@action='https://www.automationexercise.com/login']/button[@innertext='Login']
-				</path>
-				<robustPath>
-				</robustPath>
-			</info>
-		</WaitForRecordItem>
-		<setvaluerecorditem
-		attrname="Value"
+			<arguments
+			id="83de5365-adf3-4103-b7c7-bb19f9f48585">
+			</arguments>
+		</userrecorditem>
+		<userrecorditem
+		classname="ui_login"
 		enabled="True"
-		optional="False"
-		searchpropertyid="6ca76389-16f7-4170-9a22-5c2b0d9edd23">
+		isexternaltestmethod="False"
+		methodname="SetLoginCredentials"
+		namespace="AutomationExercise.User"
+		optional="False">
 			<comment>
 			</comment>
 			<bindings>
-				<binding
-				target="AttributeValue"
-				variable="email">
-				</binding>
 			</bindings>
-			<info
-			id="56f07783-f8a1-4b0e-904a-3bfd55319073"
-			sourcename="ItemRecorderEditor">
-				<path>
-					/dom[@domain='www.automationexercise.com']//section[#'form']/div/div/div[1]/?/?/form[@action='https://www.automationexercise.com/login']/input[@name='email']
-				</path>
-				<robustPath>
-				</robustPath>
-			</info>
-			<AttributeValue>
-			</AttributeValue>
-		</setvaluerecorditem>
-		<setvaluerecorditem
-		attrname="Value"
-		enabled="True"
-		optional="False"
-		searchpropertyid="b22c3f00-4cf9-4e08-86ef-bd96a34a27d4">
-			<comment>
-			</comment>
-			<bindings>
-				<binding
-				target="AttributeValue"
-				variable="password">
-				</binding>
-			</bindings>
-			<info
-			id="bc78f211-ee4b-410f-88c1-0e0cfadaf899"
-			sourcename="ItemRecorderEditor">
-				<path>
-					/dom[@domain='www.automationexercise.com']//section[#'form']/div/div/div[1]/?/?/form[@action='https://www.automationexercise.com/login']/input[@name='password']
-				</path>
-				<robustPath>
-				</robustPath>
-			</info>
-			<AttributeValue>
-			</AttributeValue>
-		</setvaluerecorditem>
+			<arguments
+			id="f2f9dae5-97b7-41f1-935d-13b0fe81c4f2">
+			</arguments>
+		</userrecorditem>
 		<mouseitem
 		action="Click"
 		button="Left"

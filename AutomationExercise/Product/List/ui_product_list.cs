@@ -83,10 +83,13 @@ namespace AutomationExercise.Product.List
             repo.ApplicationUnderTest.Products_Menu.Click();
             Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Delay", "Waiting for 1s.", new RecordItemIndex(1));
-            Delay.Duration(1000, false);
+            Report.Log(ReportLevel.Info, "Delay", "Waiting for 5s.", new RecordItemIndex(1));
+            Delay.Duration(5000, false);
             
             ValidateUiProductListCount();
+            Delay.Milliseconds(0);
+            
+            ClosePopupAdIfExists();
             Delay.Milliseconds(0);
             
         }

@@ -82,10 +82,7 @@ namespace AutomationExercise.Product.Detail
             ScrollAndClickViewProduct();
             Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Wait", "Waiting 10s to exist. Associated repository item: 'ApplicationUnderTest.ProductDetailPage.ProductPrice'", repo.ApplicationUnderTest.ProductDetailPage.ProductPriceInfo, new ActionTimeout(10000), new RecordItemIndex(1));
-            repo.ApplicationUnderTest.ProductDetailPage.ProductPriceInfo.WaitForExists(10000);
-            
-            ClosePopupAdIfExists();
+            WaitForProductDetailPage();
             Delay.Milliseconds(0);
             
             ValidateProductDetail();

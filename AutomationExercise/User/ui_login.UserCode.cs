@@ -37,17 +37,143 @@ namespace AutomationExercise.User
         /// </summary>
         private void Init()
         {
-            // Your recording specific initialization code goes here.
-            // APIで作成したユーザー情報を取得
-            email = global:: AutomationExercise.TestContext.UserEmail;
-            
-            password = global:: AutomationExercise.TestContext.UserPassword;
-            
-            // ログ出力
-            Report.Info("ログインメールアドレス: " + email);
-            
-            Report.Info("ログインパスワードをTestContextから取得しました。");
+         
         }
+           
+        /// <summary>
+		/// TestContextからログイン情報を取得し、ログイン画面へ入力する。
+		///
+		/// 処理内容:
+		/// ・APIで作成したユーザーのメールアドレスを取得する。
+		/// ・APIで作成したユーザーのパスワードを取得する。
+		/// ・メールアドレスおよびパスワードを入力する。
+		///
+		/// Returns:
+		/// なし。
+		/// </summary>
+		public void SetLoginCredentials()
+		{
+			// TestContextからログイン情報を取得する
+			string loginEmail =
+				global::AutomationExercise.TestContext.UserEmail;
+			
+			string loginPassword =
+				global::AutomationExercise.TestContext.UserPassword;
+			
+			
+			// ログイン情報が設定されていることを確認する
+			Validate.IsTrue(
+				!string.IsNullOrEmpty(loginEmail),
+				"ログインメールアドレスが設定されていること"
+			);
+			
+			Validate.IsTrue(
+				!string.IsNullOrEmpty(loginPassword),
+				"ログインパスワードが設定されていること"
+			);
+			
+			// メールアドレスを入力する
+			repo.ApplicationUnderTest.email_address.Element
+				.SetAttributeValue(
+					"Value",
+					loginEmail
+				);
+			
+			// パスワードを入力する
+			repo.ApplicationUnderTest.password.Element
+				.SetAttributeValue(
+					"Value",
+					loginPassword
+				);
+			
+			Report.Info(
+				"ログインメールアドレス: " +
+        		loginEmail
+       		);
+			
+			Report.Info(
+				"ログインパスワードをTestContextから取得しました。"
+			);
+			
+			
+		}
+		
+		public void ClosePopupAdIfExists() 
+		{
+			// 広告CloseボタンのRxPath
+			string closePath =
+        		"/dom[@domain='www.automationexercise.com']" +
+        		"//iframe//div[#'dismiss-button-element']" +
+        		"/div[@innertext='Close']";
+			
+			IList<Ranorex.Unknown> closeButtons = 
+				Host.Local.Find<Ranorex.Unknown>(
+					closePath
+				);
+			
+			// 広告が存在しない場合
+    		if (closeButtons.Count == 0)
+    		{
+        		Report.Info(
+        		    "ポップアップ広告なし。処理を継続します。"
+        		);
 
-    }
+        		return;
+    		}
+    		
+    		// 広告を閉じる
+    		closeButtons[0].Click();
+    		
+    		
+    		Report.Info(
+        		"ポップアップ広告を閉じました。"
+    		);
+					
+		}
+		
+		
+		/// <summary>
+		/// ログイン画面が表示されるまで待機する。
+		///
+		/// 処理内容:
+		/// ・ログインフォームの表示を確認する。
+		/// ・表示されない場合はポップアップ広告を閉じる。
+		/// ・広告処理後、再度ログインフォームを待機する。
+		///
+		/// Returns:
+		/// なし。
+		/// </summary>
+		public void WaitForLoginPage()
+		{
+		    try
+		    {
+		        // ログインボタンを最大5秒待機する
+		        repo.ApplicationUnderTest
+		            .login_buttonInfo
+		            .WaitForExists(5000);
+		
+		        Report.Info(
+		            "ログイン画面を確認しました。"
+		        );
+		
+		        return;
+		    }
+		    catch (Ranorex.ElementNotFoundException)
+		    {
+		        Report.Warn(
+		            "ログイン画面が未表示のため、ポップアップ広告を確認します。"
+		        );
+		    }
+				
+		    ClosePopupAdIfExists();
+		
+		    repo.ApplicationUnderTest
+		    	.logout_buttonInfo
+		        .WaitForExists(10000);
+		
+		    Report.Info("ログイン画面を確認しました。");
+		}
+    
+
+    }      
 }

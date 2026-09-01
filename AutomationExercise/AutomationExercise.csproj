@@ -165,6 +165,9 @@
       <id>4e7b100a-b5f4-4b79-9452-b49e2b02c71b</id>
       <BoundTo>dce1dc48-ec0b-4dcb-8cb7-1fbbbb7650a5</BoundTo>
     </Compile>
+    <Compile Include="Common\NavigationHelper.cs">
+      <id>4171f984-8b66-4ef7-ab1e-6e4ca98808ce</id>
+    </Compile>
     <Compile Include="Common\OpenBrowser.cs">
       <DependentUpon>OpenBrowser.rxrec</DependentUpon>
       <RecorderCode>true</RecorderCode>

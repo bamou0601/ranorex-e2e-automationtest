@@ -41,8 +41,6 @@ namespace AutomationExercise.User
         /// </summary>
         public ui_login()
         {
-            email = "test_20260827164436571@example.com ";
-            password = "test1234";
         }
 
         /// <summary>
@@ -54,30 +52,6 @@ namespace AutomationExercise.User
         }
 
 #region Variables
-
-        string _email;
-
-        /// <summary>
-        /// Gets or sets the value of variable email.
-        /// </summary>
-        [TestVariable("a51ba0c1-8b95-4498-b1b4-fdcb1e528969")]
-        public string email
-        {
-            get { return _email; }
-            set { _email = value; }
-        }
-
-        string _password;
-
-        /// <summary>
-        /// Gets or sets the value of variable password.
-        /// </summary>
-        [TestVariable("13576797-d398-4c5a-8c4e-7d6fdd73a4b6")]
-        public string password
-        {
-            get { return _password; }
-            set { _password = value; }
-        }
 
 #endregion
 
@@ -109,26 +83,21 @@ namespace AutomationExercise.User
             repo.ApplicationUnderTest.SignupLogin.Click("37;14");
             Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Wait", "Waiting 15s to exist. Associated repository item: 'ApplicationUnderTest.login_button'", repo.ApplicationUnderTest.login_buttonInfo, new ActionTimeout(15000), new RecordItemIndex(1));
-            repo.ApplicationUnderTest.login_buttonInfo.WaitForExists(15000);
-            
-            Report.Log(ReportLevel.Info, "Set value", "Setting attribute Value to '$email' on item 'ApplicationUnderTest.email_address'.", repo.ApplicationUnderTest.email_addressInfo, new RecordItemIndex(2));
-            repo.ApplicationUnderTest.email_address.Element.SetAttributeValue("Value", email);
+            WaitForLoginPage();
             Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Set value", "Setting attribute Value to '$password' on item 'ApplicationUnderTest.password'.", repo.ApplicationUnderTest.passwordInfo, new RecordItemIndex(3));
-            repo.ApplicationUnderTest.password.Element.SetAttributeValue("Value", password);
+            SetLoginCredentials();
             Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ApplicationUnderTest.login_button' at Center.", repo.ApplicationUnderTest.login_buttonInfo, new RecordItemIndex(4));
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ApplicationUnderTest.login_button' at Center.", repo.ApplicationUnderTest.login_buttonInfo, new RecordItemIndex(3));
             repo.ApplicationUnderTest.login_button.Click();
             Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating Exists on item 'ApplicationUnderTest.logout_button'.", repo.ApplicationUnderTest.logout_buttonInfo, new RecordItemIndex(5));
+            Report.Log(ReportLevel.Info, "Validation", "Validating Exists on item 'ApplicationUnderTest.logout_button'.", repo.ApplicationUnderTest.logout_buttonInfo, new RecordItemIndex(4));
             Validate.Exists(repo.ApplicationUnderTest.logout_buttonInfo);
             Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeContains (Text>' Logged in as ') on item 'ApplicationUnderTest.login_as_testuser'.", repo.ApplicationUnderTest.login_as_testuserInfo, new RecordItemIndex(6));
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeContains (Text>' Logged in as ') on item 'ApplicationUnderTest.login_as_testuser'.", repo.ApplicationUnderTest.login_as_testuserInfo, new RecordItemIndex(5));
             Validate.AttributeContains(repo.ApplicationUnderTest.login_as_testuserInfo, "Text", " Logged in as ");
             Delay.Milliseconds(0);
             

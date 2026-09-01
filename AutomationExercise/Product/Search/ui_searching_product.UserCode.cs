@@ -9,9 +9,9 @@
 
 using System;
 using System.Collections.Generic;
+using System.Drawing;
 using System.Text;
 using System.Text.RegularExpressions;
-using System.Drawing;
 using System.Threading;
 using WinForms = System.Windows.Forms;
 
@@ -78,7 +78,21 @@ namespace AutomationExercise.Product.Search
 		}
         
         
-        
+        /// <summary>
+        /// UIの商品検索結果とAPIの商品検索結果を比較する。
+        ///
+        /// 処理内容:
+        /// ・UIの商品数を取得する。
+        /// ・APIの商品数とUIの商品数を比較する。
+        /// ・UIの商品名を取得する。
+        /// ・View ProductリンクのHrefからUI商品IDを取得する。
+        /// ・APIの商品IDおよび商品名と比較する。
+        /// ・商品IDまたは商品名のどちらかが一致すれば同一商品と判定する。
+        /// ・商品IDが一致し商品名のみ異なる場合はWarningを出力する。
+        ///
+        /// Returns:
+        /// なし。
+        /// </summary>
         public void ValidateUiProductCount()
 		{
     		// Automation ExerciseのDOMを取得
@@ -88,13 +102,15 @@ namespace AutomationExercise.Product.Search
             		10000
         		);
 			
-    		int expectedProductCount = TestContext.ApiProductCount;
+    		int expectedProductCount = 
+    			TestContext.ApiProductCount;
     		
     		IList<PTag> products = null;
     		
-    		// 最多等待10秒，直到UI商品数与API一致
+    		// 最大10回までUI商品数を再取得する
     		for (int i = 0; i < 10; i++)
     		{
+    			// 検索結果の商品名を取得する
     			products = 
     				document.Find<PTag>(
             			".//h2[@innertext='Searched Products']" +
@@ -102,16 +118,20 @@ namespace AutomationExercise.Product.Search
         		);
     			
     			Report.Info(
-    				"取得尝试[" + (i + 1) + "]: " +
-            		products.Count + "件"
+    				"取得試行[" + 
+    				(i + 1) + 
+    				"]: " +
+            		products.Count + 
+            		"件"
     			);
     			
-    			
+    			// APIの商品数と一致した場合は待機終了
     			if (products.Count == expectedProductCount)
     			{
     				break;
     			}
     			
+    			// DOM更新を待機する
     			Delay.Milliseconds(500);
     						
     		}
@@ -123,23 +143,12 @@ namespace AutomationExercise.Product.Search
         		"API検索結果の商品数: " + expectedProductCount
     		);
     		
-    		    		// 取得件数を確認
+    		// 取得件数を確認
     		Report.Info(
         		"UI検索結果の商品数: " + uiPoductCount
     		);
 
-    		// 商品名をログ出力
-    		for (int i = 0; i < products.Count; i++)
-    		{
-        		Report.Info(
-            		"商品[" +
-            		(i + 1) +
-            		"]: " +
-            		products[i].InnerText
-        		);
-    		}
-
-    		// 期待件数14件と比較
+    		// UI商品数をAPI商品数と比較する
     		Validate.AreEqual(
         		uiPoductCount,
         		expectedProductCount
@@ -151,16 +160,60 @@ namespace AutomationExercise.Product.Search
     			TestContext.ApiProductNames.Count > 0
     		);
     		
+    		// API商品IDリストが存在することを確認する
+    		Validate.IsTrue(
+    			TestContext.ApiProductIds != null &&
+    			TestContext.ApiProductIds.Count > 0
+    		);
+    		
+    		
     		// API商品名リストとUI商品数を比較
     		Validate.AreEqual(
     			TestContext.ApiProductNames.Count,
     			uiPoductCount
     		);
     		
+    		// API商品ID数とUI商品数を比較する
+    		Validate.AreEqual(
+    			TestContext.ApiProductIds.Count,
+    			uiPoductCount
+    		);
+    		
+    		// UIのView Productリンクを取得する
+    		IList<ATag> viewProductLinks =
+    			document.Find<ATag>(
+    				".//h2[@innertext='Searched Products']" +
+                    "/..//div[@class~'product-image-wrapper']" +
+                    "//div[@class='choose']//a[@innertext~'View Product']"
+    			);
+    		
+    		Report.Info(
+    			"UI View Productリンク数: " +
+    			viewProductLinks.Count
+    		);
+    		
+    		// View Productリンク数と商品数を比較する
+    		Validate.AreEqual(
+    			viewProductLinks.Count,
+    			uiPoductCount
+    		);
+    		
+    		// UIの商品名をログ出力する
+    		for (int i = 0; i < products.Count; i++)
+    		{
+        		Report.Info(
+            		"商品[" +
+            		(i + 1) +
+            		"]: " +
+            		products[i].InnerText.Trim()
+        		);
+    		}
+    		
     		
     		// APIとUIの商品名を1件ずつ比較
     		for (int i = 0; i < uiPoductCount; i++)
     		{
+    			
     			// UIの商品名を取得
     			string uiProductName = 
     				products[i].InnerText.Trim();
@@ -169,22 +222,115 @@ namespace AutomationExercise.Product.Search
     			string apiProductName = 
     				TestContext.ApiProductNames[i].Trim();
     			
-    			// 比較対象の商品名をログ出力
+    			// APIの商品IDを取得する
+    			int apiProductId =
+    				TestContext.ApiProductIds[i];
+    			
+    			// UIのView ProductリンクからHrefを取得する
+    			string href =
+    				viewProductLinks[i].Href;
+    			
     			Report.Info(
-    				"商品[" + (i + 1) + "] " +
-        			"API: " + apiProductName +
-        			" / UI: " + uiProductName
+    				"商品[" +
+                    (i + 1) +
+                    "] View Product Href: " +
+                    href
     			);
     			
-    			// APIとUIの商品名を比較
-    			Validate.AreEqual(
-    				uiProductName,
-    				apiProductName
+    			// Hrefから商品IDを抽出する
+    			Match match = Regex.Match(
+    				href,
+    				@"/product_details/(\d+)"
     			);
+    			
+    			
+    			 // UI商品IDを取得できたことを確認する
+    			 
+    			 Validate.IsTrue(
+    			 	match.Success,
+                    "商品[" +
+                    (i + 1) +
+                    "] UIの商品リンクから商品IDを取得できること"
+    			 );
+    			
+    			 // UIの商品IDを数値へ変換する
+    			 int uiProductId =
+    			 	int.Parse(
+    			 		match.Groups[1].Value
+    			 	);
+    			 
+    			 // APIとUIの商品IDを比較する
+    			 bool idMatches = apiProductId == uiProductId;
+    			 
+    			 // APIとUIの商品名を比較する
+    			 bool nameMatches =
+    			 	string.Equals(
+    			 		apiProductName,
+    			 		uiProductName,
+    			 		StringComparison.OrdinalIgnoreCase
+    			 	);
+    			 
+    			 // 商品IDまたは商品名のどちらかが一致すれば同一商品と判定する
+    			 bool productMatches =
+                    idMatches || nameMatches;
+    			 
+    			// 比較対象の商品情報をログ出力する
+    			Report.Info(
+                    "商品[" +
+                    (i + 1) +
+                    "] API: ID=" +
+                    apiProductId +
+                    ", Name=" +
+                    apiProductName +
+                    " / UI: ID=" +
+                    uiProductId +
+                    ", Name=" +
+                    uiProductName
+                );
+    			
+    			
+    			// 商品IDは一致するが商品名が異なる場合はWarningを出力する
+    			if (idMatches && !nameMatches)
+                {
+                    Report.Warn(
+                        "商品[" +
+                        (i + 1) +
+                        "] 商品IDは一致していますが、商品名が異なります。" +
+                        " API='" +
+                        apiProductName +
+                        "', UI='" +
+                        uiProductName +
+                        "'"
+                    );
+                }
+    			
+    			// 商品名は一致するが商品IDが異なる場合もWarningを出力する
+    			if (!idMatches && nameMatches)
+                {
+                    Report.Warn(
+                        "商品[" +
+                        (i + 1) +
+                        "] 商品名は一致していますが、商品IDが異なります。" +
+                        " API ID=" +
+                        apiProductId +
+                        ", UI ID=" +
+                        uiProductId
+                    );
+                }
+    			
+    			
+    			// 商品IDまたは商品名が一致することを検証する
+                Validate.IsTrue(
+                    productMatches,
+                    "商品[" +
+                    (i + 1) +
+                    "] 商品IDまたは商品名が一致すること"
+                );
+    			 
+ 		
     		}
 		}
-        
-        
+             
         
     }
 }

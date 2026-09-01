@@ -17,6 +17,11 @@ namespace AutomationExercise
     /// </summary>
 	public static class TestContext
 	{	
+		
+		// APIで取得した商品ID一覧
+        public static List<int> ApiProductIds { get; set; }
+        
+		
 		// API検索キーワード
         public static string SearchProduct { get; set; }
 		
@@ -28,6 +33,7 @@ namespace AutomationExercise
         
         // APIで取得した商品名一覧
         public static List<string> ApiProductNames { get; set; }
+        
         
         
         // ユーザー関連

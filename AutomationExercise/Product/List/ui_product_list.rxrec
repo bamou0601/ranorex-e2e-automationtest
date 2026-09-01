@@ -52,7 +52,7 @@ mode="Global">
 			</info>
 		</mouseitem>
 		<explicitdelayitem
-		duration="1000ms"
+		duration="5000ms"
 		enabled="True"
 		optional="False">
 			<comment>
@@ -73,6 +73,21 @@ mode="Global">
 			</bindings>
 			<arguments
 			id="8d984d74-60dd-4c69-97d2-fe46fbb17046">
+			</arguments>
+		</userrecorditem>
+		<userrecorditem
+		classname="ui_product_list"
+		enabled="True"
+		isexternaltestmethod="False"
+		methodname="ClosePopupAdIfExists"
+		namespace="AutomationExercise.Product.List"
+		optional="False">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<arguments
+			id="9d009ea2-2230-481e-9c57-4f631ff33358">
 			</arguments>
 		</userrecorditem>
 	</recorditems>

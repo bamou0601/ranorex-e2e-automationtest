@@ -106,16 +106,16 @@ namespace AutomationExercise
             {
                 _productspage = new AutomationExerciseRepositoryFolders.ProductsPageFolder(this);
                 _productdetailpage = new AutomationExerciseRepositoryFolders.ProductDetailPageFolder(this);
-                _products_menuInfo = new RepoItemInfo(this, "Products_Menu", ".//header[#'header']/div/div/div/div[2]/?/?/ul/li[2]/a[@innertext=' Products']", "", 30000, null, "ece49e18-a297-4a30-bf9e-f0faa070e73a");
+                _products_menuInfo = new RepoItemInfo(this, "Products_Menu", ".//header[#'header']//a[@innertext~'Products']", "", 30000, null, "ece49e18-a297-4a30-bf9e-f0faa070e73a");
                 _searchproductInfo = new RepoItemInfo(this, "SearchProduct", ".//input[#'search_product']", "", 30000, null, "fd0b7cc1-fc3f-4beb-aa4b-e221a80d531f");
                 _submitsearchInfo = new RepoItemInfo(this, "SubmitSearch", ".//button[#'submit_search']", ".//button[#'submit_search']", 30000, null, "f6a14cf7-d441-4173-8fca-a751a345d1a5");
-                _signuploginInfo = new RepoItemInfo(this, "SignupLogin", ".//header[#'header']/div/div/div/div[2]/?/?/ul/li[4]/a[@innertext=' Signup / Login']", ".//header[#'header']//a[@innertext=' Signup / Login']", 30000, null, "18715491-e9e5-4244-bd9d-08d3796fa309");
-                _email_addressInfo = new RepoItemInfo(this, "email_address", ".//section[#'form']/div/div/div[1]/?/?/form[@action='https://www.automationexercise.com/login']/input[@name='email']", ".//section[#'form']//input[@name='email']", 30000, null, "56f07783-f8a1-4b0e-904a-3bfd55319073");
-                _passwordInfo = new RepoItemInfo(this, "password", ".//section[#'form']/div/div/div[1]/?/?/form[@action='https://www.automationexercise.com/login']/input[@name='password']", ".//section[#'form']//input[@name='password']", 30000, null, "bc78f211-ee4b-410f-88c1-0e0cfadaf899");
-                _login_buttonInfo = new RepoItemInfo(this, "login_button", ".//section[#'form']/div/div/div[1]/?/?/form[@action='https://www.automationexercise.com/login']/button[@innertext='Login']", ".//section[#'form']//button[@innertext='Login']", 30000, null, "fb752a5d-8eab-4a75-9b99-91ba48a8460b");
-                _logout_buttonInfo = new RepoItemInfo(this, "logout_button", ".//header[#'header']/div/div/div/div[2]/?/?/ul/li[4]/a[@innertext=' Logout']", ".//header[#'header']//a[@innertext=' Logout']", 30000, null, "683a1e01-4431-4dae-ab21-b18c832d829a");
-                _login_as_testuserInfo = new RepoItemInfo(this, "login_as_testuser", ".//header[#'header']/div/div/div/div[2]/?/?/ul/li[10]/a[@innertext=' Logged in as ']", ".//header[#'header']//a[@innertext=' Logged in as ']", 30000, null, "10390275-c35e-41de-89d4-d2639dbb6908");
-                _brandsInfo = new RepoItemInfo(this, "brands", "body/section[2]/div/div/div[1]/div/div[2]/h2[@innertext='Brands']", ".//h2[@innertext='Brands']", 30000, null, "5589a3aa-1e3d-4cae-a647-7012049364d9");
+                _signuploginInfo = new RepoItemInfo(this, "SignupLogin", ".//header[#'header']//a[@innertext~'Signup / Login']", ".//header[#'header']//a[@innertext=' Signup / Login']", 30000, null, "18715491-e9e5-4244-bd9d-08d3796fa309");
+                _email_addressInfo = new RepoItemInfo(this, "email_address", ".//div[@class~'login-form']//input[@name='email']", ".//section[#'form']//input[@name='email']", 30000, null, "56f07783-f8a1-4b0e-904a-3bfd55319073");
+                _passwordInfo = new RepoItemInfo(this, "password", ".//div[@class~'login-form']//input[@name='password']", ".//section[#'form']//input[@name='password']", 30000, null, "bc78f211-ee4b-410f-88c1-0e0cfadaf899");
+                _login_buttonInfo = new RepoItemInfo(this, "login_button", ".//div[@class~'login-form']//button[@innertext='Login']", ".//section[#'form']//button[@innertext='Login']", 30000, null, "fb752a5d-8eab-4a75-9b99-91ba48a8460b");
+                _logout_buttonInfo = new RepoItemInfo(this, "logout_button", ".//header[#'header']//a[@innertext~'Logout']", ".//header[#'header']//a[@innertext=' Logout']", 30000, null, "683a1e01-4431-4dae-ab21-b18c832d829a");
+                _login_as_testuserInfo = new RepoItemInfo(this, "login_as_testuser", ".//header[#'header']//a[@innertext~'Logged in as']", ".//header[#'header']//a[@innertext=' Logged in as ']", 30000, null, "10390275-c35e-41de-89d4-d2639dbb6908");
+                _brandsInfo = new RepoItemInfo(this, "brands", ".//div[@class~'brands_products']//h2[@innertext='Brands']", ".//h2[@innertext='Brands']", 30000, null, "5589a3aa-1e3d-4cae-a647-7012049364d9");
             }
 
             /// <summary>
@@ -519,6 +519,7 @@ namespace AutomationExercise
             RepoItemInfo _availabilityInfo;
             RepoItemInfo _brandInfo;
             RepoItemInfo _conditionInfo;
+            RepoItemInfo _productinformationInfo;
 
             /// <summary>
             /// Creates a new ProductDetailPage  folder.
@@ -532,6 +533,7 @@ namespace AutomationExercise
                 _availabilityInfo = new RepoItemInfo(this, "Availability", ".//div[@class~'product-information']//b[@innertext='Availability:']", ".//b[@innertext='Availability:']", 30000, null, "5286bf82-e4c4-4588-86ce-b6be5f933440");
                 _brandInfo = new RepoItemInfo(this, "Brand", ".//div[@class~'product-information']//b[@innertext='Brand:']", ".//b[@innertext='Brand:']", 30000, null, "52bcbe19-e180-49af-b231-eaa2cbaf6130");
                 _conditionInfo = new RepoItemInfo(this, "Condition", ".//div[@class~'product-information']//b[@innertext='Condition:']", ".//b[@innertext='Condition:']", 30000, null, "a558f3a6-36a6-45da-9a7c-7a152634b48b");
+                _productinformationInfo = new RepoItemInfo(this, "ProductInformation", ".//div[@class~'product-information']", "element", 30000, null, "5d2b209c-6f76-4293-947c-87923f994f96");
             }
 
             /// <summary>
@@ -687,6 +689,30 @@ namespace AutomationExercise
                 get
                 {
                     return _conditionInfo;
+                }
+            }
+
+            /// <summary>
+            /// The ProductInformation item.
+            /// </summary>
+            [RepositoryItem("5d2b209c-6f76-4293-947c-87923f994f96")]
+            public virtual Ranorex.DivTag ProductInformation
+            {
+                get
+                {
+                    return _productinformationInfo.CreateAdapter<Ranorex.DivTag>(true);
+                }
+            }
+
+            /// <summary>
+            /// The ProductInformation item info.
+            /// </summary>
+            [RepositoryItemInfo("5d2b209c-6f76-4293-947c-87923f994f96")]
+            public virtual RepoItemInfo ProductInformationInfo
+            {
+                get
+                {
+                    return _productinformationInfo;
                 }
             }
         }

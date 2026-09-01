@@ -12,6 +12,7 @@ using System;
 using System.Collections.Generic;
 using System.Net.Http;
 using System.Web.Script.Serialization;
+using System.Linq;
 
 using Ranorex;
 using Ranorex.Core;
@@ -157,13 +158,22 @@ namespace AutomationExercise.Product.Search
             	TestContext.ApiProductName = result.products[0].name;
             	// API商品数を共有
             	TestContext.ApiProductCount = result.products.Count;
+            	
+            	
             		
             	// 全商品名を保存するListを初期化
             	TestContext.ApiProductNames = new List<string>();
+            	
+            	//全商品IDを保存するListを初期化
+            	TestContext.ApiProductIds = new List<int>();
             		
-            	// APIから取得した全商品名を保存
+            	// APIから取得した商品ID・商品名を保存
             	foreach (Product product in result.products)
-            	{
+            	{		
+            		TestContext.ApiProductIds.Add(
+            			product.id
+            		);
+            		
             		TestContext.ApiProductNames.Add(
             			product.name
             		);
@@ -181,7 +191,9 @@ namespace AutomationExercise.Product.Search
             		Report.Info(
             			"API商品[" +
             			(i + 1) +
-            			"]: " +
+            			"]: ID=" +
+            			TestContext.ApiProductIds[i] +
+            			" / Name=" +
             			TestContext.ApiProductNames[i]
             		);
             	}

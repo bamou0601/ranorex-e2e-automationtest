@@ -33,6 +33,51 @@ namespace AutomationExercise.Product.Detail
             // Your recording specific initialization code goes here.
         }
         
+        /// <summary>
+		/// 商品詳細画面が表示されるまで待機する。
+		///
+		/// 処理内容:
+		/// ・商品詳細領域の表示を確認する。
+		/// ・表示されない場合はポップアップ広告を閉じる。
+		/// ・広告処理後、再度商品詳細領域を待機する。
+		///
+		/// Returns:
+		/// なし。
+		/// </summary>
+		public void WaitForProductDetailPage()
+		{
+			try 
+			{
+				// 商品詳細領域を最大5秒待機する
+				repo.ApplicationUnderTest
+					.ProductDetailPage
+					.ProductInformationInfo
+					.WaitForExists(5000);
+				
+				Report.Info("商品詳細画面を確認しました。");
+				return;
+			}	
+			catch (Ranorex.ElementNotFoundException)
+			{	
+				// 初回待機で商品詳細画面を確認できなかった場合
+				Report.Warn("商品詳細画面が未表示のため、ポップアップ広告を確認します。");
+			}
+			
+			// ポップアップ広告を確認する
+			ClosePopupAdIfExists();
+			
+			// 広告処理後、商品詳細領域を最大10秒再待機する
+			repo.ApplicationUnderTest
+				.ProductDetailPage
+				.ProductInformationInfo
+				.WaitForExists(10000);
+			
+			
+			Report.Info("商品詳細画面を確認しました。");		
+			
+		}
+			
+                 
         public void ValidateProductDetail()
 		{
     		// 商品詳細画面から各商品情報を取得する
